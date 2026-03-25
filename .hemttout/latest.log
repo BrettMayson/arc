@@ -1,0 +1,454 @@
+2026-03-25T08:56:34.214505Z TRACE ThreadId(01) version: 1.18.3-local
+2026-03-25T08:56:34.214531Z TRACE ThreadId(01) platform: linux
+2026-03-25T08:56:34.214539Z DEBUG ThreadId(02) skip update check for local / debug version
+2026-03-25T08:56:34.214539Z TRACE ThreadId(01) args: [
+    "hemtt",
+    "launch",
+    "+rf",
+    "+ws",
+]
+2026-03-25T08:56:34.214562Z DEBUG ThreadId(01) using global config directory: "/home/brett/.config/hemtt"
+2026-03-25T08:56:34.214688Z TRACE ThreadId(01) launch config: LaunchOptions { workshop: ["3499977893", "450814997", "463939057"], dlc: [ReactionForces, WesternSahara], presets: [], optionals: [], mission: None, dev_mission: None, parameters: [], executable: None, binarize: None, file_patching: None, instances: None, rapify: None }
+2026-03-25T08:56:34.215263Z DEBUG ThreadId(01) Arma 3 found at: /var/mnt/540a9c00-2dc0-4ebc-83fe-c675cff526c3/SteamLibrary/steamapps/common/Arma 3
+2026-03-25T08:56:34.215366Z TRACE ThreadId(01) using temporary folder: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc"
+2026-03-25T08:56:34.215373Z TRACE ThreadId(01) using project folder: "/home/brett/Documents/GitHub/BrettMayson/arc"
+2026-03-25T08:56:34.215379Z TRACE ThreadId(01) using out folder: "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout"
+2026-03-25T08:56:34.215414Z TRACE ThreadId(01) using build folder: "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev"
+2026-03-25T08:56:34.216387Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/compat_ws/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.216423Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/compat_ws/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.216775Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/compat_vanilla/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.216812Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/compat_vanilla/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.216894Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.216946Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.217042Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/signal/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.217079Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/signal/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.217325Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/core/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.217355Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/core/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.217679Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/isr/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.217743Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/isr/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.218125Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/compat_aegis/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.218151Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/compat_aegis/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.218245Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/compat_rf/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.218341Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/compat_rf/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.218425Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc/include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/tmp/hemtt/brett/brett_Documents_GitHub_BrettMayson_arc/hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "/home/brett/Documents/GitHub/BrettMayson/arc" } } } } } }] } } }
+2026-03-25T08:56:34.223389Z  INFO ThreadId(01) Config loaded for Advanced Remote Control 1.0.0.0-24448b3d
+2026-03-25T08:56:34.223403Z TRACE ThreadId(01) Scanning /home/brett/Documents/GitHub/BrettMayson/arc/addons for addons
+2026-03-25T08:56:34.223593Z DEBUG ThreadId(01) using global config directory: "/home/brett/.config/hemtt"
+2026-03-25T08:56:34.224094Z  INFO ThreadId(01) Creating `dev` version
+2026-03-25T08:56:34.224109Z TRACE ThreadId(01) phase: init (BOM Check) (start)
+2026-03-25T08:56:34.224114Z TRACE ThreadId(01) phase: init (BOM Check) (done)
+2026-03-25T08:56:34.224117Z TRACE ThreadId(01) phase: init (Final New Line Check) (start)
+2026-03-25T08:56:34.224121Z TRACE ThreadId(01) phase: init (Final New Line Check) (done)
+2026-03-25T08:56:34.224124Z TRACE ThreadId(01) phase: init (git) (start)
+2026-03-25T08:56:34.224127Z TRACE ThreadId(01) phase: init (git) (done)
+2026-03-25T08:56:34.224130Z TRACE ThreadId(01) phase: init (Hooks) (start)
+2026-03-25T08:56:34.224141Z TRACE ThreadId(01) no hooks folder
+2026-03-25T08:56:34.224145Z TRACE ThreadId(01) phase: init (Hooks) (done)
+2026-03-25T08:56:34.224149Z TRACE ThreadId(01) phase: init (pboprefix) (start)
+2026-03-25T08:56:34.224153Z TRACE ThreadId(01) phase: init (pboprefix) (done)
+2026-03-25T08:56:34.224157Z TRACE ThreadId(01) phase: init (tex_headers) (start)
+2026-03-25T08:56:34.224161Z TRACE ThreadId(01) phase: init (tex_headers) (done)
+2026-03-25T08:56:34.224164Z TRACE ThreadId(01) phase: init (Files) (start)
+2026-03-25T08:56:34.224167Z TRACE ThreadId(01) phase: init (Files) (done)
+2026-03-25T08:56:34.224170Z TRACE ThreadId(01) phase: init (FilePatching) (start)
+2026-03-25T08:56:34.224174Z TRACE ThreadId(01) phase: init (FilePatching) (done)
+2026-03-25T08:56:34.224177Z TRACE ThreadId(01) phase: init (summary) (start)
+2026-03-25T08:56:34.224181Z TRACE ThreadId(01) phase: init (summary) (done)
+2026-03-25T08:56:34.224184Z TRACE ThreadId(01) phase: init (Rapifier) (start)
+2026-03-25T08:56:34.224187Z TRACE ThreadId(01) phase: init (Rapifier) (done)
+2026-03-25T08:56:34.224191Z TRACE ThreadId(01) phase: init (SQF) (start)
+2026-03-25T08:56:34.313109Z TRACE ThreadId(01) phase: init (SQF) (done)
+2026-03-25T08:56:34.313125Z TRACE ThreadId(01) phase: init (Stringtables) (start)
+2026-03-25T08:56:34.313130Z TRACE ThreadId(01) phase: init (Stringtables) (done)
+2026-03-25T08:56:34.313138Z TRACE ThreadId(01) phase: check (BOM Check) (start)
+2026-03-25T08:56:34.313920Z TRACE ThreadId(01) phase: check (BOM Check) (done)
+2026-03-25T08:56:34.313930Z TRACE ThreadId(01) phase: check (Final New Line Check) (start)
+2026-03-25T08:56:34.314665Z TRACE ThreadId(01) phase: check (Final New Line Check) (done)
+2026-03-25T08:56:34.314670Z TRACE ThreadId(01) phase: check (git) (start)
+2026-03-25T08:56:34.315267Z TRACE ThreadId(01) phase: check (git) (done)
+2026-03-25T08:56:34.315273Z TRACE ThreadId(01) phase: check (Hooks) (start)
+2026-03-25T08:56:34.315276Z TRACE ThreadId(01) phase: check (Hooks) (done)
+2026-03-25T08:56:34.315280Z TRACE ThreadId(01) phase: check (pboprefix) (start)
+2026-03-25T08:56:34.315284Z TRACE ThreadId(01) Checking prefixes against expected project path: z\arc\
+2026-03-25T08:56:34.315751Z TRACE ThreadId(01) phase: check (pboprefix) (done)
+2026-03-25T08:56:34.315763Z TRACE ThreadId(01) phase: check (tex_headers) (start)
+2026-03-25T08:56:34.315769Z TRACE ThreadId(01) phase: check (tex_headers) (done)
+2026-03-25T08:56:34.315773Z TRACE ThreadId(01) phase: check (Files) (start)
+2026-03-25T08:56:34.315778Z TRACE ThreadId(01) phase: check (Files) (done)
+2026-03-25T08:56:34.315782Z TRACE ThreadId(01) phase: check (FilePatching) (start)
+2026-03-25T08:56:34.315787Z TRACE ThreadId(01) phase: check (FilePatching) (done)
+2026-03-25T08:56:34.315792Z TRACE ThreadId(01) phase: check (summary) (start)
+2026-03-25T08:56:34.315796Z TRACE ThreadId(01) phase: check (summary) (done)
+2026-03-25T08:56:34.315801Z TRACE ThreadId(01) phase: check (Rapifier) (start)
+2026-03-25T08:56:34.315850Z TRACE ThreadId(01) phase: check (Rapifier) (done)
+2026-03-25T08:56:34.315869Z TRACE ThreadId(01) phase: check (SQF) (start)
+2026-03-25T08:56:34.315899Z TRACE ThreadId(01) phase: check (SQF) (done)
+2026-03-25T08:56:34.315903Z TRACE ThreadId(01) phase: check (Stringtables) (start)
+2026-03-25T08:56:34.315922Z TRACE ThreadId(01) phase: check (Stringtables) (done)
+2026-03-25T08:56:34.315926Z TRACE ThreadId(01) phase: pre_build (BOM Check) (start)
+2026-03-25T08:56:34.315929Z TRACE ThreadId(01) phase: pre_build (BOM Check) (done)
+2026-03-25T08:56:34.315933Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (start)
+2026-03-25T08:56:34.315936Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (done)
+2026-03-25T08:56:34.315940Z TRACE ThreadId(01) phase: pre_build (git) (start)
+2026-03-25T08:56:34.315943Z TRACE ThreadId(01) phase: pre_build (git) (done)
+2026-03-25T08:56:34.315946Z TRACE ThreadId(01) phase: pre_build (Hooks) (start)
+2026-03-25T08:56:34.315950Z TRACE ThreadId(01) phase: pre_build (Hooks) (done)
+2026-03-25T08:56:34.315954Z TRACE ThreadId(01) phase: pre_build (pboprefix) (start)
+2026-03-25T08:56:34.315957Z TRACE ThreadId(01) phase: pre_build (pboprefix) (done)
+2026-03-25T08:56:34.315960Z TRACE ThreadId(01) phase: pre_build (tex_headers) (start)
+2026-03-25T08:56:34.316486Z  INFO ThreadId(01) Generated 0 texture headers
+2026-03-25T08:56:34.316498Z TRACE ThreadId(01) phase: pre_build (tex_headers) (done)
+2026-03-25T08:56:34.316502Z TRACE ThreadId(01) phase: pre_build (Files) (start)
+2026-03-25T08:56:34.316506Z TRACE ThreadId(01) phase: pre_build (Files) (done)
+2026-03-25T08:56:34.316509Z TRACE ThreadId(01) phase: pre_build (FilePatching) (start)
+2026-03-25T08:56:34.316567Z TRACE ThreadId(04) symlink "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/signal" => "/home/brett/Documents/GitHub/BrettMayson/arc/addons/signal"
+2026-03-25T08:56:34.316565Z TRACE ThreadId(03) symlink "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/main" => "/home/brett/Documents/GitHub/BrettMayson/arc/addons/main"
+2026-03-25T08:56:34.316574Z TRACE ThreadId(06) symlink "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/isr" => "/home/brett/Documents/GitHub/BrettMayson/arc/addons/isr"
+2026-03-25T08:56:34.316619Z TRACE ThreadId(05) symlink "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/core" => "/home/brett/Documents/GitHub/BrettMayson/arc/addons/core"
+2026-03-25T08:56:34.316671Z TRACE ThreadId(08) symlink "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/compat_vanilla" => "/home/brett/Documents/GitHub/BrettMayson/arc/addons/compat_vanilla"
+2026-03-25T08:56:34.316672Z TRACE ThreadId(12) symlink "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/compat_ws" => "/home/brett/Documents/GitHub/BrettMayson/arc/addons/compat_ws"
+2026-03-25T08:56:34.316671Z TRACE ThreadId(09) symlink "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/compat_rf" => "/home/brett/Documents/GitHub/BrettMayson/arc/addons/compat_rf"
+2026-03-25T08:56:34.316672Z TRACE ThreadId(07) symlink "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/compat_aegis" => "/home/brett/Documents/GitHub/BrettMayson/arc/addons/compat_aegis"
+2026-03-25T08:56:34.316771Z TRACE ThreadId(01) phase: pre_build (FilePatching) (done)
+2026-03-25T08:56:34.316777Z TRACE ThreadId(01) phase: pre_build (summary) (start)
+2026-03-25T08:56:34.316781Z TRACE ThreadId(01) phase: pre_build (summary) (done)
+2026-03-25T08:56:34.316786Z TRACE ThreadId(01) phase: pre_build (Rapifier) (start)
+2026-03-25T08:56:34.334893Z  INFO ThreadId(01) Rapified 8 addon configs
+2026-03-25T08:56:34.334920Z TRACE ThreadId(01) phase: pre_build (Rapifier) (done)
+2026-03-25T08:56:34.334924Z TRACE ThreadId(01) phase: pre_build (SQF) (start)
+2026-03-25T08:56:34.339273Z TRACE ThreadId(05) sqf compiling /addons/isr/functions/fnc_menu_draw.sqf
+2026-03-25T08:56:34.339276Z TRACE ThreadId(12) sqf compiling /addons/isr/functions/fnc_pfh_markers.sqf
+2026-03-25T08:56:34.339287Z TRACE ThreadId(04) sqf compiling /addons/core/functions/fnc_generic_insertBatteryCondition.sqf
+2026-03-25T08:56:34.339287Z TRACE ThreadId(10) sqf compiling /addons/isr/functions/fnc_pfh_targets.sqf
+2026-03-25T08:56:34.339290Z TRACE ThreadId(17) sqf compiling /addons/compat_ws/XEH_preInit.sqf
+2026-03-25T08:56:34.339292Z TRACE ThreadId(18) sqf compiling /addons/compat_ws/functions/fnc_ied_armCondition.sqf
+2026-03-25T08:56:34.339292Z TRACE ThreadId(07) sqf compiling /addons/isr/functions/fnc_displayFrequency.sqf
+2026-03-25T08:56:34.339292Z TRACE ThreadId(06) sqf compiling /addons/isr/functions/fnc_menu_targets.sqf
+2026-03-25T08:56:34.339291Z TRACE ThreadId(16) sqf compiling /addons/signal/functions/fnc_collision.sqf
+2026-03-25T08:56:34.339297Z TRACE ThreadId(09) sqf compiling /addons/compat_ws/functions/fnc_bustard_packCondition.sqf
+2026-03-25T08:56:34.339301Z TRACE ThreadId(03) sqf compiling /addons/isr/XEH_preStart.sqf
+2026-03-25T08:56:34.339303Z TRACE ThreadId(13) sqf compiling /addons/isr/functions/fnc_displayPower.sqf
+2026-03-25T08:56:34.339334Z TRACE ThreadId(14) sqf compiling /addons/signal/functions/fnc_satError.sqf
+2026-03-25T08:56:34.339436Z TRACE ThreadId(08) sqf compiling /addons/signal/XEH_preInit.sqf
+2026-03-25T08:56:34.339650Z TRACE ThreadId(11) sqf compiling /addons/signal/functions/fnc_calc.sqf
+2026-03-25T08:56:34.339651Z TRACE ThreadId(15) sqf compiling /addons/isr/functions/fnc_menu_keybind.sqf
+2026-03-25T08:56:34.340773Z TRACE ThreadId(18) sqf compiling /addons/compat_ws/functions/fnc_ied_arm.sqf
+2026-03-25T08:56:34.340878Z TRACE ThreadId(04) sqf compiling /addons/core/functions/fnc_generic_removeBatteryModify.sqf
+2026-03-25T08:56:34.341277Z TRACE ThreadId(13) sqf compiling /addons/isr/functions/fnc_menu_grid.sqf
+2026-03-25T08:56:34.341402Z TRACE ThreadId(07) sqf compiling /addons/isr/functions/fnc_menu_configuration.sqf
+2026-03-25T08:56:34.341582Z TRACE ThreadId(09) sqf compiling /addons/compat_ws/functions/fnc_bustard_assembled.sqf
+2026-03-25T08:56:34.342049Z TRACE ThreadId(09) sqf compiling /addons/compat_ws/functions/fnc_bustard_disarmCondition.sqf
+2026-03-25T08:56:34.342292Z TRACE ThreadId(08) sqf compiling /addons/signal/XEH_postInitClient.sqf
+2026-03-25T08:56:34.342572Z TRACE ThreadId(04) sqf compiling /addons/core/functions/fnc_generic_deployInsertChildren.sqf
+2026-03-25T08:56:34.342690Z TRACE ThreadId(09) sqf compiling /addons/compat_ws/functions/fnc_ied_assembled.sqf
+2026-03-25T08:56:34.343694Z TRACE ThreadId(18) sqf compiling /addons/compat_ws/functions/fnc_ied_armInsertChildren.sqf
+2026-03-25T08:56:34.344125Z TRACE ThreadId(14) sqf compiling /addons/signal/functions/fnc_adjust.sqf
+2026-03-25T08:56:34.344215Z TRACE ThreadId(17) sqf compiling /addons/compat_ws/XEH_preStart.sqf
+2026-03-25T08:56:34.344901Z TRACE ThreadId(09) sqf compiling /addons/compat_ws/functions/fnc_ied_disarm.sqf
+2026-03-25T08:56:34.344930Z TRACE ThreadId(11) sqf compiling /addons/signal/functions/fnc_maxRes.sqf
+2026-03-25T08:56:34.345784Z TRACE ThreadId(08) sqf compiling /addons/compat_ws/functions/fnc_bustard_disarm.sqf
+2026-03-25T08:56:34.346749Z TRACE ThreadId(03) sqf compiling /addons/isr/XEH_preInit.sqf
+2026-03-25T08:56:34.346836Z TRACE ThreadId(16) sqf compiling /addons/compat_ws/functions/fnc_bustard_armModify.sqf
+2026-03-25T08:56:34.347109Z TRACE ThreadId(04) sqf compiling /addons/core/functions/fnc_init.sqf
+2026-03-25T08:56:34.347456Z TRACE ThreadId(11) sqf compiling /addons/signal/functions/fnc_pfh.sqf
+2026-03-25T08:56:34.347507Z TRACE ThreadId(18) sqf compiling /addons/compat_ws/functions/fnc_ied_init.sqf
+2026-03-25T08:56:34.347564Z TRACE ThreadId(16) sqf compiling /addons/compat_ws/functions/fnc_bustard_armCondition.sqf
+2026-03-25T08:56:34.347854Z TRACE ThreadId(08) sqf compiling /addons/compat_ws/functions/fnc_bustard_arm.sqf
+2026-03-25T08:56:34.348293Z TRACE ThreadId(17) sqf compiling /addons/compat_ws/functions/fnc_bustard_disarmModify.sqf
+2026-03-25T08:56:34.348373Z TRACE ThreadId(14) sqf compiling /addons/isr/XEH_postInitClient.sqf
+2026-03-25T08:56:34.348516Z TRACE ThreadId(08) sqf compiling /addons/compat_ws/functions/fnc_bustard_init.sqf
+2026-03-25T08:56:34.348541Z TRACE ThreadId(07) sqf compiling /addons/core/functions/fnc_generic_removeBatteryCondition.sqf
+2026-03-25T08:56:34.348692Z TRACE ThreadId(16) sqf compiling /addons/core/functions/fnc_generic_pack.sqf
+2026-03-25T08:56:34.349250Z TRACE ThreadId(17) sqf compiling /addons/core/functions/fnc_mini_grabCondition.sqf
+2026-03-25T08:56:34.349420Z TRACE ThreadId(09) sqf compiling /addons/isr/functions/fnc_menu_main.sqf
+2026-03-25T08:56:34.350052Z TRACE ThreadId(07) sqf compiling /addons/core/functions/fnc_generic_deploy.sqf
+2026-03-25T08:56:34.350124Z TRACE ThreadId(18) sqf compiling /addons/isr/functions/fnc_vanilla.sqf
+2026-03-25T08:56:34.350352Z TRACE ThreadId(17) sqf compiling /addons/core/functions/fnc_generic_insertBattery.sqf
+2026-03-25T08:56:34.350824Z TRACE ThreadId(04) sqf compiling /addons/isr/functions/fnc_menu_setControlText.sqf
+2026-03-25T08:56:34.351007Z TRACE ThreadId(05) sqf compiling /addons/isr/functions/fnc_menu_addControl.sqf
+2026-03-25T08:56:34.351637Z TRACE ThreadId(16) sqf compiling /addons/compat_rf/XEH_postInitClient.sqf
+2026-03-25T08:56:34.351709Z TRACE ThreadId(17) sqf compiling /addons/core/functions/fnc_generic_packCondition.sqf
+2026-03-25T08:56:34.352740Z TRACE ThreadId(17) sqf compiling /addons/core/functions/fnc_generic_removeBattery.sqf
+2026-03-25T08:56:34.352845Z TRACE ThreadId(16) sqf compiling /addons/compat_rf/XEH_preInit.sqf
+2026-03-25T08:56:34.353054Z TRACE ThreadId(10) sqf compiling /addons/isr/functions/fnc_getAltitude.sqf
+2026-03-25T08:56:34.354126Z TRACE ThreadId(16) sqf compiling /addons/compat_rf/XEH_preStart.sqf
+2026-03-25T08:56:34.354185Z TRACE ThreadId(11) sqf compiling /addons/core/XEH_preStart.sqf
+2026-03-25T08:56:34.354571Z TRACE ThreadId(17) sqf compiling /addons/core/functions/fnc_generic_insertBatteryInsertChildren.sqf
+2026-03-25T08:56:34.355023Z TRACE ThreadId(12) sqf compiling /addons/isr/functions/fnc_getSpeed.sqf
+2026-03-25T08:56:34.355289Z TRACE ThreadId(16) sqf compiling /addons/compat_rf/functions/fnc_gl_deploy.sqf
+2026-03-25T08:56:34.355662Z TRACE ThreadId(08) sqf compiling /addons/compat_ws/functions/fnc_ied_disarmCondition.sqf
+2026-03-25T08:56:34.355805Z TRACE ThreadId(07) sqf compiling /addons/core/functions/fnc_generic_deployCondition.sqf
+2026-03-25T08:56:34.356149Z TRACE ThreadId(15) sqf compiling /addons/isr/functions/fnc_menu_target.sqf
+2026-03-25T08:56:34.356328Z TRACE ThreadId(08) sqf compiling /addons/compat_ws/functions/fnc_ied_packCondition.sqf
+2026-03-25T08:56:34.356871Z TRACE ThreadId(18) sqf compiling /addons/isr/functions/fnc_menu_power.sqf
+2026-03-25T08:56:34.357580Z TRACE ThreadId(12) sqf compiling /addons/isr/functions/fnc_menu_markers.sqf
+2026-03-25T08:56:34.357701Z TRACE ThreadId(08) sqf compiling /addons/isr/functions/fnc_isISR.sqf
+2026-03-25T08:56:34.357738Z TRACE ThreadId(09) sqf compiling /addons/isr/functions/fnc_menu_getControls.sqf
+2026-03-25T08:56:34.357746Z TRACE ThreadId(11) sqf compiling /addons/core/XEH_preInit.sqf
+2026-03-25T08:56:34.357949Z TRACE ThreadId(17) sqf compiling /addons/isr/functions/fnc_vanillaTurret.sqf
+2026-03-25T08:56:34.358100Z TRACE ThreadId(07) sqf compiling /addons/core/functions/fnc_mini_grab.sqf
+2026-03-25T08:56:34.358168Z TRACE ThreadId(14) sqf compiling /addons/isr/functions/fnc_pfh.sqf
+2026-03-25T08:56:34.359206Z TRACE ThreadId(05) sqf compiling /addons/isr/functions/fnc_menu_camera.sqf
+2026-03-25T08:56:34.359656Z TRACE ThreadId(06) sqf compiling /addons/signal/XEH_preStart.sqf
+2026-03-25T08:56:34.371241Z  INFO ThreadId(01) Compiled 74 sqf files
+2026-03-25T08:56:34.371320Z TRACE ThreadId(01) phase: pre_build (SQF) (done)
+2026-03-25T08:56:34.371326Z TRACE ThreadId(01) phase: pre_build (Stringtables) (start)
+2026-03-25T08:56:34.373131Z  INFO ThreadId(01) Checked 0 stringtables
+2026-03-25T08:56:34.373140Z TRACE ThreadId(01) phase: pre_build (Stringtables) (done)
+2026-03-25T08:56:34.373145Z TRACE ThreadId(01) phase: build (start)
+2026-03-25T08:56:34.373373Z DEBUG ThreadId(01) "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons" already exists
+2026-03-25T08:56:34.373380Z DEBUG ThreadId(01) building "addons/main" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/arc_main.pbo"
+2026-03-25T08:56:34.373467Z TRACE ThreadId(01) adding file "config.bin"
+2026-03-25T08:56:34.373516Z TRACE ThreadId(01) adding file "script_macros.hpp"
+2026-03-25T08:56:34.373539Z TRACE ThreadId(01) adding file "script_mod.hpp"
+2026-03-25T08:56:34.373561Z TRACE ThreadId(01) adding file "script_component.hpp"
+2026-03-25T08:56:34.373594Z TRACE ThreadId(01) adding file "script_version.hpp"
+2026-03-25T08:56:34.373688Z DEBUG ThreadId(01) "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons" already exists
+2026-03-25T08:56:34.373693Z DEBUG ThreadId(01) building "addons/isr" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/arc_isr.pbo"
+2026-03-25T08:56:34.374162Z TRACE ThreadId(01) adding file "CfgEventHandlers.hpp"
+2026-03-25T08:56:34.374186Z TRACE ThreadId(01) adding file "RscInGameUI.hpp"
+2026-03-25T08:56:34.374200Z TRACE ThreadId(01) adding file "config.bin"
+2026-03-25T08:56:34.374205Z TRACE ThreadId(01) adding file "XEH_preStart.sqfc"
+2026-03-25T08:56:34.374211Z TRACE ThreadId(01) adding file "XEH_preInit.sqfc"
+2026-03-25T08:56:34.374224Z TRACE ThreadId(01) adding file "script_component.hpp"
+2026-03-25T08:56:34.374246Z TRACE ThreadId(01) adding file "XEH_postInitClient.sqf"
+2026-03-25T08:56:34.374259Z TRACE ThreadId(01) adding file "XEH_postInitClient.sqfc"
+2026-03-25T08:56:34.374273Z TRACE ThreadId(01) adding file "XEH_PREP.hpp"
+2026-03-25T08:56:34.374295Z TRACE ThreadId(01) adding file "XEH_preStart.sqf"
+2026-03-25T08:56:34.374318Z TRACE ThreadId(01) adding file "XEH_preInit.sqf"
+2026-03-25T08:56:34.374353Z TRACE ThreadId(01) adding file "UI\\DarterTurret.hpp"
+2026-03-25T08:56:34.374375Z TRACE ThreadId(01) adding file "UI\\DarterDriver.hpp"
+2026-03-25T08:56:34.374389Z TRACE ThreadId(01) adding file "functions\\fnc_menu_target.sqfc"
+2026-03-25T08:56:34.374395Z TRACE ThreadId(01) adding file "functions\\fnc_pfh.sqfc"
+2026-03-25T08:56:34.374401Z TRACE ThreadId(01) adding file "functions\\fnc_getSpeed.sqfc"
+2026-03-25T08:56:34.374406Z TRACE ThreadId(01) adding file "functions\\fnc_menu_markers.sqfc"
+2026-03-25T08:56:34.374419Z TRACE ThreadId(01) adding file "functions\\fnc_menu_camera.sqf"
+2026-03-25T08:56:34.374442Z TRACE ThreadId(01) adding file "functions\\fnc_menu_target.sqf"
+2026-03-25T08:56:34.374457Z TRACE ThreadId(01) adding file "functions\\fnc_menu_power.sqfc"
+2026-03-25T08:56:34.374475Z TRACE ThreadId(01) adding file "functions\\fnc_displayPower.sqf"
+2026-03-25T08:56:34.374499Z TRACE ThreadId(01) adding file "functions\\fnc_menu_keybind.sqf"
+2026-03-25T08:56:34.374514Z TRACE ThreadId(01) adding file "functions\\fnc_vanilla.sqfc"
+2026-03-25T08:56:34.374519Z TRACE ThreadId(01) adding file "functions\\fnc_menu_main.sqfc"
+2026-03-25T08:56:34.374524Z TRACE ThreadId(01) adding file "functions\\fnc_displayPower.sqfc"
+2026-03-25T08:56:34.374538Z TRACE ThreadId(01) adding file "functions\\fnc_menu_markers.sqf"
+2026-03-25T08:56:34.374552Z TRACE ThreadId(01) adding file "functions\\fnc_menu_configuration.sqfc"
+2026-03-25T08:56:34.374557Z TRACE ThreadId(01) adding file "functions\\fnc_isISR.sqfc"
+2026-03-25T08:56:34.374571Z TRACE ThreadId(01) adding file "functions\\fnc_menu_grid.sqf"
+2026-03-25T08:56:34.374587Z TRACE ThreadId(01) adding file "functions\\fnc_menu_keybind.sqfc"
+2026-03-25T08:56:34.374592Z TRACE ThreadId(01) adding file "functions\\fnc_menu_setControlText.sqfc"
+2026-03-25T08:56:34.374598Z TRACE ThreadId(01) adding file "functions\\fnc_getAltitude.sqfc"
+2026-03-25T08:56:34.374603Z TRACE ThreadId(01) adding file "functions\\fnc_menu_getControls.sqfc"
+2026-03-25T08:56:34.374616Z TRACE ThreadId(01) adding file "functions\\fnc_pfh_markers.sqf"
+2026-03-25T08:56:34.374639Z TRACE ThreadId(01) adding file "functions\\fnc_pfh_targets.sqf"
+2026-03-25T08:56:34.374661Z TRACE ThreadId(01) adding file "functions\\fnc_menu_addControl.sqf"
+2026-03-25T08:56:34.374685Z TRACE ThreadId(01) adding file "functions\\fnc_pfh.sqf"
+2026-03-25T08:56:34.374708Z TRACE ThreadId(01) adding file "functions\\fnc_menu_targets.sqf"
+2026-03-25T08:56:34.374722Z TRACE ThreadId(01) adding file "functions\\fnc_menu_draw.sqfc"
+2026-03-25T08:56:34.374736Z TRACE ThreadId(01) adding file "functions\\fnc_menu_main.sqf"
+2026-03-25T08:56:34.374750Z TRACE ThreadId(01) adding file "functions\\fnc_displayFrequency.sqfc"
+2026-03-25T08:56:34.374756Z TRACE ThreadId(01) adding file "functions\\fnc_pfh_targets.sqfc"
+2026-03-25T08:56:34.374769Z TRACE ThreadId(01) adding file "functions\\fnc_menu_draw.sqf"
+2026-03-25T08:56:34.374792Z TRACE ThreadId(01) adding file "functions\\fnc_menu_setControlText.sqf"
+2026-03-25T08:56:34.374816Z TRACE ThreadId(01) adding file "functions\\fnc_vanillaTurret.sqf"
+2026-03-25T08:56:34.374839Z TRACE ThreadId(01) adding file "functions\\fnc_menu_power.sqf"
+2026-03-25T08:56:34.374861Z TRACE ThreadId(01) adding file "functions\\fnc_getSpeed.sqf"
+2026-03-25T08:56:34.374876Z TRACE ThreadId(01) adding file "functions\\fnc_menu_grid.sqfc"
+2026-03-25T08:56:34.374881Z TRACE ThreadId(01) adding file "functions\\fnc_vanillaTurret.sqfc"
+2026-03-25T08:56:34.374895Z TRACE ThreadId(01) adding file "functions\\fnc_menu_configuration.sqf"
+2026-03-25T08:56:34.374909Z TRACE ThreadId(01) adding file "functions\\fnc_menu_addControl.sqfc"
+2026-03-25T08:56:34.374923Z TRACE ThreadId(01) adding file "functions\\fnc_vanilla.sqf"
+2026-03-25T08:56:34.374946Z TRACE ThreadId(01) adding file "functions\\fnc_displayFrequency.sqf"
+2026-03-25T08:56:34.374969Z TRACE ThreadId(01) adding file "functions\\fnc_menu_getControls.sqf"
+2026-03-25T08:56:34.374984Z TRACE ThreadId(01) adding file "functions\\fnc_pfh_markers.sqfc"
+2026-03-25T08:56:34.374989Z TRACE ThreadId(01) adding file "functions\\fnc_menu_targets.sqfc"
+2026-03-25T08:56:34.374994Z TRACE ThreadId(01) adding file "functions\\fnc_menu_camera.sqfc"
+2026-03-25T08:56:34.375012Z TRACE ThreadId(01) adding file "functions\\fnc_isISR.sqf"
+2026-03-25T08:56:34.375035Z TRACE ThreadId(01) adding file "functions\\fnc_getAltitude.sqf"
+2026-03-25T08:56:34.375414Z DEBUG ThreadId(01) "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons" already exists
+2026-03-25T08:56:34.375422Z DEBUG ThreadId(01) building "addons/signal" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/arc_signal.pbo"
+2026-03-25T08:56:34.375681Z TRACE ThreadId(01) adding file "XEH_preInit.sqfc"
+2026-03-25T08:56:34.375705Z TRACE ThreadId(01) adding file "CfgEventHandlers.hpp"
+2026-03-25T08:56:34.375735Z TRACE ThreadId(01) adding file "XEH_PREP.hpp"
+2026-03-25T08:56:34.375761Z TRACE ThreadId(01) adding file "XEH_preInit.sqf"
+2026-03-25T08:56:34.375817Z TRACE ThreadId(01) adding file "XEH_postInitClient.sqf"
+2026-03-25T08:56:34.375839Z TRACE ThreadId(01) adding file "script_component.hpp"
+2026-03-25T08:56:34.375861Z TRACE ThreadId(01) adding file "XEH_preStart.sqf"
+2026-03-25T08:56:34.375876Z TRACE ThreadId(01) adding file "XEH_preStart.sqfc"
+2026-03-25T08:56:34.375884Z TRACE ThreadId(01) adding file "XEH_postInitClient.sqfc"
+2026-03-25T08:56:34.375902Z TRACE ThreadId(01) adding file "config.bin"
+2026-03-25T08:56:34.375907Z TRACE ThreadId(01) adding file "functions\\fnc_adjust.sqfc"
+2026-03-25T08:56:34.375923Z TRACE ThreadId(01) adding file "functions\\fnc_maxRes.sqf"
+2026-03-25T08:56:34.375948Z TRACE ThreadId(01) adding file "functions\\fnc_collision.sqf"
+2026-03-25T08:56:34.375963Z TRACE ThreadId(01) adding file "functions\\fnc_maxRes.sqfc"
+2026-03-25T08:56:34.375976Z TRACE ThreadId(01) adding file "functions\\fnc_calc.sqf"
+2026-03-25T08:56:34.375999Z TRACE ThreadId(01) adding file "functions\\fnc_adjust.sqf"
+2026-03-25T08:56:34.376013Z TRACE ThreadId(01) adding file "functions\\fnc_pfh.sqfc"
+2026-03-25T08:56:34.376019Z TRACE ThreadId(01) adding file "functions\\fnc_collision.sqfc"
+2026-03-25T08:56:34.376024Z TRACE ThreadId(01) adding file "functions\\fnc_satError.sqfc"
+2026-03-25T08:56:34.376029Z TRACE ThreadId(01) adding file "functions\\fnc_calc.sqfc"
+2026-03-25T08:56:34.376043Z TRACE ThreadId(01) adding file "functions\\fnc_satError.sqf"
+2026-03-25T08:56:34.376066Z TRACE ThreadId(01) adding file "functions\\fnc_pfh.sqf"
+2026-03-25T08:56:34.376223Z DEBUG ThreadId(01) "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons" already exists
+2026-03-25T08:56:34.376229Z DEBUG ThreadId(01) building "addons/compat_vanilla" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/arc_compat_vanilla.pbo"
+2026-03-25T08:56:34.376313Z TRACE ThreadId(01) adding file "config.bin"
+2026-03-25T08:56:34.376328Z TRACE ThreadId(01) adding file "CfgVehicles.hpp"
+2026-03-25T08:56:34.376357Z TRACE ThreadId(01) adding file "script_component.hpp"
+2026-03-25T08:56:34.376421Z TRACE ThreadId(01) adding file "CfgMagazines.hpp"
+2026-03-25T08:56:34.376503Z DEBUG ThreadId(01) "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons" already exists
+2026-03-25T08:56:34.376510Z DEBUG ThreadId(01) building "addons/core" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/arc_core.pbo"
+2026-03-25T08:56:34.376864Z TRACE ThreadId(01) adding file "XEH_preStart.sqf"
+2026-03-25T08:56:34.376889Z TRACE ThreadId(01) adding file "XEH_PREP.hpp"
+2026-03-25T08:56:34.376942Z TRACE ThreadId(01) adding file "CfgVehicles.hpp"
+2026-03-25T08:56:34.376956Z TRACE ThreadId(01) adding file "config.bin"
+2026-03-25T08:56:34.376970Z TRACE ThreadId(01) adding file "XEH_preStart.sqfc"
+2026-03-25T08:56:34.376984Z TRACE ThreadId(01) adding file "script_component.hpp"
+2026-03-25T08:56:34.376997Z TRACE ThreadId(01) adding file "XEH_preInit.sqfc"
+2026-03-25T08:56:34.377011Z TRACE ThreadId(01) adding file "CfgMagazines.hpp"
+2026-03-25T08:56:34.377033Z TRACE ThreadId(01) adding file "XEH_preInit.sqf"
+2026-03-25T08:56:34.377055Z TRACE ThreadId(01) adding file "CfgEventHandlers.hpp"
+2026-03-25T08:56:34.377087Z TRACE ThreadId(01) adding file "actions\\pack.hpp"
+2026-03-25T08:56:34.377111Z TRACE ThreadId(01) adding file "actions\\battery.hpp"
+2026-03-25T08:56:34.377134Z TRACE ThreadId(01) adding file "functions\\fnc_generic_deployInsertChildren.sqf"
+2026-03-25T08:56:34.377158Z TRACE ThreadId(01) adding file "functions\\fnc_init.sqf"
+2026-03-25T08:56:34.377181Z TRACE ThreadId(01) adding file "functions\\fnc_mini_grabCondition.sqf"
+2026-03-25T08:56:34.377205Z TRACE ThreadId(01) adding file "functions\\fnc_mini_grab.sqf"
+2026-03-25T08:56:34.377219Z TRACE ThreadId(01) adding file "functions\\fnc_generic_packCondition.sqfc"
+2026-03-25T08:56:34.377233Z TRACE ThreadId(01) adding file "functions\\fnc_generic_insertBatteryInsertChildren.sqf"
+2026-03-25T08:56:34.377260Z TRACE ThreadId(01) adding file "functions\\fnc_generic_deployCondition.sqf"
+2026-03-25T08:56:34.377277Z TRACE ThreadId(01) adding file "functions\\fnc_generic_deployInsertChildren.sqfc"
+2026-03-25T08:56:34.377290Z TRACE ThreadId(01) adding file "functions\\fnc_generic_pack.sqf"
+2026-03-25T08:56:34.377313Z TRACE ThreadId(01) adding file "functions\\fnc_generic_deploy.sqf"
+2026-03-25T08:56:34.377337Z TRACE ThreadId(01) adding file "functions\\fnc_generic_pack.sqfc"
+2026-03-25T08:56:34.377344Z TRACE ThreadId(01) adding file "functions\\fnc_generic_removeBatteryCondition.sqfc"
+2026-03-25T08:56:34.377349Z TRACE ThreadId(01) adding file "functions\\fnc_init.sqfc"
+2026-03-25T08:56:34.377355Z TRACE ThreadId(01) adding file "functions\\fnc_generic_insertBatteryInsertChildren.sqfc"
+2026-03-25T08:56:34.377360Z TRACE ThreadId(01) adding file "functions\\fnc_mini_grab.sqfc"
+2026-03-25T08:56:34.377365Z TRACE ThreadId(01) adding file "functions\\fnc_mini_grabCondition.sqfc"
+2026-03-25T08:56:34.377371Z TRACE ThreadId(01) adding file "functions\\fnc_generic_removeBatteryModify.sqfc"
+2026-03-25T08:56:34.377386Z TRACE ThreadId(01) adding file "functions\\fnc_generic_insertBattery.sqf"
+2026-03-25T08:56:34.377400Z TRACE ThreadId(01) adding file "functions\\fnc_generic_insertBatteryCondition.sqfc"
+2026-03-25T08:56:34.377406Z TRACE ThreadId(01) adding file "functions\\fnc_generic_deployCondition.sqfc"
+2026-03-25T08:56:34.377411Z TRACE ThreadId(01) adding file "functions\\fnc_generic_deploy.sqfc"
+2026-03-25T08:56:34.377425Z TRACE ThreadId(01) adding file "functions\\fnc_generic_insertBatteryCondition.sqf"
+2026-03-25T08:56:34.377448Z TRACE ThreadId(01) adding file "functions\\fnc_generic_packCondition.sqf"
+2026-03-25T08:56:34.377471Z TRACE ThreadId(01) adding file "functions\\fnc_generic_removeBattery.sqf"
+2026-03-25T08:56:34.377485Z TRACE ThreadId(01) adding file "functions\\fnc_generic_removeBattery.sqfc"
+2026-03-25T08:56:34.377499Z TRACE ThreadId(01) adding file "functions\\fnc_generic_removeBatteryCondition.sqf"
+2026-03-25T08:56:34.377515Z TRACE ThreadId(01) adding file "functions\\fnc_generic_insertBattery.sqfc"
+2026-03-25T08:56:34.377528Z TRACE ThreadId(01) adding file "functions\\fnc_generic_removeBatteryModify.sqf"
+2026-03-25T08:56:34.377736Z DEBUG ThreadId(01) "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons" already exists
+2026-03-25T08:56:34.377742Z DEBUG ThreadId(01) building "addons/compat_rf" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/arc_compat_rf.pbo"
+2026-03-25T08:56:34.377937Z TRACE ThreadId(01) adding file "XEH_preStart.sqfc"
+2026-03-25T08:56:34.377952Z TRACE ThreadId(01) adding file "XEH_preStart.sqf"
+2026-03-25T08:56:34.377975Z TRACE ThreadId(01) adding file "CfgVehicles.hpp"
+2026-03-25T08:56:34.377997Z TRACE ThreadId(01) adding file "script_component.hpp"
+2026-03-25T08:56:34.378043Z TRACE ThreadId(01) adding file "XEH_postInitClient.sqfc"
+2026-03-25T08:56:34.378057Z TRACE ThreadId(01) adding file "CfgMagazines.hpp"
+2026-03-25T08:56:34.378079Z TRACE ThreadId(01) adding file "CfgWeapons.hpp"
+2026-03-25T08:56:34.378101Z TRACE ThreadId(01) adding file "XEH_PREP.hpp"
+2026-03-25T08:56:34.378133Z TRACE ThreadId(01) adding file "CfgAmmo.hpp"
+2026-03-25T08:56:34.378155Z TRACE ThreadId(01) adding file "CfgMagazineWells.hpp"
+2026-03-25T08:56:34.378171Z TRACE ThreadId(01) adding file "XEH_preInit.sqfc"
+2026-03-25T08:56:34.378176Z TRACE ThreadId(01) adding file "config.bin"
+2026-03-25T08:56:34.378189Z TRACE ThreadId(01) adding file "CfgEventHandlers.hpp"
+2026-03-25T08:56:34.378211Z TRACE ThreadId(01) adding file "XEH_postInitClient.sqf"
+2026-03-25T08:56:34.378234Z TRACE ThreadId(01) adding file "XEH_preInit.sqf"
+2026-03-25T08:56:34.378249Z TRACE ThreadId(01) adding file "functions\\fnc_gl_deploy.sqfc"
+2026-03-25T08:56:34.378263Z TRACE ThreadId(01) adding file "functions\\fnc_gl_deploy.sqf"
+2026-03-25T08:56:34.378415Z DEBUG ThreadId(01) "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons" already exists
+2026-03-25T08:56:34.378421Z DEBUG ThreadId(01) building "addons/compat_aegis" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/arc_compat_aegis.pbo"
+2026-03-25T08:56:34.378499Z TRACE ThreadId(01) adding file "config.bin"
+2026-03-25T08:56:34.378516Z TRACE ThreadId(01) adding file "CfgVehicles.hpp"
+2026-03-25T08:56:34.378538Z TRACE ThreadId(01) adding file "script_component.hpp"
+2026-03-25T08:56:34.378641Z DEBUG ThreadId(01) "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons" already exists
+2026-03-25T08:56:34.378647Z DEBUG ThreadId(01) building "addons/compat_ws" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/addons/arc_compat_ws.pbo"
+2026-03-25T08:56:34.378976Z TRACE ThreadId(01) adding file "script_component.hpp"
+2026-03-25T08:56:34.378992Z TRACE ThreadId(01) adding file "XEH_preStart.sqfc"
+2026-03-25T08:56:34.379005Z TRACE ThreadId(01) adding file "XEH_preStart.sqf"
+2026-03-25T08:56:34.379020Z TRACE ThreadId(01) adding file "config.bin"
+2026-03-25T08:56:34.379033Z TRACE ThreadId(01) adding file "CfgVehicles.hpp"
+2026-03-25T08:56:34.379065Z TRACE ThreadId(01) adding file "CfgMagazines.hpp"
+2026-03-25T08:56:34.379087Z TRACE ThreadId(01) adding file "XEH_PREP.hpp"
+2026-03-25T08:56:34.379109Z TRACE ThreadId(01) adding file "XEH_preInit.sqf"
+2026-03-25T08:56:34.379154Z TRACE ThreadId(01) adding file "XEH_preInit.sqfc"
+2026-03-25T08:56:34.379168Z TRACE ThreadId(01) adding file "CfgEventHandlers.hpp"
+2026-03-25T08:56:34.379191Z TRACE ThreadId(01) adding file "functions\\fnc_ied_disarmCondition.sqf"
+2026-03-25T08:56:34.379207Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_armCondition.sqfc"
+2026-03-25T08:56:34.379213Z TRACE ThreadId(01) adding file "functions\\fnc_ied_armCondition.sqfc"
+2026-03-25T08:56:34.379218Z TRACE ThreadId(01) adding file "functions\\fnc_ied_armInsertChildren.sqfc"
+2026-03-25T08:56:34.379223Z TRACE ThreadId(01) adding file "functions\\fnc_ied_arm.sqfc"
+2026-03-25T08:56:34.379237Z TRACE ThreadId(01) adding file "functions\\fnc_ied_armCondition.sqf"
+2026-03-25T08:56:34.379252Z TRACE ThreadId(01) adding file "functions\\fnc_ied_disarmCondition.sqfc"
+2026-03-25T08:56:34.379266Z TRACE ThreadId(01) adding file "functions\\fnc_ied_armInsertChildren.sqf"
+2026-03-25T08:56:34.379281Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_packCondition.sqfc"
+2026-03-25T08:56:34.379294Z TRACE ThreadId(01) adding file "functions\\fnc_ied_packCondition.sqf"
+2026-03-25T08:56:34.379309Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_armModify.sqfc"
+2026-03-25T08:56:34.379323Z TRACE ThreadId(01) adding file "functions\\fnc_ied_disarm.sqf"
+2026-03-25T08:56:34.379351Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_arm.sqf"
+2026-03-25T08:56:34.379366Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_disarm.sqfc"
+2026-03-25T08:56:34.379380Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_disarmModify.sqf"
+2026-03-25T08:56:34.379403Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_disarm.sqf"
+2026-03-25T08:56:34.379420Z TRACE ThreadId(01) adding file "functions\\fnc_ied_assembled.sqfc"
+2026-03-25T08:56:34.379430Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_disarmModify.sqfc"
+2026-03-25T08:56:34.379448Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_armCondition.sqf"
+2026-03-25T08:56:34.379464Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_assembled.sqfc"
+2026-03-25T08:56:34.379477Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_packCondition.sqf"
+2026-03-25T08:56:34.379492Z TRACE ThreadId(01) adding file "functions\\fnc_ied_disarm.sqfc"
+2026-03-25T08:56:34.379506Z TRACE ThreadId(01) adding file "functions\\fnc_ied_init.sqf"
+2026-03-25T08:56:34.379534Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_armModify.sqf"
+2026-03-25T08:56:34.379549Z TRACE ThreadId(01) adding file "functions\\fnc_ied_packCondition.sqfc"
+2026-03-25T08:56:34.379562Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_assembled.sqf"
+2026-03-25T08:56:34.379577Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_disarmCondition.sqfc"
+2026-03-25T08:56:34.379592Z TRACE ThreadId(01) adding file "functions\\fnc_ied_arm.sqf"
+2026-03-25T08:56:34.379614Z TRACE ThreadId(01) adding file "functions\\fnc_ied_init.sqfc"
+2026-03-25T08:56:34.379623Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_init.sqfc"
+2026-03-25T08:56:34.379628Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_arm.sqfc"
+2026-03-25T08:56:34.379642Z TRACE ThreadId(01) adding file "functions\\fnc_ied_assembled.sqf"
+2026-03-25T08:56:34.379669Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_disarmCondition.sqf"
+2026-03-25T08:56:34.379693Z TRACE ThreadId(01) adding file "functions\\fnc_bustard_init.sqf"
+2026-03-25T08:56:34.379952Z  INFO ThreadId(01) Built 8 PBOs
+2026-03-25T08:56:34.379962Z TRACE ThreadId(01) phase: build (done)
+2026-03-25T08:56:34.379966Z TRACE ThreadId(01) phase: post_build (BOM Check) (start)
+2026-03-25T08:56:34.379970Z TRACE ThreadId(01) phase: post_build (BOM Check) (done)
+2026-03-25T08:56:34.379974Z TRACE ThreadId(01) phase: post_build (Final New Line Check) (start)
+2026-03-25T08:56:34.379977Z TRACE ThreadId(01) phase: post_build (Final New Line Check) (done)
+2026-03-25T08:56:34.379981Z TRACE ThreadId(01) phase: post_build (git) (start)
+2026-03-25T08:56:34.379984Z TRACE ThreadId(01) phase: post_build (git) (done)
+2026-03-25T08:56:34.379987Z TRACE ThreadId(01) phase: post_build (Hooks) (start)
+2026-03-25T08:56:34.379991Z TRACE ThreadId(01) phase: post_build (Hooks) (done)
+2026-03-25T08:56:34.379995Z TRACE ThreadId(01) phase: post_build (pboprefix) (start)
+2026-03-25T08:56:34.380000Z TRACE ThreadId(01) phase: post_build (pboprefix) (done)
+2026-03-25T08:56:34.380005Z TRACE ThreadId(01) phase: post_build (tex_headers) (start)
+2026-03-25T08:56:34.380009Z TRACE ThreadId(01) phase: post_build (tex_headers) (done)
+2026-03-25T08:56:34.380013Z TRACE ThreadId(01) phase: post_build (Files) (start)
+2026-03-25T08:56:34.388906Z DEBUG ThreadId(01) copying "/mod.cpp" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/mod.cpp"
+2026-03-25T08:56:34.389002Z DEBUG ThreadId(01) copying "/logo_ca.paa" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev/logo_ca.paa"
+2026-03-25T08:56:34.389147Z  INFO ThreadId(01) Copied 2 files
+2026-03-25T08:56:34.389154Z TRACE ThreadId(01) phase: post_build (Files) (done)
+2026-03-25T08:56:34.389158Z TRACE ThreadId(01) phase: post_build (FilePatching) (start)
+2026-03-25T08:56:34.389204Z TRACE ThreadId(01) removing existing symlink at /var/mnt/540a9c00-2dc0-4ebc-83fe-c675cff526c3/SteamLibrary/steamapps/common/Arma 3/z/arc
+2026-03-25T08:56:34.389273Z TRACE ThreadId(01) symlink "/var/mnt/540a9c00-2dc0-4ebc-83fe-c675cff526c3/SteamLibrary/steamapps/common/Arma 3/z/arc" => "/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev"
+2026-03-25T08:56:34.389298Z  INFO ThreadId(01) Symlink created at /var/mnt/540a9c00-2dc0-4ebc-83fe-c675cff526c3/SteamLibrary/steamapps/common/Arma 3/z/arc
+2026-03-25T08:56:34.389304Z TRACE ThreadId(01) phase: post_build (FilePatching) (done)
+2026-03-25T08:56:34.389307Z TRACE ThreadId(01) phase: post_build (summary) (start)
+2026-03-25T08:56:34.389578Z TRACE ThreadId(01) phase: post_build (summary) (done)
+2026-03-25T08:56:34.389583Z TRACE ThreadId(01) phase: post_build (Rapifier) (start)
+2026-03-25T08:56:34.389587Z TRACE ThreadId(01) phase: post_build (Rapifier) (done)
+2026-03-25T08:56:34.389590Z TRACE ThreadId(01) phase: post_build (SQF) (start)
+2026-03-25T08:56:34.389595Z TRACE ThreadId(01) phase: post_build (SQF) (done)
+2026-03-25T08:56:34.389599Z TRACE ThreadId(01) phase: post_build (Stringtables) (start)
+2026-03-25T08:56:34.389602Z TRACE ThreadId(01) phase: post_build (Stringtables) (done)
+2026-03-25T08:56:34.420603Z  INFO ThreadId(01) Using distrobox-host-exec steam with:
+  -mod="ws"
+  -mod="rf"
+  -mod="Z:/home/brett/Documents/GitHub/BrettMayson/arc/.hemttout/dev"
+  -mod="Z:/var/mnt/540a9c00-2dc0-4ebc-83fe-c675cff526c3/SteamLibrary/steamapps/workshop/content/107410/3499977893"
+  -mod="Z:/var/mnt/540a9c00-2dc0-4ebc-83fe-c675cff526c3/SteamLibrary/steamapps/workshop/content/107410/450814997"
+  -mod="Z:/var/mnt/540a9c00-2dc0-4ebc-83fe-c675cff526c3/SteamLibrary/steamapps/workshop/content/107410/463939057"
+  -skipIntro
+  -noSplash
+  -showScriptErrors
+  -debug
+  -filePatching
+2026-03-25T08:56:34.420791Z TRACE ThreadId(01) writing ci annotations to .hemttout/ci_annotations.txt
+2026-03-25T08:56:34.420808Z TRACE ThreadId(01) wrote 0 ci annotations to .hemttout/ci_annotations.txt
