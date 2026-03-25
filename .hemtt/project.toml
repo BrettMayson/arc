@@ -9,3 +9,11 @@ workshop = [
     "450814997", # CBA
     "463939057", # ACE3
 ]
+
+[hemtt.launch.cup]
+extends = "default"
+workshop = [
+    "497660133", # CUP Weapons
+    "497661914", # CUP Units
+    "541888371", # CUP Vehicles
+]
