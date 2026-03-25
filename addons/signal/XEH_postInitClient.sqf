@@ -18,7 +18,7 @@ GVAR(ppResolution) = ppEffectCreate ["Resolution", 2012];
         GVAR(uav) = _uav;
         private _config = configOf _uav;
         private _mode = getText (_config >> QAVAR(mode));
-        if (_mode isEqualTo "SAT") then {
+        if (_mode == "SAT") then {
             AVAR(mode) = "SAT";
             GVAR(satCacheExpiry) = 0;
         } else {

@@ -3,5 +3,6 @@
 hemtt
 hemtt.exe
 *.biprivatekey
+*.hemttprivatekey
 releases/
 ~*

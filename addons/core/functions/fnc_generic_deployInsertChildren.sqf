@@ -8,7 +8,8 @@ private _children = [];
     private _container = _x;
     {
         _x params ["_class", "_count"];
-        private _drone = getText (configFile >> "CfgMagazines" >> _class >> QAVAR(drone));
+        private _droneMagCfg = configFile >> "CfgMagazines" >> _class;
+        private _drone = getText (_droneMagCfg >> QAVAR(drone));
         if (_drone == "") exitWith {
             continue;
         };
@@ -16,7 +17,7 @@ private _children = [];
         _children pushBack [
             [
                 format ["drone_%1", _forEachIndex],
-                if (getNumber (_droneCfg >> QAVAR(hidePercentage)) == 1) then {
+                if (getNumber (_droneMagCfg >> QAVAR(hidePercentage)) == 1) then {
                     getText (_droneCfg >> "displayName")
                 } else {
                     format ["%1 (%2%3)", getText (_droneCfg >> "displayName"), _count, "%"]

@@ -7,7 +7,8 @@ class CfgVehicles {
     };
     class UAV_RC40_Base_RF: UAV_01_base_F {
         AVAR(singleUse) = 1;
-        AVAR(assembleTime) = 1;
+        AVAR(deployTime) = 1;
+        AVAR(deployType) = "mini";
         AVAR(mode) = "LOS";
         AVAR(power)[] = { 100, 200, 300 };
         AVAR(defaultPower) = 100;

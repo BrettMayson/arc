@@ -9,9 +9,12 @@ private _dir = getDir _unit;
 [_projectile, _unit,_zeroing, _dir] spawn {
     params ["_projectile", "_unit", "_zeroing", "_dir"];
 
+    private _deployed = _projectile getVariable [QAVAR(deployed), false];
     private _pPos = getPosASL _projectile;
 
-    waitUntil { (speed _projectile != 0) };
+    if !(_deployed) then {
+        waitUntil { (speed _projectile != 0) };
+    };
 
     private _thrown = _projectile getVariable [QAVAR(thrown), false];
 
@@ -33,7 +36,9 @@ private _dir = getDir _unit;
         _max + 1
     } else {
         private _fuel = parseNumber (((currentMagazineDetail _unit) splitString "([ ]/:)") select 2) + 1;
-        _unit removePrimaryWeaponItem currentMagazine _unit;
+        if !(_deployed) then {
+            _unit removePrimaryWeaponItem currentMagazine _unit;
+        };
         _fuel + 1
     };
 

@@ -3,7 +3,7 @@
 params ["_unit", "_uav"];
 
 private _case = getText ((configOf _uav) >> QAVAR(case));
-if (_case isEqualTo "") exitWith {};
+if (_case == "") exitWith {};
 
 [_unit, "MedicOther"] call ace_common_fnc_doGesture;
 [

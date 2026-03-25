@@ -3,7 +3,7 @@
 params ["_unit", "_uav"];
 
 private _magazine = getText ((configOf _uav) >> QAVAR(magazine));
-if (_magazine isEqualTo "") exitWith {};
+if (_magazine == "") exitWith {};
 
 [_unit, "PutDown"] call ace_common_fnc_doGesture;
 

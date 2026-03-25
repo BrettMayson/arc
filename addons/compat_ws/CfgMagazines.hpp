@@ -6,7 +6,7 @@ class CfgMagazines {
         count = 100;
         picture = "\lxWS\air_f_lxWS\Data\UI\UAV_02_CA.paa";
         DLC = "lxWS";
-        AVAR(assembled) = QUOTE(_this call FUNC(bustard_assembled));
+        AVAR(deployed) = QUOTE(_this call FUNC(bustard_deployed));
     };
     class AVAR(B_UAV_02_lxWS_CASE): AVAR(base_bustard) {
         scope = 2;
@@ -35,7 +35,7 @@ class CfgMagazines {
         count = 100;
         picture = "\lxWS\air_1_f_lxws\Data\UI\UAV_02_IED_CA.paa";
         DLC = "lxWS";
-        AVAR(assembled) = QUOTE(_this call FUNC(ied_assembled));
+        AVAR(deployed) = QUOTE(_this call FUNC(ied_deployed));
     };
     class AVAR(B_UAV_02_IED_lxWS_CASE): AVAR(base_ied) {
         scope = 2;

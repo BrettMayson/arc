@@ -4,7 +4,7 @@ params ["_unit"];
 
 scopeName "search";
 
-private _canAssemble = false;
+private _canDeploy = false;
 
 {
     {
@@ -13,7 +13,7 @@ private _canAssemble = false;
         if (_drone == "") exitWith {
             continue;
         };
-        _canAssemble = true;
+        _canDeploy = true;
         breakTo "search";
     } forEach magazinesAmmoCargo _x;
 } forEach [
@@ -22,4 +22,4 @@ private _canAssemble = false;
     vestContainer _unit
 ];
 
-_canAssemble
+_canDeploy

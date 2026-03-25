@@ -4,13 +4,13 @@ uiNamespace setVariable [QGVAR(controls), createHashMap];
 
 GVAR(cameraChangedEH) = ["cameraView", {
     params ["", "_new", "_old"];
-    if (_old isEqualTo "GUNNER") then {
+    if (_old == "GUNNER") then {
         if !(isNil QGVAR(pfh)) then {
             [GVAR(pfh)] call CBA_fnc_removePerFrameHandler;
             GVAR(pfh) = nil;
         };
     };
-    if (_new isEqualTo "GUNNER" && call FUNC(isISR)) then {
+    if (_new == "GUNNER" && call FUNC(isISR)) then {
         private _vehicle = if (getConnectedUAV ace_player isNotEqualTo objNull) then {
             getConnectedUAV ace_player
         } else {
@@ -26,7 +26,7 @@ GVAR(cameraChangedEH) = ["cameraView", {
         };
         GVAR(pfh) = [FUNC(pfh)] call CBA_fnc_addPerFrameHandler;
     };
-    if (_new isEqualTo "INTERNAL") then {
+    if (_new == "INTERNAL") then {
         uiNamespace setVariable [QGVAR(controls), createHashMap];
     };
 }, true] call CBA_fnc_addPlayerEventHandler;
