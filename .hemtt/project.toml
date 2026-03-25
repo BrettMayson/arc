@@ -1,0 +1,11 @@
+name = "Advanced Remote Control"
+author = "Brett"
+prefix = "arc"
+mainprefix = "z"
+
+[hemtt.launch.default]
+workshop = [
+    "3499977893", # ADT
+    "450814997", # CBA
+    "463939057", # ACE3
+]
