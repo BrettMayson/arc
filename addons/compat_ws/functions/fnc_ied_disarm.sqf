@@ -29,10 +29,4 @@ private _weapon = getText (configFile >> "CfgMagazines" >> _uavMag >> "pylonWeap
     };
 }] remoteExecCall ["call"];
 
-if (_unit canAdd _playerMag) then {
-    _unit addMagazine _playerMag;
-} else {
-    private _weaponHolder = createVehicle ["WeaponHolder_Single_F", _unit modelToWorld [0, 1, 0.025], [], 0, "CAN_COLLIDE"];
-    _weaponHolder setDir (random 360);
-    _weaponHolder addMagazineAmmoCargo [_playerMag, 1, 1];
-};
+[_unit, _playerMag] call EFUNC(core,addMagazine);

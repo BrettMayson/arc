@@ -1,5 +1,7 @@
 PREP(init);
 
+PREP(addMagazine);
+
 PREP(generic_deploy);
 PREP(generic_deployCondition);
 PREP(generic_deployInsertChildren);

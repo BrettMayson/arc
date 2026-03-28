@@ -14,8 +14,10 @@ if (_case == "") exitWith {};
         private _fuel = fuel _uav;
         deleteVehicle _uav;
 
-        private _gwh = [getPos _uav, 0, 'GroundWeaponHolder', side _unit] call BIS_fnc_spawnVehicle; 
-        (_gwh select 0) addMagazineAmmoCargo [_case, 1, _fuel * 100];
+        // private _gwh = [getPos _uav, 0, 'GroundWeaponHolder', side _unit] call BIS_fnc_spawnVehicle; 
+        // (_gwh select 0) addMagazineAmmoCargo [_case, 1, _fuel * 100];
+
+        [_unit, _case, _fuel * 100] call EFUNC(core,addMagazine);
     },
     {},
     format ["Packing %1", getText ((configOf _uav) >> "displayName")]
