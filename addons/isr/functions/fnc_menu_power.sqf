@@ -68,28 +68,28 @@ switch (_command) do {
             case 4: { // Freq Next
                 private _options = call _fnc_options;
                 private _nextFreq = _options select 0;
-                if (_nextFreq == "N/A") exitWith {};
+                if (_nextFreq isEqualTo "N/A") exitWith {};
                 GVAR(vehicle) setVariable [QAVAR(freq), _nextFreq, true];
                 call _fnc_draw;
             };
             case 1: { // Freq Previous
                 private _options = call _fnc_options;
                 private _prevFreq = _options select 1;
-                if (_prevFreq == "N/A") exitWith {};
+                if (_prevFreq isEqualTo "N/A") exitWith {};
                 GVAR(vehicle) setVariable [QAVAR(freq), _prevFreq, true];
                 call _fnc_draw;
             };
             case 5: { // Power Next
                 private _options = call _fnc_options;
                 private _nextPower = _options select 2;
-                if (_nextPower == "N/A") exitWith {};
+                if (_nextPower isEqualTo "N/A") exitWith {};
                 GVAR(vehicle) setVariable [QAVAR(power), _nextPower, true];
                 call _fnc_draw;
             };
             case 2: { // Power Previous
                 private _options = call _fnc_options;
                 private _prevPower = _options select 3;
-                if (_prevPower == "N/A") exitWith {};
+                if (_prevPower isEqualTo "N/A") exitWith {};
                 GVAR(vehicle) setVariable [QAVAR(power), _prevPower, true];
                 call _fnc_draw;
             };
