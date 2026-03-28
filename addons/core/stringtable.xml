@@ -2,7 +2,7 @@
 <Project name="ARC">
     <Package name="Core">
         <Key ID="STR_ARC_Core_Battery_Description">
-            <English>Used to refuel Carried UAV's</English>
+            <English>Used to refuel carried UAVs</English>
             <Russian>Используется для зарядки переносных БПЛА</Russian>
         </Key>
         <Key ID="STR_ARC_Core_Battery_DisplayName">
