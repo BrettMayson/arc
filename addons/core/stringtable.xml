@@ -4,70 +4,87 @@
         <Key ID="STR_ARC_Core_Battery_Description">
             <English>Used to refuel carried UAVs</English>
             <Russian>Используется для зарядки переносных БПЛА</Russian>
+            <Spanish>Se utiliza para recargar los UAV transportados</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_Battery_DisplayName">
             <English>UAV Battery</English>
             <Russian>Аккумулятор БПЛА</Russian>
+            <Spanish>Batería de UAV</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_Battery_Insert">
             <English>Insert Battery</English>
             <Russian>Вставить Аккумулятор</Russian>
+            <Spanish>Insertar Batería</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_Battery_Remove">
             <English>Remove Battery</English>
             <Russian>Достать Аккумулятор</Russian>
+            <Spanish>Quitar Batería</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Arm">
             <English>Arm</English>
             <Russian>Зарядить</Russian>
+            <Spanish>Armar</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Arm_1">
             <English>Arm 1</English>
             <Russian>Зарядить 1</Russian>
+            <Spanish>Armar 1</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Arm_2">
             <English>Arm 2</English>
             <Russian>Зарядить 2</Russian>
+            <Spanish>Armar 2</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Arm_3">
             <English>Arm 3</English>
             <Russian>Зарядить 3</Russian>
+            <Spanish>Armar 3</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Arm_4">
             <English>Arm 4</English>
             <Russian>Зарядить 4</Russian>
+            <Spanish>Armar 4</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Deploy">
             <English>Deploy</English>
             <Russian>Разместить</Russian>
+            <Spanish>Desplegar</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Deploying">
             <English>Deploying %1</English>
             <Russian>Размещение %1</Russian>
+            <Spanish>Desplegando %1</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Disarm">
             <English>Disarm</English>
             <Russian>Разрядить</Russian>
+            <Spanish>Desarmar</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Disarm_1">
             <English>Disarm 1</English>
             <Russian>Разрядить 1</Russian>
+            <Spanish>Desarmar 1</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Disarm_2">
             <English>Disarm 2</English>
             <Russian>Разрядить 2</Russian>
+            <Spanish>Desarmar 2</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Disarm_3">
             <English>Disarm 3</English>
             <Russian>Разрядить 3</Russian>
+            <Spanish>Desarmar 3</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Disarm_4">
             <English>Disarm 4</English>
             <Russian>Разрядить 4</Russian>
+            <Spanish>Desarmar 4</Spanish>
         </Key>
         <Key ID="STR_ARC_Core_UAV_Pack">
             <English>Pack</English>
             <Russian>Упаковать</Russian>
+            <Spanish>Empacar</Spanish>
         </Key>
     </Package>
 </Project>
