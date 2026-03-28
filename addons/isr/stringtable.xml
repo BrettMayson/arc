@@ -9,7 +9,7 @@
         <Key ID="STR_ARC_ISR_Info_Connection">
             <English>CONN:</English>
             <Russian>СОЕД:</Russian>
-            <Spanish>CONN:</Spanish>
+            <Spanish>CON:</Spanish>
         </Key>
         <Key ID="STR_ARC_ISR_Info_Freq">
             <English>FREQ:</English>
@@ -29,12 +29,12 @@
         <Key ID="STR_ARC_ISR_Info_Speed">
             <English>SPD [%1]:</English>
             <Russian>СКОР [%1]:</Russian>
-            <Spanish>SPD [%1]:</Spanish>
+            <Spanish>VEL [%1]:</Spanish>
         </Key>
         <Key ID="STR_ARC_ISR_Menu">
             <English>ISR MENU</English>
             <Russian>ISR МЕНЮ</Russian>
-            <Spanish>ISR MENÚ</Spanish>
+            <Spanish>MENÚ ISR</Spanish>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration">
             <English>CONFIGURATION</English>
@@ -59,7 +59,7 @@
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_Clear">
             <English>3 CLEAR</English>
             <Russian>3 ОЧИСТИТЬ</Russian>
-            <Spanish>3 LIMPIAR</Spanish>
+            <Spanish>3 DESPEJAR</Spanish>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_Confirm">
             <English>1 CONFIRM</English>
@@ -69,22 +69,22 @@
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_DigitGrid">
             <English>%1-DIGIT GRID</English>
             <Russian>%1-ЦИФР СЕТКА</Russian>
-            <Spanish>%1-CUADRÍCULA</Spanish>
+            <Spanish>%1-DÍGITOS</Spanish>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_InputGrid">
             <English>INPUT GRID</English>
             <Russian>ВВОД КВАДРАТА</Russian>
-            <Spanish>ENTRAR CUADRÍCULA</Spanish>
+            <Spanish>INGRESAR COORD</Spanish>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_Lock">
             <English>LOCK TO GRID</English>
             <Russian>ПРИВЯЗ К КВАДРАТУ</Russian>
-            <Spanish>FIJAR A CUADRÍCULA</Spanish>
+            <Spanish>FIJAR A COORD</Spanish>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_Move">
             <English>MOVE TO GRID</English>
             <Russian>ПЕРЕМ В КВАДРАТ</Russian>
-            <Spanish>MOVER A CUADRÍCULA</Spanish>
+            <Spanish>MOVER A COORD</Spanish>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers">
             <English>MARKERS</English>
@@ -104,7 +104,7 @@
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Group">
             <English>GROUP</English>
             <Russian>ГРУППА</Russian>
-            <Spanish>EQUIPO</Spanish>
+            <Spanish>GRUPO</Spanish>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Side">
             <English>SIDE</English>
@@ -169,7 +169,7 @@
         <Key ID="STR_ARC_ISR_Menu_Configuration_Targets_NextPage">
             <English>NEXT PAGE</English>
             <Russian>СЛЕД СТРАНИЦ</Russian>
-            <Spanish>PÁGINA SIGUIENTE</Spanish>
+            <Spanish>SIGUIENTE PÁGINA</Spanish>
         </Key>
     </Package>
 </Project>
