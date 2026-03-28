@@ -6,25 +6,25 @@ _fnc_draw = {
     _this params ["_length", "_grid"];
     if (_length == 0) exitWith {
         [[
-            "INPUT GRID",
-            "6-DIGIT GRID",
-            "8-DIGIT GRID",
-            "10-DIGIT GRID"
+            LLSTRING(Menu_Configuration_Camera_InputGrid),
+            format[LLSTRING(Menu_Configuration_Camera_DigitGrid), 6],
+            format[LLSTRING(Menu_Configuration_Camera_DigitGrid), 8],
+            format[LLSTRING(Menu_Configuration_Camera_DigitGrid), 10]
         ]] call FUNC(menu_draw);
     };
     if (_length == count _grid) exitWith {
         [[
-            "INPUT GRID",
-            format ["%1 DIGIT GRID", _length],
+            LLSTRING(Menu_Configuration_Camera_InputGrid),
+            format[LLSTRING(Menu_Configuration_Camera_DigitGrid), _length],
             format ["%1", _grid joinString ""],
-            "1 CONFIRM",
-            "2 CANCEL",
-            "3 CLEAR"
+            LLSTRING(Menu_Configuration_Camera_Confirm),
+            LLSTRING(Menu_Configuration_Camera_Cancel),
+            LLSTRING(Menu_Configuration_Camera_Clear)
         ], [false]] call FUNC(menu_draw);
     };
     [[
-        "INPUT GRID",
-        format ["%1 DIGIT GRID", _length],
+        LLSTRING(Menu_Configuration_Camera_InputGrid),
+        format[LLSTRING(Menu_Configuration_Camera_DigitGrid), _length],
         format ["> %1", _grid joinString ""]
     ], [false]] call FUNC(menu_draw);
 };

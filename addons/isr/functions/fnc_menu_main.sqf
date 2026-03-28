@@ -4,10 +4,10 @@ params ["_command", "_arg"];
 
 _fnc_draw = {
     [[
-        "ISR MENU",
-        "CONFIGURATION",
-        "TARGETS",
-        "CAMERA"
+        LLSTRING(Menu),
+        LLSTRING(Menu_Configuration),
+        LLSTRING(Menu_Configuration_Targets),
+        LLSTRING(Menu_Configuration_Camera)
     ]] call FUNC(menu_draw);
 };
 

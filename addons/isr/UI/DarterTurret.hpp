@@ -26,7 +26,7 @@ class RscOptics_UAV_gunner: RscUnitInfo {
                 fade = 0;
                 font = ISR_FONT;
                 shadow = 0;
-                text = "SIGNAL:";
+                text = CSTRING(Info_Signal);
                 idc = IDC_SIGNAL_TEXT;
                 y = "14.8 * (0.025 * safeZoneH)";
             };
@@ -38,7 +38,7 @@ class RscOptics_UAV_gunner: RscUnitInfo {
             };
             class GVAR(TextConnMode): GVAR(TextSignal) {
                 idc = IDC_CONN_MODE_TEXT;
-                text = "CONN:";
+                text = CSTRING(Info_Connection);
                 y = "15.6 * (0.025 * safeZoneH)";
             };
             class GVAR(CA_ConnMode): GVAR(CA_Signal) {
@@ -49,7 +49,7 @@ class RscOptics_UAV_gunner: RscUnitInfo {
             };
             class GVAR(TextConnFreq): GVAR(TextSignal) {
                 idc = IDC_CONN_FREQ_TEXT;
-                text = "FREQ:";
+                text = CSTRING(Info_Freq);
                 y = "16.4 * (0.025 * safeZoneH)";
             };
             class GVAR(CA_ConnFreq): GVAR(CA_Signal) {
@@ -60,7 +60,7 @@ class RscOptics_UAV_gunner: RscUnitInfo {
             };
             class GVAR(TextConnPower): GVAR(TextSignal) {
                 idc = IDC_CONN_POWER_TEXT;
-                text = "POWER:";
+                text = CSTRING(Info_Power);
                 y = "17.2 * (0.025 * safeZoneH)";
             };
             class GVAR(CA_ConnPower): GVAR(CA_Signal) {
