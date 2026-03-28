@@ -17,7 +17,7 @@ class CfgVehicles {
         class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {
                 class AVAR(pack) {
-                    displayName = "Pack";
+                    displayName = ECSTRING(core,UAV_Pack);
                     distance = 4;
                     condition = QUOTE([ARR_2(_player,_target)] call FUNC(bustard_packCondition));
                     statement = QUOTE([ARR_2(_player,_target)] call FUNC(generic_pack));
@@ -25,7 +25,7 @@ class CfgVehicles {
                 #include "..\core\actions\battery.hpp"
             };
             class AVAR(arm) {
-                displayName = "Arm";
+                displayName = ECSTRING(core,UAV_Arm);
                 distance = 4;
                 condition = QUOTE([ARR_2(_player,_target)] call FUNC(bustard_armCondition));
                 statement = QUOTE([ARR_2(_player,_target)] call FUNC(bustard_arm));
@@ -33,7 +33,7 @@ class CfgVehicles {
                 position = "[1.88926e-006,6.80166e-005,-0.237018]";
             };
             class AVAR(disarm) {
-                displayName = "Disarm";
+                displayName = ECSTRING(core,UAV_Disarm);
                 distance = 4;
                 condition = QUOTE([ARR_2(_player,_target)] call FUNC(bustard_disarmCondition));
                 statement = QUOTE([ARR_2(_player,_target)] call FUNC(bustard_disarm));
@@ -80,50 +80,50 @@ class CfgVehicles {
             class AVAR(disarm) {};
             #define PYLON_Z -0.28
             class AVAR(arm1) {
-                displayName = "Arm 1";
+                displayName = ECSTRING(core,UAV_Arm_1);
                 distance = 4;
                 condition = QUOTE([ARR_3(_player,_target,1)] call FUNC(ied_armCondition));
                 position = QUOTE([ARR_3(0.0351628,0.0354007,PYLON_Z)]);
                 insertChildren = QUOTE([ARR_3(_player,_target,1)] call FUNC(ied_armInsertChildren));
             };
             class AVAR(arm2): AVAR(arm1) {
-                displayName = "Arm 2";
+                displayName = ECSTRING(core,UAV_Arm_2);
                 condition = QUOTE([ARR_3(_player,_target,2)] call FUNC(ied_armCondition));
                 position = QUOTE([ARR_3(-0.0351529,0.0354007,PYLON_Z)]);
                 insertChildren = QUOTE([ARR_3(_player,_target,2)] call FUNC(ied_armInsertChildren));
             };
             class AVAR(arm3): AVAR(arm1) {
-                displayName = "Arm 3";
+                displayName = ECSTRING(core,UAV_Arm_3);
                 condition = QUOTE([ARR_3(_player,_target,3)] call FUNC(ied_armCondition));
                 position = QUOTE([ARR_3(0.0351628,-0.0354006,PYLON_Z)]);
                 insertChildren = QUOTE([ARR_3(_player,_target,3)] call FUNC(ied_armInsertChildren));
             };
             class AVAR(arm4): AVAR(arm1) {
-                displayName = "Arm 4";
+                displayName = ECSTRING(core,UAV_Arm_4);
                 condition = QUOTE([ARR_3(_player,_target,4)] call FUNC(ied_armCondition));
                 position = QUOTE([ARR_3(-0.0351529,-0.0354006,PYLON_Z)]);
                 insertChildren = QUOTE([ARR_3(_player,_target,4)] call FUNC(ied_armInsertChildren));
             };
             class AVAR(disarm1): AVAR(arm1) {
-                displayName = "Disarm 1";
+                displayName = ECSTRING(core,UAV_Disarm_1);
                 condition = QUOTE(([ARR_3(_player,_target,1)] call FUNC(ied_disarmCondition)));
                 statement = QUOTE([ARR_3(_player,_target,1)] call FUNC(ied_disarm));
                 insertChildren = "";
             };
             class AVAR(disarm2): AVAR(arm2) {
-                displayName = "Disarm 2";
+                displayName = ECSTRING(core,UAV_Disarm_2);
                 condition = QUOTE(([ARR_3(_player,_target,2)] call FUNC(ied_disarmCondition)));
                 statement = QUOTE([ARR_3(_player,_target,2)] call FUNC(ied_disarm));
                 insertChildren = "";
             };
             class AVAR(disarm3): AVAR(arm3) {
-                displayName = "Disarm 3";
+                displayName = ECSTRING(core,UAV_Disarm_3);
                 condition = QUOTE(([ARR_3(_player,_target,3)] call FUNC(ied_disarmCondition)));
                 statement = QUOTE([ARR_3(_player,_target,3)] call FUNC(ied_disarm));
                 insertChildren = "";
             };
             class AVAR(disarm4): AVAR(arm4) {
-                displayName = "Disarm 4";
+                displayName = ECSTRING(core,UAV_Disarm_4);
                 condition = QUOTE(([ARR_3(_player,_target,4)] call FUNC(ied_disarmCondition)));
                 statement = QUOTE([ARR_3(_player,_target,4)] call FUNC(ied_disarm));
                 insertChildren = "";

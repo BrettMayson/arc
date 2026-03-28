@@ -4,7 +4,7 @@ params ["_command", "_arg"];
 
 _fnc_draw = {
     private _menu = [
-        "TARGETS"
+        LLSTRING(Menu_Configuration_Targets)
     ];
     for "_i" from 0 to 8 do {
         private _gi = GVAR(menuTargetPage) * 9 + _i;
@@ -12,7 +12,7 @@ _fnc_draw = {
             break;
         };
         if (_i == 8 && (count GVAR(currentTargets) - 1) > _gi) then {
-            _menu pushBack "NEXT PAGE";
+            _menu pushBack LLSTRING(Menu_Configuration_Targets_NextPage);
             break;
         };
         _menu pushBack (getText (configOf (GVAR(currentTargets) select _gi) >> "displayName"));

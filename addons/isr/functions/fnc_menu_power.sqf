@@ -35,12 +35,12 @@ _fnc_options = {
 _fnc_draw = {
     private _options = call _fnc_options;
     [[
-        "POWER SETTINGS",
-        format ["PREV FREQ: %1", (_options select 1) call FUNC(displayFrequency)],
-        format ["PREV POWER: %1", (_options select 3) call FUNC(displayPower)],
-        format ["AUTO ADJUST: %1", ["OFF", "ON"] select (GVAR(vehicle) getVariable [QAVAR(autoAdjust), false])],
-        format ["NEXT FREQ: %1", (_options select 0) call FUNC(displayFrequency)],
-        format ["NEXT POWER: %1", (_options select 2) call FUNC(displayPower)]
+        LLSTRING(Menu_Configuration_Power),
+        format [LLSTRING(Menu_Configuration_Power_PrevFreq), (_options select 1) call FUNC(displayFrequency)],
+        format [LLSTRING(Menu_Configuration_Power_PrevPower), (_options select 3) call FUNC(displayPower)],
+        format [LLSTRING(Menu_Configuration_Power_AutoAdjust), [LLSTRING(Menu_Configuration_Off), LLSTRING(Menu_Configuration_On)] select (GVAR(vehicle) getVariable [QAVAR(autoAdjust), false])],
+        format [LLSTRING(Menu_Configuration_Power_NextFreq), (_options select 0) call FUNC(displayFrequency)],
+        format [LLSTRING(Menu_Configuration_Power_NextPower), (_options select 2) call FUNC(displayPower)]
     ]] call FUNC(menu_draw);
 };
 

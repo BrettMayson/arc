@@ -6,7 +6,7 @@ _fnc_draw = {
     params ["", "_label"];
     private _menu = [
         _label,
-        "LOCK CAMERA"
+        LLSTRING(Menu_Configuration_Targets_LockCamera)
     ];
     [_menu] call FUNC(menu_draw);
 };

@@ -4,10 +4,10 @@ class CfgMagazines {
     class AVAR(battery): CA_Magazine {
         scope = 2;
         author = "ARC";
-        displayName = "UAV Battery";
+        displayName = CSTRING(Battery_DisplayName);
         model = "\z\ace\addons\logistics_uavbattery\data\ace_battery.p3d";
         picture = "\z\ace\addons\logistics_uavbattery\ui\UAV_battery_ca.paa";
-        descriptionShort = "A UAV battery";
+        descriptionShort = CSTRING(Battery_Description);
         ACE_isUnique = 1;
         ACE_asItem = 1;
         ace_disableRepacking = 1;

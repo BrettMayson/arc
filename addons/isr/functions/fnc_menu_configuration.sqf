@@ -4,13 +4,13 @@ params ["_command", "_arg"];
 
 _fnc_draw = {
     private _menu = [
-        "CONFIGURATION",
-        format ["SPEED: %1", GVAR(speedCurrentMode)],
-        format ["ALTITUDE: %1", GVAR(altCurrentMode)],
-        "MARKERS"
+        LLSTRING(Menu_Configuration),
+        format [LLSTRING(Menu_Configuration_Speed), GVAR(speedCurrentMode)],
+        format [LLSTRING(Menu_Configuration_Altitude), GVAR(altCurrentMode)],
+        LLSTRING(Menu_Configuration_Markers)
     ];
     if (GVAR(isUAV)) then {
-        _menu pushBack "POWER SETTINGS";
+        _menu pushBack LLSTRING(Menu_Configuration_Power);
     };
     [_menu] call FUNC(menu_draw);
 };

@@ -14,7 +14,7 @@ class CfgVehicles {
         class ACE_SelfActions {
             class ACE_Equipment {
                 class AVAR(deploy) {
-                    displayName = "Deploy";
+                    displayName = CSTRING(UAV_Deploy);
                     condition = QUOTE([_player] call FUNC(generic_deployCondition));
                     insertChildren = QUOTE([_player] call FUNC(generic_deployInsertChildren));
                     statement = "";

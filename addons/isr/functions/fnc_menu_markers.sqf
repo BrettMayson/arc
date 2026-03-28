@@ -4,10 +4,10 @@ params ["_command", "_arg"];
 
 _fnc_availableChannels = {
     private _available = [
-        ["GLOBAL", 0],
-        ["SIDE", 1],
-        ["GROUP", 3],
-        ["VEHICLE", 4]
+        [LLSTRING(Menu_Configuration_Markers_Global), 0],
+        [LLSTRING(Menu_Configuration_Markers_Side), 1],
+        [LLSTRING(Menu_Configuration_Markers_Group), 3],
+        [LLSTRING(Menu_Configuration_Markers_Vehicle), 4]
     ];
     for "_i" from 1 to 10 do {
         (radioChannelInfo _i) params ["", "_label", "", "_units", "", "_enabled"];
@@ -23,13 +23,13 @@ _fnc_availableChannels = {
 _fnc_draw = {
     private _channels = GVAR(vehicle) getVariable [QGVAR(markerChannels), DEFAULT_MARKER_CHANNELS];
     private _menu = [
-        "MARKERS",
-        format ["DISTANCE: %1", ["OFF", "ON"] select (GVAR(vehicle) getVariable [QGVAR(markerShowDistance), true])]
+        LLSTRING(Menu_Configuration_Markers),
+        format [LLSTRING(Menu_Configuration_Markers_Distance), [LLSTRING(Menu_Configuration_Off), LLSTRING(Menu_Configuration_On)] select (GVAR(vehicle) getVariable [QGVAR(markerShowDistance), true])]
     ];
     {
         private _label = _x select 0;
         private _channel = _x select 1;
-        _menu pushBack format ["%1: %2", _label, ["OFF", "ON"] select (_channels select _channel)];
+        _menu pushBack format ["%1: %2", _label, [LLSTRING(Menu_Configuration_Off), LLSTRING(Menu_Configuration_On)] select (_channels select _channel)];
     } forEach call _fnc_availableChannels;
     [_menu] call FUNC(menu_draw);
 };

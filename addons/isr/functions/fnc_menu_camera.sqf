@@ -4,9 +4,9 @@ params ["_command", "_arg", ["_state", []]];
 
 _fnc_draw = {
     private _menu = [
-        "CAMERA",
-        "MOVE TO GRID",
-        "LOCK TO GRID"
+        LLSTRING(Menu_Configuration_Camera),
+        LLSTRING(Menu_Configuration_Camera_Move),
+        LLSTRING(Menu_Configuration_Camera_Lock)
     ];
     [_menu] call FUNC(menu_draw);
 };

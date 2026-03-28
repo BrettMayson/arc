@@ -52,5 +52,5 @@ if (_time > 3) then {
         _unit connectTerminalToUAV _uav;
     },
     {},
-    format ["Deploying %1", getText (configFile >> "CfgVehicles" >> _drone >> "displayName")]
+    format [LLSTRING(UAV_Deploying), getText (configFile >> "CfgVehicles" >> _drone >> "displayName")]
 ] call ace_common_fnc_progressBar;
