@@ -12,22 +12,22 @@ _fnc_options = {
     private _freqNext = if (_frequencyOptions isNotEqualTo []) then {
         _frequencyOptions select ((_freqCurrent + 1) % count _frequencyOptions)
     } else {
-        "N/A"
+        -1
     };
     private _freqPrev = if (_frequencyOptions isNotEqualTo []) then {
         _frequencyOptions select ((_freqCurrent - 1 + count _frequencyOptions) % count _frequencyOptions)
     } else {
-        "N/A"
+        -1
     };
     private _powerNext = if (_powerOptions isNotEqualTo []) then {
         _powerOptions select ((_powerCurrent + 1) % count _powerOptions)
     } else {
-        "N/A"
+        -1
     };
     private _powerPrev = if (_powerOptions isNotEqualTo []) then {
         _powerOptions select ((_powerCurrent - 1 + count _powerOptions) % count _powerOptions)
     } else {
-        "N/A"
+        -1
     };
     [_freqNext, _freqPrev, _powerNext, _powerPrev]
 };
@@ -68,28 +68,28 @@ switch (_command) do {
             case 4: { // Freq Next
                 private _options = call _fnc_options;
                 private _nextFreq = _options select 0;
-                if (_nextFreq isEqualTo "N/A") exitWith {};
+                if (_nextFreq == -1) exitWith {};
                 GVAR(vehicle) setVariable [QAVAR(freq), _nextFreq, true];
                 call _fnc_draw;
             };
             case 1: { // Freq Previous
                 private _options = call _fnc_options;
                 private _prevFreq = _options select 1;
-                if (_prevFreq isEqualTo "N/A") exitWith {};
+                if (_prevFreq == -1) exitWith {};
                 GVAR(vehicle) setVariable [QAVAR(freq), _prevFreq, true];
                 call _fnc_draw;
             };
             case 5: { // Power Next
                 private _options = call _fnc_options;
                 private _nextPower = _options select 2;
-                if (_nextPower isEqualTo "N/A") exitWith {};
+                if (_nextPower == -1) exitWith {};
                 GVAR(vehicle) setVariable [QAVAR(power), _nextPower, true];
                 call _fnc_draw;
             };
             case 2: { // Power Previous
                 private _options = call _fnc_options;
                 private _prevPower = _options select 3;
-                if (_prevPower isEqualTo "N/A") exitWith {};
+                if (_prevPower == -1) exitWith {};
                 GVAR(vehicle) setVariable [QAVAR(power), _prevPower, true];
                 call _fnc_draw;
             };
