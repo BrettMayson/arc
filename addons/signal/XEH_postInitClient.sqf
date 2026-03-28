@@ -12,6 +12,7 @@ GVAR(ppResolution) = ppEffectCreate ["Resolution", 2012];
         if (GVAR(pfh) != -1) then {
             [GVAR(pfh)] call CBA_fnc_removePerFrameHandler;
             GVAR(pfh) = -1;
+            GVAR(ppResolution) ppEffectEnable false;
         };
     };
     if ((!isNull _uav) && isNull GVAR(uav)) then {
