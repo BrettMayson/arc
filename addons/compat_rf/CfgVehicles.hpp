@@ -26,101 +26,25 @@ class CfgVehicles {
         };
     };
 
-    class UAV_RC40_Base_Sensor_RF;
-    class B_UAV_RC40_SENSOR_RF: UAV_RC40_Base_Sensor_RF {
-        AVAR(magazine) = QGVAR(RC40_scout);
+    class UAV_RC40_Base_Sensor_RF: UAV_RC40_Base_RF {
+        AVAR(magazine) = "1Rnd_RC40_shell_RF";
     };
-    class O_UAV_RC40_SENSOR_RF: UAV_RC40_Base_Sensor_RF {
-        AVAR(magazine) = QGVAR(RC40_scout);
+    class UAV_RC40_Base_HE_RF: UAV_RC40_Base_RF {
+        AVAR(magazine) = "1Rnd_RC40_HE_shell_RF";
     };
-    class I_UAV_RC40_SENSOR_RF: UAV_RC40_Base_Sensor_RF {
-        AVAR(magazine) = QGVAR(RC40_scout);
+    class UAV_RC40_Base_SmokeBlue_RF: UAV_RC40_Base_RF {
+        AVAR(magazine) = "1Rnd_RC40_SmokeBlue_shell_RF";
     };
-    class C_UAV_RC40_SENSOR_RF: UAV_RC40_Base_Sensor_RF {
-        AVAR(magazine) = QGVAR(RC40_scout);
+    class UAV_RC40_Base_SmokeGreen_RF: UAV_RC40_Base_RF {
+        AVAR(magazine) = "1Rnd_RC40_SmokeGreen_shell_RF";
     };
-
-    class UAV_RC40_Base_HE_RF;
-    class B_UAV_RC40_HE_RF: UAV_RC40_Base_HE_RF {
-        AVAR(magazine) = QGVAR(RC40_HE);
+    class UAV_RC40_Base_SmokeOrange_RF: UAV_RC40_Base_RF {
+        AVAR(magazine) = "1Rnd_RC40_SmokeOrange_shell_RF";
     };
-    class O_UAV_RC40_HE_RF: UAV_RC40_Base_HE_RF {
-        AVAR(magazine) = QGVAR(RC40_HE);
+    class UAV_RC40_Base_SmokeRed_RF: UAV_RC40_Base_RF {
+        AVAR(magazine) = "1Rnd_RC40_SmokeRed_shell_RF";
     };
-    class I_UAV_RC40_HE_RF: UAV_RC40_Base_HE_RF {
-        AVAR(magazine) = QGVAR(RC40_HE);
-    };
-    class C_UAV_RC40_HE_RF: UAV_RC40_Base_HE_RF {
-        AVAR(magazine) = QGVAR(RC40_HE);
-    };
-
-    class UAV_RC40_Base_SmokeBlue_RF;
-    class B_UAV_RC40_SmokeBlue_RF: UAV_RC40_Base_SmokeBlue_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeBlue);
-    };
-    class O_UAV_RC40_SmokeBlue_RF: UAV_RC40_Base_SmokeBlue_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeBlue);
-    };
-    class I_UAV_RC40_SmokeBlue_RF: UAV_RC40_Base_SmokeBlue_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeBlue);
-    };
-    class C_UAV_RC40_SmokeBlue_RF: UAV_RC40_Base_SmokeBlue_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeBlue);
-    };
-
-    class UAV_RC40_Base_SmokeGreen_RF;
-    class B_UAV_RC40_SmokeGreen_RF: UAV_RC40_Base_SmokeGreen_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeGreen);
-    };
-    class O_UAV_RC40_SmokeGreen_RF: UAV_RC40_Base_SmokeGreen_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeGreen);
-    };
-    class I_UAV_RC40_SmokeGreen_RF: UAV_RC40_Base_SmokeGreen_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeGreen);
-    };
-    class C_UAV_RC40_SmokeGreen_RF: UAV_RC40_Base_SmokeGreen_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeGreen);
-    };
-
-    class UAV_RC40_Base_SmokeOrange_RF;
-    class B_UAV_RC40_SmokeOrange_RF: UAV_RC40_Base_SmokeOrange_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeOrange);
-    };
-    class O_UAV_RC40_SmokeOrange_RF: UAV_RC40_Base_SmokeOrange_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeOrange);
-    };
-    class I_UAV_RC40_SmokeOrange_RF: UAV_RC40_Base_SmokeOrange_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeOrange);
-    };
-    class C_UAV_RC40_SmokeOrange_RF: UAV_RC40_Base_SmokeOrange_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeOrange);
-    };
-
-    class UAV_RC40_Base_SmokeRed_RF;
-    class B_UAV_RC40_SmokeRed_RF: UAV_RC40_Base_SmokeRed_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeRed);
-    };
-    class O_UAV_RC40_SmokeRed_RF: UAV_RC40_Base_SmokeRed_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeRed);
-    };
-    class I_UAV_RC40_SmokeRed_RF: UAV_RC40_Base_SmokeRed_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeRed);
-    };
-    class C_UAV_RC40_SmokeRed_RF: UAV_RC40_Base_SmokeRed_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeRed);
-    };
-
-    class UAV_RC40_Base_SmokeWhite_RF;
-    class B_UAV_RC40_SmokeWhite_RF: UAV_RC40_Base_SmokeWhite_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeWhite);
-    };
-    class O_UAV_RC40_SmokeWhite_RF: UAV_RC40_Base_SmokeWhite_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeWhite);
-    };
-    class I_UAV_RC40_SmokeWhite_RF: UAV_RC40_Base_SmokeWhite_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeWhite);
-    };
-    class C_UAV_RC40_SmokeWhite_RF: UAV_RC40_Base_SmokeWhite_RF {
-        AVAR(magazine) = QGVAR(RC40_SmokeWhite);
+    class UAV_RC40_Base_SmokeWhite_RF: UAV_RC40_Base_RF {
+        AVAR(magazine) = "1Rnd_RC40_SmokeWhite_shell_RF";
     };
 };

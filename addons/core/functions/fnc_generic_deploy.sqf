@@ -3,7 +3,20 @@
 params ["_unit", "_params"];
 _params params ["_container", "_count", "_case"];
 
-private _drone = getText (configFile >> "CfgMagazines" >> _case >> QAVAR(drone));
+private _dronePath = configFile >> "CfgMagazines" >> _case >> QAVAR(drone);
+
+private _drone = if (isArray _dronePath) then {
+    private _sides = getArray _dronePath;
+    switch (side _unit) do {
+        case west: {_sides select 0};
+        case east: {_sides select 1};
+        case independent: {_sides select 2};
+        case civilian: {_sides select 3};
+        default {""};
+    };
+} else {
+    getText _dronePath
+};
 if (_drone == "") exitWith {};
 
 private _deployType = getText (configFile >> "CfgMagazines" >> _case >> QAVAR(deployType));
