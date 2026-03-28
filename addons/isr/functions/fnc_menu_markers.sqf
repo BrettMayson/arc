@@ -6,8 +6,7 @@ _fnc_availableChannels = {
     private _available = [
         [LLSTRING(Menu_Configuration_Markers_Global), 0],
         [LLSTRING(Menu_Configuration_Markers_Side), 1],
-        [LLSTRING(Menu_Configuration_Markers_Group), 3],
-        [LLSTRING(Menu_Configuration_Markers_Vehicle), 4]
+        [LLSTRING(Menu_Configuration_Markers_Group), 3]
     ];
     for "_i" from 1 to 10 do {
         (radioChannelInfo _i) params ["", "_label", "", "_units", "", "_enabled"];

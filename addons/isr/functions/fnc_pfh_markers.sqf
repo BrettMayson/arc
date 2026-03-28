@@ -9,6 +9,7 @@ private _showDistance = _vehicle getVariable [QGVAR(markerShowDistance), true];
 
 {
     private _channel = markerChannel _x;
+    if (_channel == 4) then { continue };
     if !(_channel == -1 || _channels select _channel) then { continue };
 
     if (_x select [0,3] == "aid") then { continue };
