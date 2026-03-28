@@ -154,20 +154,4 @@ class CfgVehicles {
             killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
         };
     };
-
-    // Falcon
-    class UAV_03_base_F: Helicopter_Base_F {
-        AVAR(mode) = "SAT";
-    };
-
-    /// YABHON
-    class UAV;
-    class UAV_02_base_F: UAV {
-        AVAR(mode) = "SAT";
-    };
-
-    // Sentinel
-    class UAV_05_Base_F: UAV {
-        AVAR(mode) = "SAT";
-    };
 };

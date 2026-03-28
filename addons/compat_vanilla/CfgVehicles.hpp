@@ -29,7 +29,9 @@ class CfgVehicles {
     };
     class Helicopter_Base_F: Helicopter {
         class ACE_Actions: ACE_Actions {
-            class ACE_MainActions: ACE_MainActions {};
+            class ACE_MainActions: ACE_MainActions {
+                #include "..\core\actions\battery.hpp"
+            };
         };
     };
 
@@ -44,7 +46,6 @@ class CfgVehicles {
         class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {
                 #include "..\core\actions\pack.hpp"
-                #include "..\core\actions\battery.hpp"
             };
         };
     };
@@ -64,6 +65,7 @@ class CfgVehicles {
     // Falcon
     class UAV_03_base_F: Helicopter_Base_F {
         AVAR(mode) = "SAT";
+        AVAR(noBattery) = 1;
         AVAR(isr) = QEFUNC(isr,vanilla);
     };
 
@@ -71,12 +73,14 @@ class CfgVehicles {
     class UAV;
     class UAV_02_base_F: UAV {
         AVAR(mode) = "SAT";
+        AVAR(noBattery) = 1;
         AVAR(isr) = QEFUNC(isr,vanilla);
     };
 
     // Sentinel
     class UAV_05_Base_F: UAV {
         AVAR(mode) = "SAT";
+        AVAR(noBattery) = 1;
         AVAR(isr) = QEFUNC(isr,vanilla);
     };
 
@@ -84,6 +88,7 @@ class CfgVehicles {
     class Car_F;
     class UGV_01_base_F: Car_F {
         AVAR(mode) = "SAT";
+        AVAR(noBattery) = 1;
         AVAR(isr) = QEFUNC(isr,vanilla);
     };
 };

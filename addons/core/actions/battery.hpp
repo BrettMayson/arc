@@ -5,13 +5,13 @@ class AVAR(removeBattery) {
     displayName = "Remove Battery";
     distance = ACTION_DISTANCE;
     modifierFunction = QUOTE(call EFUNC(core,generic_removeBatteryModify));
-    condition = QUOTE([ARR_2(_player,_target)] call EFUNC(core,generic_removeBatteryCondition));
+    condition = QUOTE(unitIsUAV _target && {[ARR_2(_player,_target)] call EFUNC(core,generic_removeBatteryCondition)});
     statement = QUOTE([ARR_2(_player,_target)] call EFUNC(core,generic_removeBattery));
 };
 class AVAR(insertBattery) {
     displayName = "Insert Battery";
     distance = ACTION_DISTANCE;
-    condition = QUOTE([ARR_2(_player,_target)] call EFUNC(core,generic_insertBatteryCondition));
+    condition = QUOTE(unitIsUAV _target && {[ARR_2(_player,_target)] call EFUNC(core,generic_insertBatteryCondition)});
     statement = "";
     insertChildren = QUOTE([ARR_2(_player,_target)] call EFUNC(core,generic_insertBatteryInsertChildren));
 };
