@@ -19,7 +19,7 @@
         <Key ID="STR_ARC_ISR_Info_Power">
             <English>POWER:</English>
             <Spanish>POTENCIA:</Spanish>
-            <Russian>ЗАРЯД:</Russian>
+            <Russian>МОЩНОСТЬ:</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Info_Signal">
             <English>SIGNAL:</English>
