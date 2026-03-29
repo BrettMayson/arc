@@ -5,7 +5,7 @@ _options params [["_showNumbers", true]];
 
 _fnc_spacing = {
     params ["_key"];
-    private _length = 12 - count _key;
+    private _length = 14 - count _key;
     private _spacing = "";
     for "_i" from 1 to _length do {
         _spacing = _spacing + " ";
@@ -18,11 +18,14 @@ for "_i" from 0 to 9 do {
         private _line = _lines#_i;
         private _text = "";
         private _value = "";
-        if (_line isEqualType "STRING") then {
+        if (typeName _line == "STRING") then {
             _text = _line;
         } else {
             _text = _line select 0;
             _value = _line select 1;
+        };
+        if (typeName _value != "STRING") then {
+            _value = format ["%1", _value];
         };
 
         private _number = if (_showNumbers && _i != 0 && _text != "") then { str _i } else { " " };

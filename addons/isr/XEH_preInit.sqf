@@ -7,6 +7,24 @@ GVAR(markerColorCache) = createHashMap;
 
 GVAR(menuStack) = [];
 
+[
+    QGVAR(maxMarkerDistance),
+    "SLIDER",
+    LLSTRING(Setting_MaxMarkerDistance),
+    "ARC - ISR",
+    [2,15,15,0],
+    1,
+    {
+        GVAR(maxMarkerDistance) = round _this;
+        if (isNil QGVAR(pfh)) exitWith {};
+        private _current = GVAR(vehicle) getVariable [QGVAR(markerMaxDistance), GVAR(maxMarkerDistance)];
+        if (_current < _this) exitWith {};
+        GVAR(vehicle) setVariable [QGVAR(markerMaxDistance), GVAR(maxMarkerDistance)];
+        private _menu = GVAR(menuStack) select -1;
+        ["draw", []] call (_menu select 1);
+    }
+] call CBA_fnc_addSetting;
+
 _fnc_numpad = {
     params ["_line"];
     switch (_line) do {

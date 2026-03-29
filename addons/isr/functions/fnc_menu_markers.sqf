@@ -8,13 +8,13 @@ _fnc_draw = {
         LLSTRING(Menu_Configuration_Markers),
         [LLSTRING(Menu_Configuration_Markers_Enabled), [GVAR(vehicle) getVariable [QGVAR(markerEnabled), true]] call FUNC(fmt_onoff)],
         [LLSTRING(Menu_Configuration_Markers_Distance), [GVAR(vehicle) getVariable [QGVAR(markerShowDistance), true]] call FUNC(fmt_onoff)],
+        [format ["%1 (%2)", LLSTRING(Menu_Configuration_Markers_MaxDistance), toUpper localize "str_a3_wl_unit_km"], GVAR(vehicle) getVariable [QGVAR(markerMaxDistance), GVAR(maxMarkerDistance)]],
         "",
         "",
         "",
         "",
         "",
-        "",
-        LLSTRING(Menu_Configuration_Markers_Channels)
+        if (isMultiplayer) then { LLSTRING(Menu_Configuration_Markers_Channels) } else { "" }
     ];
     [_menu] call FUNC(menu_draw);
 };
@@ -22,6 +22,9 @@ _fnc_draw = {
 switch (_command) do {
     case "open": {
         GVAR(menuStack) pushBack ["markers", { _this call FUNC(menu_markers) }, []];
+        call _fnc_draw;
+    };
+    case "draw": {
         call _fnc_draw;
     };
     case "return": {
@@ -39,7 +42,17 @@ switch (_command) do {
                 GVAR(vehicle) setVariable [QGVAR(markerShowDistance), !_distance, true];
                 call _fnc_draw;
             };
+            case 3: {
+                private _currentMaxDistance = GVAR(vehicle) getVariable [QGVAR(markerMaxDistance), GVAR(maxMarkerDistance)];
+                private _newMaxDistance = _currentMaxDistance + 1;
+                if (_newMaxDistance > GVAR(maxMarkerDistance)) then {
+                    _newMaxDistance = 2;
+                };
+                GVAR(vehicle) setVariable [QGVAR(markerMaxDistance), _newMaxDistance, true];
+                call _fnc_draw;
+            };
             case 9: {
+                if !(isMultiplayer) exitWith {};
                 ["open", "configuration"] call FUNC(menu_markers_channels);
             };
         };

@@ -8,7 +8,7 @@ if !(_enabled) exitWith {};
 
 private _channels = _vehicle getVariable [QGVAR(markerChannels), DEFAULT_MARKER_CHANNELS];
 private _showDistance = _vehicle getVariable [QGVAR(markerShowDistance), true];
-private _maxDistance = _vehicle getVariable [QGVAR(markerMaxDistance), 5000];
+private _maxDistance = (_vehicle getVariable [QGVAR(markerMaxDistance), GVAR(maxMarkerDistance)]) * 1000;
 
 {
     private _channel = markerChannel _x;
@@ -31,7 +31,14 @@ private _maxDistance = _vehicle getVariable [QGVAR(markerMaxDistance), 5000];
     }];
     private _colorType = markerColor _x;
     private _color = GVAR(markerColorCache) getOrDefaultCall [_colorType, {
-        getArray (configFile >> "CfgMarkerColors" >> _colorType >> "color")
+        private _array = getArray (configFile >> "CfgMarkerColors" >> _colorType >> "color");
+        for "_i" from 0 to 3 do {
+            private _val = _array select _i;
+            if (typeName _val == "STRING") then {
+                _array set [_i, call compile _val];
+            };
+        };
+        _array
     }];
     _color set [3, markerAlpha _x];
 

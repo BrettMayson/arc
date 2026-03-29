@@ -56,7 +56,7 @@ class RscOptics_AV_pilot: RscUnitInfo {
                 onLoad = QUOTE([ARR_2(""menuLine0"",_this#0)] call FUNC(menu_addControl););
                 x = "38 * (0.01875 * SafezoneH)";
                 y = "12.4 * (0.025 * safeZoneH)";
-                w = "10 * (0.01875 * SafezoneH)";
+                w = "16 * (0.01875 * SafezoneH)";
                 text = "";
             };
             class GVAR(MenuLine1): GVAR(CA_Signal) {
@@ -64,7 +64,7 @@ class RscOptics_AV_pilot: RscUnitInfo {
                 onLoad = QUOTE([ARR_2(""menuLine1"",_this#0)] call FUNC(menu_addControl););
                 x = "38 * (0.01875 * SafezoneH)";
                 y = "13.2 * (0.025 * safeZoneH)";
-                w = "10 * (0.01875 * SafezoneH)";
+                w = "16 * (0.01875 * SafezoneH)";
                 text = "";
             };
             class GVAR(MenuLine2): GVAR(CA_Signal) {
@@ -72,7 +72,7 @@ class RscOptics_AV_pilot: RscUnitInfo {
                 onLoad = QUOTE([ARR_2(""menuLine2"",_this#0)] call FUNC(menu_addControl););
                 x = "38 * (0.01875 * SafezoneH)";
                 y = "14 * (0.025 * safeZoneH)";
-                w = "10 * (0.01875 * SafezoneH)";
+                w = "16 * (0.01875 * SafezoneH)";
                 text = "";
             };
             class GVAR(MenuLine3): GVAR(CA_Signal) {
@@ -80,7 +80,7 @@ class RscOptics_AV_pilot: RscUnitInfo {
                 onLoad = QUOTE([ARR_2(""menuLine3"",_this#0)] call FUNC(menu_addControl););
                 x = "38 * (0.01875 * SafezoneH)";
                 y = "14.8 * (0.025 * safeZoneH)";
-                w = "10 * (0.01875 * SafezoneH)";
+                w = "16 * (0.01875 * SafezoneH)";
                 text = "";
             };
             class GVAR(MenuLine4): GVAR(CA_Signal) {
@@ -88,7 +88,7 @@ class RscOptics_AV_pilot: RscUnitInfo {
                 onLoad = QUOTE([ARR_2(""menuLine4"",_this#0)] call FUNC(menu_addControl););
                 x = "38 * (0.01875 * SafezoneH)";
                 y = "15.6 * (0.025 * safeZoneH)";
-                w = "10 * (0.01875 * SafezoneH)";
+                w = "16 * (0.01875 * SafezoneH)";
                 text = "";
             };
             class GVAR(MenuLine5): GVAR(CA_Signal) {
@@ -96,7 +96,7 @@ class RscOptics_AV_pilot: RscUnitInfo {
                 onLoad = QUOTE([ARR_2(""menuLine5"",_this#0)] call FUNC(menu_addControl););
                 x = "38 * (0.01875 * SafezoneH)";
                 y = "16.4 * (0.025 * safeZoneH)";
-                w = "10 * (0.01875 * SafezoneH)";
+                w = "16 * (0.01875 * SafezoneH)";
                 text = "";
             };
             class GVAR(MenuLine6): GVAR(CA_Signal) {
@@ -104,7 +104,7 @@ class RscOptics_AV_pilot: RscUnitInfo {
                 onLoad = QUOTE([ARR_2(""menuLine6"",_this#0)] call FUNC(menu_addControl););
                 x = "38 * (0.01875 * SafezoneH)";
                 y = "17.2 * (0.025 * safeZoneH)";
-                w = "10 * (0.01875 * SafezoneH)";
+                w = "16 * (0.01875 * SafezoneH)";
                 text = "";
             };
             class GVAR(MenuLine7): GVAR(CA_Signal) {
@@ -112,7 +112,7 @@ class RscOptics_AV_pilot: RscUnitInfo {
                 onLoad = QUOTE([ARR_2(""menuLine7"",_this#0)] call FUNC(menu_addControl););
                 x = "38 * (0.01875 * SafezoneH)";
                 y = "18 * (0.025 * safeZoneH)";
-                w = "10 * (0.01875 * SafezoneH)";
+                w = "16 * (0.01875 * SafezoneH)";
                 text = "";
             };
             class GVAR(MenuLine8): GVAR(CA_Signal) {
@@ -120,7 +120,7 @@ class RscOptics_AV_pilot: RscUnitInfo {
                 onLoad = QUOTE([ARR_2(""menuLine8"",_this#0)] call FUNC(menu_addControl););
                 x = "38 * (0.01875 * SafezoneH)";
                 y = "18.8 * (0.025 * safeZoneH)";
-                w = "10 * (0.01875 * SafezoneH)";
+                w = "16 * (0.01875 * SafezoneH)";
                 text = "";
             };
             class GVAR(MenuLine9): GVAR(CA_Signal) {
@@ -128,7 +128,7 @@ class RscOptics_AV_pilot: RscUnitInfo {
                 onLoad = QUOTE([ARR_2(""menuLine9"",_this#0)] call FUNC(menu_addControl););
                 x = "38 * (0.01875 * SafezoneH)";
                 y = "19.6 * (0.025 * safeZoneH)";
-                w = "10 * (0.01875 * SafezoneH)";
+                w = "16 * (0.01875 * SafezoneH)";
                 text = "";
             };
         };

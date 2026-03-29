@@ -121,6 +121,12 @@
             <Spanish>GRUPO</Spanish>
             <Russian>ГРУППА</Russian>
         </Key>
+        <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_MaxDistance">
+            <!-- as in WITHIN 1km -->
+            <English>WITHIN</English>
+            <Spanish>DENTRO DE</Spanish>
+            <Russian>В РАДИУСЕ</Russian>
+        </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Side">
             <English>SIDE</English>
             <Spanish>BANDO</Spanish>
@@ -177,6 +183,7 @@
             <Russian>ЦЕЛИ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Targets_LockCamera">
+            <!-- as in LOCK CAMERA onto a target -->
             <English>LOCK CAMERA</English>
             <Spanish>FIJAR CÁMARA</Spanish>
             <Russian>ЗАБЛ КАМЕР</Russian>
@@ -185,6 +192,11 @@
             <English>NEXT PAGE</English>
             <Spanish>SIGUIENTE PÁGINA</Spanish>
             <Russian>СЛЕД СТРАНИЦ</Russian>
+        </Key>
+        <Key ID="STR_ARC_ISR_Setting_MaxMarkerDistance">
+            <English>Max Marker Distance</English>
+            <Spanish>Distancia Máx Marcadores</Spanish>
+            <Russian>Макс Дистанция Маркера</Russian>
         </Key>
     </Package>
 </Project>
