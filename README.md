@@ -25,6 +25,7 @@ A comprehensive UAV control system for Arma 3 that revolutionizes how players in
 
 - Control UAV transmission settings (frequency, power)
 - Snap to targets and grids, toggle markers, adjust units
+- See ACE laser codes
 
 ### ACE3 Interaction
 
