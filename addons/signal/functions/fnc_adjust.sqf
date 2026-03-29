@@ -16,6 +16,10 @@ if (_signal > 0.8) then {
         private _newPower = _powerLevels select (_powerIndex - 1);
         _uav setVariable [QAVAR(power), _newPower, true];
     };
+    if (_freqIndex < (count _freqLevels) - 1) then {
+        private _newFreq = _freqLevels select (_freqIndex + 1);
+        _uav setVariable [QAVAR(freq), _newFreq, true];
+    };
 };
 
 // Signal is weak — increase power
