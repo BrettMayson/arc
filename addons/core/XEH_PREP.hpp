@@ -2,6 +2,8 @@ PREP(init);
 
 PREP(addMagazine);
 
+PREP(case_drone);
+
 PREP(generic_deploy);
 PREP(generic_deployCondition);
 PREP(generic_deployInsertChildren);

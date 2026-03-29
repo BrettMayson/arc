@@ -9,10 +9,8 @@ private _children = [];
     {
         _x params ["_class", "_count"];
         private _droneMagCfg = configFile >> "CfgMagazines" >> _class;
-        private _drone = getText (_droneMagCfg >> QAVAR(drone));
-        if (_drone == "") exitWith {
-            continue;
-        };
+        private _drone = [side _unit, _class] call FUNC(case_drone);
+        if (_drone == "") then { continue; };
         private _droneCfg = configFile >> "CfgVehicles" >> _drone;
         _children pushBack [
             [

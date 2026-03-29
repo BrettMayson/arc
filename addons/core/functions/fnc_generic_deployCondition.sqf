@@ -9,10 +9,7 @@ private _canDeploy = false;
 {
     {
         _x params ["_class", "_count"];
-        private _drone = getText (configFile >> "CfgMagazines" >> _class >> QAVAR(drone));
-        if (_drone == "") exitWith {
-            continue;
-        };
+        private _drone = [side _unit, _class] call FUNC(case_drone);
         _canDeploy = true;
         breakTo "search";
     } forEach magazinesAmmoCargo _x;

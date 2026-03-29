@@ -3,173 +3,173 @@
     <Package name="ISR">
         <Key ID="STR_ARC_ISR_Info_Altitude">
             <English>ALT [%1]:</English>
-            <Russian>ВЫС [%1]:</Russian>
             <Spanish>ALT [%1]:</Spanish>
+            <Russian>ВЫС [%1]:</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Info_Connection">
             <English>CONN:</English>
-            <Russian>СОЕД:</Russian>
             <Spanish>CON:</Spanish>
+            <Russian>СОЕД:</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Info_Freq">
             <English>FREQ:</English>
-            <Russian>ЧАСТОТА:</Russian>
             <Spanish>FREC:</Spanish>
+            <Russian>ЧАСТОТА:</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Info_Power">
             <English>POWER:</English>
-            <Russian>ЗАРЯД:</Russian>
             <Spanish>POTENCIA:</Spanish>
+            <Russian>ЗАРЯД:</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Info_Signal">
             <English>SIGNAL:</English>
-            <Russian>СИГНАЛ:</Russian>
             <Spanish>SEÑAL:</Spanish>
+            <Russian>СИГНАЛ:</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Info_Speed">
             <English>SPD [%1]:</English>
-            <Russian>СКОР [%1]:</Russian>
             <Spanish>VEL [%1]:</Spanish>
+            <Russian>СКОР [%1]:</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu">
             <English>ISR MENU</English>
-            <Russian>ISR МЕНЮ</Russian>
             <Spanish>MENÚ ISR</Spanish>
+            <Russian>ISR МЕНЮ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration">
             <English>CONFIGURATION</English>
-            <Russian>НАСТРОЙКИ</Russian>
             <Spanish>CONFIGURACIÓN</Spanish>
+            <Russian>НАСТРОЙКИ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Altitude">
             <English>ALTITUDE: %1</English>
-            <Russian>ВЫСОТА: %1</Russian>
             <Spanish>ALTITUD: %1</Spanish>
+            <Russian>ВЫСОТА: %1</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera">
             <English>CAMERA</English>
-            <Russian>КАМЕРА</Russian>
             <Spanish>CÁMARA</Spanish>
+            <Russian>КАМЕРА</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_Cancel">
             <English>2 CANCEL</English>
-            <Russian>2 ОТМЕНИТЬ</Russian>
             <Spanish>2 CANCELAR</Spanish>
+            <Russian>2 ОТМЕНИТЬ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_Clear">
             <English>3 CLEAR</English>
-            <Russian>3 ОЧИСТИТЬ</Russian>
             <Spanish>3 DESPEJAR</Spanish>
+            <Russian>3 ОЧИСТИТЬ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_Confirm">
             <English>1 CONFIRM</English>
-            <Russian>1 ПОДТВЕРДИТЬ</Russian>
             <Spanish>1 CONFIRMAR</Spanish>
+            <Russian>1 ПОДТВЕРДИТЬ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_DigitGrid">
             <English>%1-DIGIT GRID</English>
-            <Russian>%1-ЦИФР СЕТКА</Russian>
             <Spanish>%1-DÍGITOS</Spanish>
+            <Russian>%1-ЦИФР СЕТКА</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_InputGrid">
             <English>INPUT GRID</English>
-            <Russian>ВВОД КВАДРАТА</Russian>
             <Spanish>INGRESAR COORD</Spanish>
+            <Russian>ВВОД КВАДРАТА</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_Lock">
             <English>LOCK TO GRID</English>
-            <Russian>ПРИВЯЗ К КВАДРАТУ</Russian>
             <Spanish>FIJAR A COORD</Spanish>
+            <Russian>ПРИВЯЗ К КВАДРАТУ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_Move">
             <English>MOVE TO GRID</English>
-            <Russian>ПЕРЕМ В КВАДРАТ</Russian>
             <Spanish>MOVER A COORD</Spanish>
+            <Russian>ПЕРЕМ В КВАДРАТ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers">
             <English>MARKERS</English>
-            <Russian>МАРКЕРА</Russian>
             <Spanish>MARCADORES</Spanish>
+            <Russian>МАРКЕРА</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Distance">
             <English>DISTANCE: %1</English>
-            <Russian>ДИСТАНЦИЯ: %1</Russian>
             <Spanish>DISTANCIA: %1</Spanish>
+            <Russian>ДИСТАНЦИЯ: %1</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Global">
             <English>GLOBAL</English>
-            <Russian>ГЛОБАЛЬНЫЙ</Russian>
             <Spanish>GLOBAL</Spanish>
+            <Russian>ГЛОБАЛЬНЫЙ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Group">
             <English>GROUP</English>
-            <Russian>ГРУППА</Russian>
             <Spanish>GRUPO</Spanish>
+            <Russian>ГРУППА</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Side">
             <English>SIDE</English>
-            <Russian>СТОРОНА</Russian>
             <Spanish>BANDO</Spanish>
+            <Russian>СТОРОНА</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Off">
             <English>OFF</English>
-            <Russian>ВЫКЛ</Russian>
             <Spanish>OFF</Spanish>
+            <Russian>ВЫКЛ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_On">
             <English>ON</English>
-            <Russian>ВКЛ</Russian>
             <Spanish>ON</Spanish>
+            <Russian>ВКЛ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power">
             <English>POWER</English>
-            <Russian>ПИТАНИЕ</Russian>
             <Spanish>POTENCIA</Spanish>
+            <Russian>ПИТАНИЕ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power_AutoAdjust">
             <English>AUTO ADJUST: %1</English>
-            <Russian>АВТО РЕГУЛИР: %1</Russian>
             <Spanish>AJUSTE AUTO: %1</Spanish>
+            <Russian>АВТО РЕГУЛИР: %1</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power_NextFreq">
             <English>NEXT FREQ: %1</English>
-            <Russian>СЛЕД ЧАСТ: %1</Russian>
             <Spanish>SIG. FREC: %1</Spanish>
+            <Russian>СЛЕД ЧАСТ: %1</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power_NextPower">
             <English>NEXT POWER: %1</English>
-            <Russian>СЛЕД ПИТАН: %1</Russian>
             <Spanish>SIG. POT.: %1</Spanish>
+            <Russian>СЛЕД ПИТАН: %1</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power_PrevFreq">
             <English>PREV FREQ: %1</English>
-            <Russian>ПРЕД ЧАСТ: %1</Russian>
             <Spanish>ANT. FREC: %1</Spanish>
+            <Russian>ПРЕД ЧАСТ: %1</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power_PrevPower">
             <English>PREV POWER: %1</English>
-            <Russian>ПРЕД ПИТАН: %1</Russian>
             <Spanish>ANT. POT.: %1</Spanish>
+            <Russian>ПРЕД ПИТАН: %1</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Speed">
             <English>SPEED: %1</English>
-            <Russian>СКОРОСТЬ: %1</Russian>
             <Spanish>VELOCIDAD: %1</Spanish>
+            <Russian>СКОРОСТЬ: %1</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Targets">
             <English>TARGETS</English>
-            <Russian>ЦЕЛИ</Russian>
             <Spanish>BLANCOS</Spanish>
+            <Russian>ЦЕЛИ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Targets_LockCamera">
             <English>LOCK CAMERA</English>
-            <Russian>ЗАБЛ КАМЕР</Russian>
             <Spanish>FIJAR CÁMARA</Spanish>
+            <Russian>ЗАБЛ КАМЕР</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Targets_NextPage">
             <English>NEXT PAGE</English>
-            <Russian>СЛЕД СТРАНИЦ</Russian>
             <Spanish>SIGUIENTE PÁGINA</Spanish>
+            <Russian>СЛЕД СТРАНИЦ</Russian>
         </Key>
     </Package>
 </Project>
