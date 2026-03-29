@@ -2,7 +2,9 @@
 
 params ["_vehicle"];
 
-if !(GVAR(showMarkers)) exitWith {};
+private _enabled = _vehicle getVariable [QGVAR(markerEnabled), true];
+
+if !(_enabled) exitWith {};
 
 private _channels = _vehicle getVariable [QGVAR(markerChannels), DEFAULT_MARKER_CHANNELS];
 private _showDistance = _vehicle getVariable [QGVAR(markerShowDistance), true];

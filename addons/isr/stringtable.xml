@@ -42,9 +42,9 @@
             <Russian>НАСТРОЙКИ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Altitude">
-            <English>ALTITUDE: %1</English>
-            <Spanish>ALTITUD: %1</Spanish>
-            <Russian>ВЫСОТА: %1</Russian>
+            <English>ALTITUDE</English>
+            <Spanish>ALTITUD</Spanish>
+            <Russian>ВЫСОТА</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Camera">
             <English>CAMERA</English>
@@ -91,10 +91,25 @@
             <Spanish>MARCADORES</Spanish>
             <Russian>МАРКЕРА</Russian>
         </Key>
+        <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Channels">
+            <English>CHANNELS</English>
+            <Spanish>CANALES</Spanish>
+            <Russian>КАНАЛЫ</Russian>
+        </Key>
+        <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Command">
+            <English>COMMAND</English>
+            <Spanish>COMANDO</Spanish>
+            <Russian>КОМАНДА</Russian>
+        </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Distance">
-            <English>DISTANCE: %1</English>
-            <Spanish>DISTANCIA: %1</Spanish>
-            <Russian>ДИСТАНЦИЯ: %1</Russian>
+            <English>DISTANCE</English>
+            <Spanish>DISTANCIA</Spanish>
+            <Russian>ДИСТАНЦИЯ</Russian>
+        </Key>
+        <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Enabled">
+            <English>ENABLED</English>
+            <Spanish>HABILITADOS</Spanish>
+            <Russian>ВКЛЮЧЕНЫ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers_Global">
             <English>GLOBAL</English>
@@ -127,34 +142,34 @@
             <Russian>ПИТАНИЕ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power_AutoAdjust">
-            <English>AUTO ADJUST: %1</English>
-            <Spanish>AJUSTE AUTO: %1</Spanish>
-            <Russian>АВТО РЕГУЛИР: %1</Russian>
+            <English>AUTO ADJUST</English>
+            <Spanish>AJUSTE AUTO</Spanish>
+            <Russian>АВТО РЕГУЛИР</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power_NextFreq">
-            <English>NEXT FREQ: %1</English>
-            <Spanish>SIG. FREC: %1</Spanish>
-            <Russian>СЛЕД ЧАСТ: %1</Russian>
+            <English>NEXT FREQ</English>
+            <Spanish>SIG. FREC</Spanish>
+            <Russian>СЛЕД ЧАСТ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power_NextPower">
-            <English>NEXT POWER: %1</English>
-            <Spanish>SIG. POT.: %1</Spanish>
-            <Russian>СЛЕД ПИТАН: %1</Russian>
+            <English>NEXT POWER</English>
+            <Spanish>SIG. POT.</Spanish>
+            <Russian>СЛЕД ПИТАН</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power_PrevFreq">
-            <English>PREV FREQ: %1</English>
-            <Spanish>ANT. FREC: %1</Spanish>
-            <Russian>ПРЕД ЧАСТ: %1</Russian>
+            <English>PREV FREQ</English>
+            <Spanish>ANT. FREC</Spanish>
+            <Russian>ПРЕД ЧАСТ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Power_PrevPower">
-            <English>PREV POWER: %1</English>
-            <Spanish>ANT. POT.: %1</Spanish>
-            <Russian>ПРЕД ПИТАН: %1</Russian>
+            <English>PREV POWER</English>
+            <Spanish>ANT. POT.</Spanish>
+            <Russian>ПРЕД ПИТАН</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Speed">
-            <English>SPEED: %1</English>
-            <Spanish>VELOCIDAD: %1</Spanish>
-            <Russian>СКОРОСТЬ: %1</Russian>
+            <English>SPEED</English>
+            <Spanish>VELOCIDAD</Spanish>
+            <Russian>СКОРОСТЬ</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Targets">
             <English>TARGETS</English>

@@ -5,8 +5,8 @@ params ["_command", "_arg"];
 _fnc_draw = {
     private _menu = [
         LLSTRING(Menu_Configuration),
-        format [LLSTRING(Menu_Configuration_Speed), GVAR(speedCurrentMode)],
-        format [LLSTRING(Menu_Configuration_Altitude), GVAR(altCurrentMode)],
+        [LLSTRING(Menu_Configuration_Speed), GVAR(speedCurrentMode)],
+        [LLSTRING(Menu_Configuration_Altitude), GVAR(altCurrentMode)],
         LLSTRING(Menu_Configuration_Markers)
     ];
     if (GVAR(isUAV)) then {

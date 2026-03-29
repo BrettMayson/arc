@@ -2,8 +2,9 @@ PREP(getAltitude);
 PREP(getSpeed);
 PREP(isISR);
 
-PREP(displayFrequency);
-PREP(displayPower);
+PREP(fmt_frequency);
+PREP(fmt_power);
+PREP(fmt_onoff);
 
 PREP(menu_addControl);
 PREP(menu_camera);
@@ -14,6 +15,7 @@ PREP(menu_grid);
 PREP(menu_keybind);
 PREP(menu_main);
 PREP(menu_markers);
+PREP(menu_markers_channels);
 PREP(menu_power);
 PREP(menu_setControlText);
 PREP(menu_target);

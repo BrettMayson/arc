@@ -3,15 +3,38 @@
 params ["_lines", ["_options", []]];
 _options params [["_showNumbers", true]];
 
+_fnc_spacing = {
+    params ["_key"];
+    private _length = 12 - count _key;
+    private _spacing = "";
+    for "_i" from 1 to _length do {
+        _spacing = _spacing + " ";
+    };
+    _spacing
+};
+
 for "_i" from 0 to 9 do {
     if (_i < count _lines) then {
-        private _text = if (_i == 0 || !_showNumbers) then {
-            _lines#_i
+        private _line = _lines#_i;
+        private _text = "";
+        private _value = "";
+        if (_line isEqualType "STRING") then {
+            _text = _line;
         } else {
-            format ["%1 %2", _i, _lines#_i]
+            _text = _line select 0;
+            _value = _line select 1;
         };
+
+        private _number = if (_showNumbers && _i != 0 && _text != "") then { str _i } else { " " };
+        private _spacing = [_text] call _fnc_spacing;
+        private _rhs = if (_value != "") then {
+            format ["%1%2", _spacing, _value]
+        } else {
+            ""
+        };
+        private _write = format ["%1 %2%3", _number, _text, _rhs];
         {
-            _x ctrlSetText _text;
+            _x ctrlSetText _write;
         } forEach ([format ["menuLine%1", _i]] call FUNC(menu_getControls));
     } else {
         {
