@@ -20,7 +20,7 @@ class CfgVehicles {
                     displayName = ECSTRING(core,UAV_Pack);
                     distance = 4;
                     condition = QUOTE([ARR_2(_player,_target)] call FUNC(bustard_packCondition));
-                    statement = QUOTE([ARR_2(_player,_target)] call FUNC(generic_pack));
+                    statement = QUOTE([ARR_2(_player,_target)] call EFUNC(core,generic_pack));
                 };
                 #include "..\core\actions\battery.hpp"
             };
