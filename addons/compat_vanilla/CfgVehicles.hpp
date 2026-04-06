@@ -91,4 +91,51 @@ class CfgVehicles {
         AVAR(noBattery) = 1;
         AVAR(isr) = QEFUNC(isr,vanilla);
     };
+
+    // Pelican
+    class UAV_06_base_F: Helicopter_Base_F {
+        AVAR(mode) = "LOS";
+        AVAR(power)[] = { 100, 200, 300, 400, 600, 800, 1200, 1800 };
+        AVAR(defaultPower) = 100;
+        AVAR(freq)[] = { 433, 915, 1200, 2400, 5800 };
+        AVAR(defaultFreq) = 1200;
+        AVAR(isr) = QEFUNC(isr,vanilla);
+        class ACE_Actions: ACE_Actions {
+            class ACE_MainActions: ACE_MainActions {
+                #include "..\core\actions\pack.hpp"
+            };
+        };
+    };
+    class B_UAV_06_F: UAV_06_base_F {
+        AVAR(case) = QAVAR(B_UAV_06_F_CASE);
+        delete assembleInfo;
+    };
+    class B_UAV_06_medical_F: UAV_06_base_F {
+        AVAR(case) = QAVAR(B_UAV_06_medical_F_CASE);
+        delete assembleInfo;
+    };
+    class I_UAV_06_F: UAV_06_base_F {
+        AVAR(case) = QAVAR(I_UAV_06_F_CASE);
+        delete assembleInfo;
+    };
+    class I_UAV_06_medical_F: UAV_06_base_F {
+        AVAR(case) = QAVAR(I_UAV_06_medical_F_CASE);
+        delete assembleInfo;
+    };
+    class O_UAV_06_F: UAV_06_base_F {
+        AVAR(case) = QAVAR(O_UAV_06_F_CASE);
+        delete assembleInfo;
+    };
+    class O_UAV_06_medical_F: UAV_06_base_F {
+        AVAR(case) = QAVAR(O_UAV_06_medical_F_CASE);
+        delete assembleInfo;
+    };
+    class C_UAV_06_F: UAV_06_base_F {
+        AVAR(case) = QAVAR(C_UAV_06_F_CASE);
+        delete assembleInfo;
+    };
+    class C_UAV_06_medical_F: UAV_06_base_F {
+        AVAR(case) = QAVAR(C_UAV_06_medical_F_CASE);
+        delete assembleInfo;
+    };
 };
