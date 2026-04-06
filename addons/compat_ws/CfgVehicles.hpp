@@ -131,7 +131,7 @@ class CfgVehicles {
         };
     };
     class B_G_UAV_02_IED_lxWS: UAV_02_IED_Base_lxWS {
-        AVAR(case) = QGVAR(B_UAV_02_IED_lxWS_CASE);
+        AVAR(case) = QAVAR(B_UAV_02_IED_lxWS_CASE);
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(ied_init));
@@ -139,7 +139,7 @@ class CfgVehicles {
         };
     };
     class I_G_UAV_02_IED_lxWS: UAV_02_IED_Base_lxWS {
-        AVAR(case) = QGVAR(I_G_UAV_02_IED_lxWS_CASE);
+        AVAR(case) = QAVAR(I_G_UAV_02_IED_lxWS_CASE);
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(ied_init));
@@ -147,7 +147,7 @@ class CfgVehicles {
         };
     };
     class O_G_UAV_02_IED_lxWS: UAV_02_IED_Base_lxWS {
-        AVAR(case) = QGVAR(O_G_UAV_02_IED_lxWS_CASE);
+        AVAR(case) = QAVAR(O_G_UAV_02_IED_lxWS_CASE);
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(ied_init));
