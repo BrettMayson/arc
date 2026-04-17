@@ -23,7 +23,7 @@ if (_signal > 0.8) then {
 };
 
 // Signal is weak — increase power
-if (_signal <= 0.20) then {
+if (_signal <= 0.50) then {
     if (_powerIndex < (count _powerLevels) - 1) exitWith {
         private _newPower = _powerLevels select (_powerIndex + 1);
         _uav setVariable [QAVAR(power), _newPower, true];

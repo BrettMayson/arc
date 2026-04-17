@@ -30,11 +30,17 @@ private _power = _uav getVariable [QAVAR(power), 800];
     // Add a meter of height to the player, since the terminal is usually held at chest height
     _playerPos set [2, (_playerPos select 2) + 1.4];
 
-    private _signal = ([_freq, _power, getPosASL _uav, _playerPos] call FUNC(calc)) select 0;
-    [
-        linearConversion [0,0.7,_signal,0,1,true],
-        [_freq] call FUNC(maxRes)
-    ]
+    private _rf = [_freq, _power, getPosASL _uav, _playerPos] call FUNC(calc);
+    private _Lb = _rf select 1;
+
+    private _noiseFloor = -100;
+    private _snr = _Lb - _noiseFloor;
+
+    private _signal = 1 min (0 max (_snr / 30));
+
+    private _res = [_freq, _snr] call FUNC(effectiveRes);
+
+    [_signal, _res]
 }) params ["_signal", "_maxRes"];
 
 GVAR(ppResolution) ppEffectAdjust [_maxRes];

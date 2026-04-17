@@ -7,7 +7,7 @@ private _distance = _txPos distance _rxPos;
 private _Lfs = -27.55 + 20 * log(_f) + 20 * log(_distance);
 private _Ptx = 10 * (log ((_mW)/1000)) + 30;
 
-private _ituLoss = 36;
+private _ituLoss = [_f, _txPos, _rxPos] call FUNC(collision);
 
 private _Ltx = 3;
 private _Lrx = 3;
@@ -24,9 +24,5 @@ private _bottom = _sinadRating - (_Sl * _Slp);
 private _Snd = abs ((_bottom - (_Lb max _bottom)) / _Sl);
 private _Px = 100 min (0 max (_Snd * 100));
 _Px = _Px / 100;
-
-private _collision = [_f, _txPos, _rxPos] call FUNC(collision);
-
-_Px = _Px * (1 - _collision);
 
 [_Px, _Lb]
