@@ -27,10 +27,13 @@ private _power = _uav getVariable [QAVAR(power), 800];
     };
 
     private _playerPos = getPosASL ace_player;
-    // Add a meter of height to the player, since the terminal is usually held at chest height
-    _playerPos set [2, (_playerPos select 2) + 1.4];
+    private _terminalOffset = (ace_player selectionPosition "lwrist") select 0;
+    _playerPos set [2, (_playerPos select 2) + _terminalOffset];
 
-    private _rf = [_freq, _power, getPosASL _uav, _playerPos] call FUNC(calc);
+    private _uavPos = getPosASL _uav;
+    _uavPos set [2, (_uavPos select 2) + 0.1]; // Antennas don't rest on the ground
+
+    private _rf = [_freq, _power, _uavPos, _playerPos] call FUNC(calc);
     private _Lb = _rf select 1;
 
     private _noiseFloor = -100;

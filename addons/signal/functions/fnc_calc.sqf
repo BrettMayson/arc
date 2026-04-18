@@ -22,7 +22,6 @@ private _Slp = 0.075;
 
 private _bottom = _sinadRating - (_Sl * _Slp);
 private _Snd = abs ((_bottom - (_Lb max _bottom)) / _Sl);
-private _Px = 100 min (0 max (_Snd * 100));
-_Px = _Px / 100;
+private _Px = (100 min (0 max (_Snd * 100))) / 100;
 
 [_Px, _Lb]
