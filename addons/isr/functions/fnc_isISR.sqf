@@ -7,7 +7,6 @@ private _currentVehicle = vehicle ACE_player;
 if (_currentVehicle isEqualTo ACE_player) exitWith {false};
 
 if (cameraView != "GUNNER") exitWith {false};
-if ([ACE_player] call CBA_fnc_canUseWeapon) exitWith {false};
 
 private _vehConfig = configOf _currentVehicle;
 
@@ -20,15 +19,22 @@ private _turretConfig = [_currentVehicle, _turret] call CBA_fnc_getTurret;
 
 if ((isNumber (_turretConfig >> "optics")) && {(getNumber (_turretConfig >> "optics")) == 0}) exitWith {false};
 
+// FFV
+if (currentMuzzle ace_player == currentWeapon ace_player) exitWith {false};
+
 private _result = false;
 
-private _turretConfigOpticsIn = _turretConfig >> "OpticsIn";
-if (isClass _turretConfigOpticsIn) then {
-    for "_index" from 0 to (count _turretConfigOpticsIn - 1) do {
-        if ("NVG" in getArray (_turretConfigOpticsIn select _index >> "visionMode")) exitWith {_result = true};
+if (currentWeapon ace_player != "") then {
+    if (currentMuzzle ace_player == "") then {
+        /// Probably in a command slot with no weapon
+        _result = true;
     };
-} else {
-    // No OpticsIn usualy means RCWS, still need to test on more vehicles
+};
+
+private _turretConfigShowCursor = getNumber (_turretConfig >> "gunnerOpticsShowCursor");
+if (_turretConfigShowCursor == 0) then {
+    /// Probably has a screen, so no cursor
     _result = true;
 };
+
 _result
