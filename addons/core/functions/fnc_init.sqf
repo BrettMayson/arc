@@ -24,4 +24,6 @@ if !(_uav getVariable [QAVAR(init), false]) then {
     if (_defaultPowerOptions isNotEqualTo []) then {
         _uav setVariable [QAVAR(powerOptions), _defaultPowerOptions];
     };
+    private _mode = getNumber (_config >> QAVAR(mode));
+    _uav setVariable [QAVAR(mode), _mode];
 };
