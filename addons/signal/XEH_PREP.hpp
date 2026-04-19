@@ -5,3 +5,4 @@ PREP(effectiveRes);
 PREP(maxRes);
 PREP(pfh);
 PREP(satError);
+PREP(signal);
