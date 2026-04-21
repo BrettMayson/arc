@@ -6,11 +6,11 @@ private _steps = [160, 240, 360, 480, 720, 1080];
 
 // SNR → discrete stability bands (with built-in hysteresis via gaps)
 private _tier = switch (true) do {
-    case (_snr < 6): {0};
-    case (_snr < 11): {1};
-    case (_snr < 16): {2};
-    case (_snr < 22): {3};
-    case (_snr < 32): {4};
+    case (_snr < 11): {0};
+    case (_snr < 16): {1};
+    case (_snr < 22): {2};
+    case (_snr < 38): {3};
+    case (_snr < 52): {4};
     default {5};
 };
 
