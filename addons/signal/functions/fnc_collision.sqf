@@ -13,8 +13,8 @@ private _dir = vectorNormalized (_start vectorFromTo _end);
 // Frequency scaling
 private _frequencyRatio = linearConversion [10, 20000, _f, 0.5, 20, true];
 
-private _terrainLossPerHit = 0.2 * _frequencyRatio;
-private _objectLossPerHit  = 0.08 * _frequencyRatio;
+private _terrainLossPerHit = 10 * _frequencyRatio;
+private _objectLossPerHit  = 2 * _frequencyRatio;
 
 while {true} do {
     private _intersects = lineIntersectsSurfaces [
@@ -38,11 +38,11 @@ while {true} do {
         if (isNull _obj) then {
             private _depth = (getTerrainHeightASL _pos) - (_pos select 2);
             private _impact = linearConversion [0, 50, _depth, 1, 5, true];
-            _lossDb = _lossDb + (_terrainLossPerHit * _impact * 5);
+            _lossDb = _lossDb + (_terrainLossPerHit * _impact);
             _pos = _pos vectorAdd (_dir vectorMultiply 25);
         } else {
             _lossDb = _lossDb + _objectLossPerHit;
-            _pos = _pos vectorAdd (_dir vectorMultiply 2);
+            _pos = _pos vectorAdd (_dir vectorMultiply 4);
         };
     };
 
