@@ -18,3 +18,9 @@ workshop = [
     "497661914", # CUP Units
     "541888371", # CUP Vehicles
 ]
+
+[hemtt.launch.mk13]
+extends = "default"
+workshop = [
+    "2975055854" # Mk13 Secondary
+]

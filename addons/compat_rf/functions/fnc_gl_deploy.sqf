@@ -37,7 +37,17 @@ private _dir = getDir _unit;
     } else {
         private _fuel = parseNumber (((currentMagazineDetail _unit) splitString "([ ]/:)") select 2) + 1;
         if !(_deployed) then {
-            _unit removePrimaryWeaponItem currentMagazine _unit;
+            switch (currentWeapon _unit) do {
+                case primaryWeapon _unit: {
+                    _unit removePrimaryWeaponItem currentMagazine _unit;
+                };
+                case secondaryWeapon _unit: {
+                    _unit removeSecondaryWeaponItem currentMagazine _unit;
+                };
+                case handgunWeapon _unit: {
+                    _unit removeHandgunItem currentMagazine _unit;
+                };
+            };
         };
         _fuel + 1
     };
