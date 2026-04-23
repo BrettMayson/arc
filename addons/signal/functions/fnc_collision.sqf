@@ -17,7 +17,7 @@ private _terrainLossPerHit = 2.4 * _frequencyRatio;
 private _objectLossPerHit  = 1.2 * _frequencyRatio;
 
 while {true} do {
-    if (!_start isEqualType [] || {count _start != 3}) then {
+    if (!(_start isEqualType []) || {count _start != 3}) then {
         INFO_1(format ["%1: Invalid start position",_f]);
         break
     };
