@@ -20,7 +20,7 @@ private _turretConfig = [_currentVehicle, _turret] call CBA_fnc_getTurret;
 if ((isNumber (_turretConfig >> "optics")) && {(getNumber (_turretConfig >> "optics")) == 0}) exitWith {false};
 
 // FFV
-if (currentMuzzle ace_player == currentWeapon ace_player) exitWith {false};
+if (currentMuzzle ace_player == currentWeapon ace_player || currentMuzzle ace_player == (weaponState ace_player select 1)) exitWith {false};
 
 private _result = false;
 
