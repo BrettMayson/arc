@@ -198,5 +198,8 @@
             <Spanish>Distancia Máx Marcadores</Spanish>
             <Russian>Макс Дистанция Маркера</Russian>
         </Key>
+        <Key ID="STR_ARC_ISR_Setting_enableISR">
+            <English>Enable ISR Menu</English>
+        </Key>
     </Package>
 </Project>
