@@ -25,6 +25,15 @@ GVAR(menuStack) = [];
     }
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(enableISR),
+    "CHECKBOX",
+    LLSTRING(Setting_enableISR),
+    "ARC - ISR",
+    false,
+    1
+] call CBA_fnc_addSetting;
+
 _fnc_numpad = {
     params ["_line"];
     switch (_line) do {
