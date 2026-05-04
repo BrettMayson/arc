@@ -30,7 +30,7 @@ GVAR(menuStack) = [];
     "CHECKBOX",
     LLSTRING(Setting_enableISR),
     "ARC - ISR",
-    false,
+    true,
     1
 ] call CBA_fnc_addSetting;
 
