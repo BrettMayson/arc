@@ -1,5 +1,7 @@
 #include "..\script_component.hpp"
 
+if !GVAR(enableISR) exitWith { false };
+
 private _control = UAVControl getConnectedUAV ACE_player;
 if (_control#0 == ACE_player && _control#1 != "") exitWith { true };
 
