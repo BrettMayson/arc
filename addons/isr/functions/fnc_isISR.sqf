@@ -1,12 +1,12 @@
 #include "..\script_component.hpp"
 
-if !GVAR(enableISR) exitWith { false };
-
 private _control = UAVControl getConnectedUAV ACE_player;
 if (_control#0 == ACE_player && _control#1 != "") exitWith { true };
 
 private _currentVehicle = vehicle ACE_player;
 if (_currentVehicle isEqualTo ACE_player) exitWith {false};
+
+if !([true, false, (unitIsUAV _currentVehicle)] select GVAR(enableISR)) exitWith {};
 
 if (cameraView != "GUNNER") exitWith {false};
 
