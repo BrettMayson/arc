@@ -27,10 +27,10 @@ GVAR(menuStack) = [];
 
 [
     QGVAR(enableISR),
-    "CHECKBOX",
+    "LIST",
     LLSTRING(Setting_enableISR),
     "ARC - ISR",
-    true,
+    [[LLSTRING(enabled),LLSTRING(disabled),LLSTRING(uavOnly)],[0,1,2],0],
     1
 ] call CBA_fnc_addSetting;
 
