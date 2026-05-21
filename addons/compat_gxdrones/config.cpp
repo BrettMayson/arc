@@ -15,8 +15,7 @@ class CfgPatches {
             "gx_drones_uav_rq11b",
             "gx_drones_ugv_honeybadger",
             "gx_drones_ugv_themis",
-            "A3_Air_F_Exp_UAV_04",
-
+            "A3_Air_F_Exp_UAV_04"
         };
         skipWhenMissingDependencies = 1;
         author = "Cplhardcore";
