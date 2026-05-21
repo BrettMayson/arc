@@ -27,6 +27,13 @@ class CfgMagazines {
         descriptionShort = "Contains an OPFOR AR-2 Darter";
         AVAR(drone) = "O_UAV_01_F";
     };
+    class AVAR(C_IDAP_UAV_01_CASE): AVAR(base_darter) {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "AR-2 (IDAP)";
+        descriptionShort = "Contains a IDAP AR-2 Darter";
+        AVAR(drone) = "C_IDAP_UAV_01_F";
+    };
 
     // Pelican
     class AVAR(base_pelican): AVAR(base) {

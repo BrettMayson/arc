@@ -61,6 +61,10 @@ class CfgVehicles {
         AVAR(case) = QAVAR(O_UAV_01_CASE);
         delete assembleInfo;
     };
+    class C_IDAP_UAV_01_F: UAV_01_base_F {
+        AVAR(case) = QAVAR(C_IDAP_UAV_01_CASE);
+        delete assembleInfo;
+    };
 
     // Falcon
     class UAV_03_base_F: Helicopter_Base_F {
