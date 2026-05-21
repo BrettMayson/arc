@@ -24,3 +24,9 @@ extends = "default"
 workshop = [
     "2975055854" # Mk13 Secondary
 ]
+
+[hemtt.launch.gxdrones]
+extends = "default"
+workshop = [
+    "3460981677" # GX drones
+]
