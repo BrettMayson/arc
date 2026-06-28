@@ -198,5 +198,17 @@
             <Spanish>Distancia Máx Marcadores</Spanish>
             <Russian>Макс Дистанция Маркера</Russian>
         </Key>
+        <Key ID="STR_ARC_ISR_Setting_enableISR">
+            <English>Enable ISR Menu</English>
+        </Key>
+        <Key ID="STR_ARC_ISR_Enabled">
+            <English>Enabled</English>
+        </Key>
+        <Key ID="STR_ARC_ISR_Disabled">
+            <English>Disabled</English>
+        </Key>
+        <Key ID="STR_ARC_ISR_uavOnly">
+            <English>UAV Only</English>
+        </Key>
     </Package>
 </Project>

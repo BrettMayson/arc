@@ -25,6 +25,15 @@ GVAR(menuStack) = [];
     }
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(enableISR),
+    "LIST",
+    LLSTRING(Setting_enableISR),
+    "ARC - ISR",
+    [[LLSTRING(enabled),LLSTRING(disabled),LLSTRING(uavOnly)],[0,1,2],0],
+    1
+] call CBA_fnc_addSetting;
+
 _fnc_numpad = {
     params ["_line"];
     switch (_line) do {
