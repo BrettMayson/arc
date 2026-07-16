@@ -1,12 +1,13 @@
 #include "..\script_component.hpp"
 
 params ["_unit", "_params"];
-_params params ["_container", "_count", "_case"];
+_params params ["_container", "_count", "_case", "_isItem"];
 
-private _drone = [side _unit, _case] call FUNC(case_drone);
+private _drone = [side _unit, _case, _isItem] call FUNC(case_drone);
 if (_drone == "") exitWith {};
 
-private _deployType = getText (configFile >> "CfgMagazines" >> _case >> QAVAR(deployType));
+private _configParent = ["CfgMagazines", "CfgWeapons"] select (_isItem);
+private _deployType = getText (configFile >> _configParent >> _case >> QAVAR(deployType));
 if (_deployType == "") then { _deployType = "generic"; };
 
 private _droneCfg = configFile >> "CfgVehicles" >> _drone;
@@ -22,11 +23,15 @@ if (_time > 3) then {
 };
 [
     _time,
-    [_unit, _container, _drone, _case, _count, _deployType],
+    [_unit, _container, _drone, _case, _count, _deployType, _configParent],
     {
-        (_this select 0) params ["_unit", "_container", "_drone", "_case", "_count", "_deployType"];
+        (_this select 0) params ["_unit", "_container", "_drone", "_case", "_count", "_deployType", "_configParent"];
         if (local _unit) then {
-            _container addMagazineAmmoCargo [_case, -1, _count];
+            if (_configParent == "CfgWeapons") then {
+                _container addItemCargoGlobal [_case, -1];
+            } else {
+                _container addMagazineAmmoCargo [_case, -1, _count];
+            };
             private _pos = _unit modelToWorld [0,1,0];
             private _uav = if (_deployType == "mini") then {
                 private _uav = createVehicle [_drone, [0,0,0], [], 0, "FLY"];
@@ -42,7 +47,7 @@ if (_time > 3) then {
             _uav setVariable [QAVAR(deployed), true];
             createVehicleCrew _uav;
             [_uav, _count / 100] remoteExec ["setFuel", _uav];
-            private _deployed = getText (configFile >> "CfgMagazines" >> _case >> QAVAR(deployed));
+            private _deployed = getText (configFile >> _configParent >> _case >> QAVAR(deployed));
             if (_deployed == "") exitWith {};
             [{
                 (_this select 0) call compile (_this select 1);

@@ -1,8 +1,12 @@
 #include "..\script_component.hpp"
 
-params ["_side", "_case"];
+params ["_side", "_case", "_isItem"];
 
-private _dronePath = configFile >> "CfgMagazines" >> _case >> QAVAR(drone);
+private _dronePath = if (_isItem) then {
+    configFile >> "CfgWeapons" >> _case >> QAVAR(drone)
+} else {
+    configFile >> "CfgMagazines" >> _case >> QAVAR(drone)
+};
 
 private _drone = if (isArray _dronePath) then {
     private _sides = getArray _dronePath;

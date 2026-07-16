@@ -15,7 +15,7 @@ class CfgMagazines {
         mass = 20;
     };
 
-    class AVAR(base): CA_Magazine {
+    class AVAR(case_base): CA_Magazine {
         author = "ARC";
         count = 1;
         mass = 500;
