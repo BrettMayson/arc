@@ -22,21 +22,25 @@ class CfgVehicles {
         AVAR(noBattery) = 1;
         AVAR(isr) = QEFUNC(isr,vanilla);
     };
+
     class Car_F;
     class GX_HONEYBADGER_UGV_BASE: Car_F {
-        AVAR(mode) = "SAT";
+        AVAR(mode) = "LOS";
+        AVAR(power)[] = { 100, 200, 300, 400, 600, 800, 1200, 1800 };
+        AVAR(defaultPower) = 100;
+        AVAR(freq)[] = { 433, 915, 1200, 2400, 5800 };
+        AVAR(defaultFreq) = 1200;
         AVAR(noBattery) = 1;
         AVAR(isr) = QEFUNC(isr,vanilla);
     };
-    class StaticMortar;
-    class GX_HUNTER_SP_LAUNCHER_BASE: StaticMortar {
-        AVAR(mode) = "SAT";
-        AVAR(noBattery) = 1;
-        AVAR(isr) = QEFUNC(isr,vanilla);
-    };
+
     class Plane_Base_F;
     class GX_HUNTER_SP_UAV_BASE: Plane_Base_F {
-        AVAR(mode) = "SAT";
+        AVAR(mode) = "LOS";
+        AVAR(power)[] = { 100, 200, 300, 400, 600, 800, 1200, 1800 };
+        AVAR(defaultPower) = 100;
+        AVAR(freq)[] = { 433, 915, 1200, 2400, 5800 };
+        AVAR(defaultFreq) = 1200;
         AVAR(noBattery) = 1;
         AVAR(isr) = QEFUNC(isr,vanilla);
     };
@@ -49,9 +53,14 @@ class CfgVehicles {
         AVAR(noBattery) = 1;
         AVAR(isr) = QEFUNC(isr,vanilla);
     };
+
     class Tank_F;
     class GX_THEMIS_UGV_BASE: Tank_F {
-        AVAR(mode) = "SAT";
+        AVAR(mode) = "LOS";
+        AVAR(power)[] = { 5000, 10000, 15000, 20000, 30000, 40000, 50000 };
+        AVAR(defaultPower) = 5000;
+        AVAR(freq)[] = { 433, 915, 1200, 2400 };
+        AVAR(defaultFreq) = 1200;
         AVAR(noBattery) = 1;
         AVAR(isr) = QEFUNC(isr,vanilla);
     };
