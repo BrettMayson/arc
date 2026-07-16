@@ -15,7 +15,10 @@ class CfgPatches {
             "gx_drones_uav_rq11b",
             "gx_drones_ugv_honeybadger",
             "gx_drones_ugv_themis",
-            "A3_Air_F_Exp_UAV_04"
+            "A3_Air_F_Exp_UAV_04",
+
+            "gx_drones_core",
+            "gx_drones_compat_ace",
         };
         skipWhenMissingDependencies = 1;
         author = "Cplhardcore";
@@ -24,3 +27,17 @@ class CfgPatches {
 };
 
 #include "CfgVehicles.hpp"
+
+class CfgWeapons {
+    class ItemCore;
+    class GX_UAVBattery: ItemCore {
+        scope = 1;
+        scopeArsenal = 1;
+    };
+};
+class CfgFunctions {
+    delete GX;
+};
+class Extended_PreInit_EventHandlers {
+    delete GX_DRONES_COMPAT_ACE;
+};

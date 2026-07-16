@@ -1,4 +1,19 @@
 class CfgVehicles {
+    // Remove GV variants of vanilla UAVs
+    delete GX_B_UAV_AI;
+    delete GX_O_UAV_AI;
+    delete GX_I_UAV_AI;
+
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class ACE_Equipment {
+                delete ACE_GX_DRONES_EQUIPMENT;
+                delete ACE_GX_DRONES_COMMAND;
+            };
+        };
+    };
+
     class Helicopter_Base_F;
     class GX_BLACKHORNET_UAV_BASE: Helicopter_Base_F {
         AVAR(mode) = "LOS";
