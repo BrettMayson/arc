@@ -36,11 +36,10 @@ if (!_initialized) then {
             ) set [1,_ammoCount];
             _uav setVariable ["lxws_holdingWeapon",_holdingWeapon,true];
 
-            private "_recoil";
-            if (_weapon == _muzzle) then {
-                _recoil = getArray (configFile >> "CfgRecoils" >> getText (configFile >> "CfgWeapons" >> _weapon >> "recoil") >> "kickBack")
+            private _recoil = if (_weapon == _muzzle) then {
+                getArray (configFile >> "CfgRecoils" >> getText (configFile >> "CfgWeapons" >> _weapon >> "recoil") >> "kickBack")
             } else {
-                _recoil = getArray (configFile >> "CfgRecoils" >> getText (configFile >> "CfgWeapons" >> _weapon >> _muzzle >> "recoil") >> "kickBack")
+                getArray (configFile >> "CfgRecoils" >> getText (configFile >> "CfgWeapons" >> _weapon >> _muzzle >> "recoil") >> "kickBack")
             };
 
             _recoil = _recoil apply {

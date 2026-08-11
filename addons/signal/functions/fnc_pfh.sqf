@@ -23,14 +23,6 @@ GVAR(ppResolution) ppEffectAdjust [_maxRes];
 GVAR(ppResolution) ppEffectCommit 0.15;
 GVAR(ppResolution) ppEffectEnable true;
 AVAR(currentSignal) = _signal;
-// TODO remove after arma 2.22
-if ((productVersion select 2) < 222) then {
-    equipmentDisabled _uav params ["", "_ti"];
-    private _desired = _signal < GVAR(disableTISignal);
-    if (_desired != _ti) then {
-        _uav disableTIEquipment _desired;
-    };
-};
 if (_signal == 0) then {
     // Change the frequency to the lowest frequency
     private _freqOptions = _uav getVariable [QAVAR(freqOptions), []];
