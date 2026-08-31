@@ -34,7 +34,7 @@ GVAR(menuStack) = [];
     1
 ] call CBA_fnc_addSetting;
 
-_fnc_numpad = {
+private _fnc_numpad = {
     params ["_line"];
     switch (_line) do {
         case 0: { DIK_NUMPAD0 };

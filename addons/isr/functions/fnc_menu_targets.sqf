@@ -2,7 +2,7 @@
 
 params ["_command", "_arg"];
 
-_fnc_draw = {
+private _fnc_draw = {
     private _menu = [
         LLSTRING(Menu_Configuration_Targets)
     ];

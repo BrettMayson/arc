@@ -2,8 +2,7 @@
 
 params ["_command", "_arg"];
 
-_fnc_draw = {
-    private _channels = GVAR(vehicle) getVariable [QGVAR(markerChannels), DEFAULT_MARKER_CHANNELS];
+private _fnc_draw = {
     private _menu = [
         LLSTRING(Menu_Configuration_Markers),
         [LLSTRING(Menu_Configuration_Markers_Enabled), [GVAR(vehicle) getVariable [QGVAR(markerEnabled), true]] call FUNC(fmt_onoff)],

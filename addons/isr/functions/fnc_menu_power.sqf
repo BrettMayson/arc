@@ -2,7 +2,7 @@
 
 params ["_command", "_arg"];
 
-_fnc_options = {
+private _fnc_options = {
     private _currentFreq = GVAR(vehicle) getVariable [QAVAR(freq), 1300];
     private _currentPower = GVAR(vehicle) getVariable [QAVAR(power), 800];
     private _frequencyOptions = GVAR(vehicle) getVariable [QAVAR(freqOptions), []];
@@ -32,7 +32,7 @@ _fnc_options = {
     [_freqNext, _freqPrev, _powerNext, _powerPrev]
 };
 
-_fnc_draw = {
+private _fnc_draw = {
     private _options = call _fnc_options;
     [[
         LLSTRING(Menu_Configuration_Power),

@@ -2,7 +2,7 @@
 
 params ["_command", "_arg", ["_state", [0,[]]]];
 
-_fnc_draw = {
+private _fnc_draw = {
     _this params ["_length", "_grid"];
     if (_length == 0) exitWith {
         [[

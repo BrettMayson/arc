@@ -2,7 +2,7 @@
 
 params ["_command", "_arg", ["_state", []]];
 
-_fnc_draw = {
+private _fnc_draw = {
     params ["", "_label"];
     private _menu = [
         _label,

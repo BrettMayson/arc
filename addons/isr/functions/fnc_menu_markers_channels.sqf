@@ -2,7 +2,7 @@
 
 params ["_command", "_arg"];
 
-_fnc_availableChannels = {
+private _fnc_availableChannels = {
     private _available = [
         [LLSTRING(Menu_Configuration_Markers_Global), 0],
         [LLSTRING(Menu_Configuration_Markers_Side), 1],
@@ -20,7 +20,7 @@ _fnc_availableChannels = {
     _available
 };
 
-_fnc_draw = {
+private _fnc_draw = {
     private _channels = GVAR(vehicle) getVariable [QGVAR(markerChannels), DEFAULT_MARKER_CHANNELS];
     private _menu = [
         LLSTRING(Menu_Configuration_Markers_Channels)

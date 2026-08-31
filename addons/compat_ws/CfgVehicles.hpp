@@ -47,7 +47,7 @@ class CfgVehicles {
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(bustard_init));
-            killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+            killed = "call (uinamespace getvariable 'BIS_fnc_effectKilled');";
         };
     };
     class I_UAV_02_lxWS: UAV_02_Base_lxWS {
@@ -55,7 +55,7 @@ class CfgVehicles {
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(bustard_init));
-            killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+            killed = "call (uinamespace getvariable 'BIS_fnc_effectKilled');";
         };
     };
     class O_UAV_02_lxWS: UAV_02_Base_lxWS {
@@ -63,7 +63,7 @@ class CfgVehicles {
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(bustard_init));
-            killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+            killed = "call (uinamespace getvariable 'BIS_fnc_effectKilled');";
         };
     };
 
@@ -135,7 +135,7 @@ class CfgVehicles {
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(ied_init));
-            killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+            killed = "call (uinamespace getvariable 'BIS_fnc_effectKilled');";
         };
     };
     class I_G_UAV_02_IED_lxWS: UAV_02_IED_Base_lxWS {
@@ -143,7 +143,7 @@ class CfgVehicles {
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(ied_init));
-            killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+            killed = "call (uinamespace getvariable 'BIS_fnc_effectKilled');";
         };
     };
     class O_G_UAV_02_IED_lxWS: UAV_02_IED_Base_lxWS {
@@ -151,7 +151,7 @@ class CfgVehicles {
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(ied_init));
-            killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+            killed = "call (uinamespace getvariable 'BIS_fnc_effectKilled');";
         };
     };
 

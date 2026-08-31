@@ -11,7 +11,7 @@ class Extended_PreInit_EventHandlers {
 class Extended_Init_EventHandlers {
     class AllVehicles {
         class ADDON {
-            init = QUOTE(_this call FUNC(init));
+            init = QUOTE(call FUNC(init));
         };
     };
 };

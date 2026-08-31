@@ -3,7 +3,7 @@
 params ["_lines", ["_options", []]];
 _options params [["_showNumbers", true]];
 
-_fnc_spacing = {
+private _fnc_spacing = {
     params ["_key"];
     private _length = 14 - count _key;
     private _spacing = "";
