@@ -30,7 +30,7 @@ GVAR(menuStack) = [];
     "LIST",
     LLSTRING(Setting_enableISR),
     "ARC - ISR",
-    [[LLSTRING(enabled),LLSTRING(disabled),LLSTRING(uavOnly)],[0,1,2],0],
+    [[0,1,2],[LLSTRING(enabled),LLSTRING(disabled),LLSTRING(uavOnly)],0],
     1
 ] call CBA_fnc_addSetting;
 
