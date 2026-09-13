@@ -13,6 +13,12 @@ class CfgVehicles {
 
     // Bustard
     class UAV_02_Base_lxWS: Helicopter_Base_F {
+        AVAR(mode) = "LOS";
+        AVAR(power)[] = { 100, 200, 300, 400, 600, 800, 1200, 1800 };
+        AVAR(defaultPower) = 100;
+        AVAR(freq)[] = { 433, 915, 1200, 2400, 5800 };
+        AVAR(defaultFreq) = 1200;
+        AVAR(isr) = QEFUNC(isr,vanilla);
         class EventHandlers;
         class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {
@@ -43,7 +49,7 @@ class CfgVehicles {
         };
     };
     class B_UAV_02_lxWS: UAV_02_Base_lxWS {
-        AVAR(case) = QGVAR(B_UAV_02_lxWS_CASE);
+        AVAR(case) = QAVAR(B_UAV_02_lxWS_CASE);
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(bustard_init));
@@ -51,7 +57,7 @@ class CfgVehicles {
         };
     };
     class I_UAV_02_lxWS: UAV_02_Base_lxWS {
-        AVAR(case) = QGVAR(I_UAV_02_lxWS_CASE);
+        AVAR(case) = QAVAR(I_UAV_02_lxWS_CASE);
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(bustard_init));
@@ -59,7 +65,7 @@ class CfgVehicles {
         };
     };
     class O_UAV_02_lxWS: UAV_02_Base_lxWS {
-        AVAR(case) = QGVAR(O_UAV_02_lxWS_CASE);
+        AVAR(case) = QAVAR(O_UAV_02_lxWS_CASE);
         delete assembleInfo;
         class EventHandlers: EventHandlers {
             init = QUOTE([_this#0] call FUNC(bustard_init));
@@ -69,6 +75,12 @@ class CfgVehicles {
 
     // IED UAV
     class UAV_02_IED_Base_lxWS: UAV_02_Base_lxWS {
+        AVAR(mode) = "LOS";
+        AVAR(power)[] = { 100, 200, 300, 400, 600, 800, 1200, 1800 };
+        AVAR(defaultPower) = 100;
+        AVAR(freq)[] = { 433, 915, 1200, 2400, 5800 };
+        AVAR(defaultFreq) = 1200;
+        AVAR(isr) = QEFUNC(isr,vanilla);
         class EventHandlers: EventHandlers {};
         class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {
