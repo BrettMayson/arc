@@ -1,5 +1,7 @@
 # ARC - Advanced Remote Control
 
+[View on GitHub](https://github.com/BrettMayson/arc)
+
 A comprehensive UAV control system for Arma 3 that revolutionizes how players interact with unmanned vehicles. ARC transforms UAV gameplay with battery management, realistic signal simulation, and an advanced ISR system.
 
 ## Features

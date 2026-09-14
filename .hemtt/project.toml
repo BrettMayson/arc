@@ -3,6 +3,13 @@ author = "Brett"
 prefix = "arc"
 mainprefix = "z"
 
+[version]
+git_hash = 0
+
+[hemtt.publish]
+changelog = "CHANGELOG.md"
+description = "README.md"
+
 [hemtt.launch.default]
 workshop = [
     "3499977893", # ADT
