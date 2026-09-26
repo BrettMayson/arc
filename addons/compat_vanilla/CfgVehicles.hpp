@@ -261,9 +261,9 @@ class CfgVehicles {
     class Static_Designator_01_base_F: StaticWeapon {
         AVAR(mode) = "LOS";
         AVAR(power)[] = { 100, 200, 300, 400, 600, 800, 1200, 1800 };
-        AVAR(defaultPower) = 100;
+        AVAR(defaultPower) = 1200;
         AVAR(freq)[] = { 433, 915, 1200, 2400, 5800 };
-        AVAR(defaultFreq) = 1200;
+        AVAR(defaultFreq) = 915;
         AVAR(isr) = QEFUNC(isr,designator);
         AVAR(noBattery) = 1;
         class ACE_Actions: ACE_Actions {
@@ -283,9 +283,9 @@ class CfgVehicles {
     class Static_Designator_02_base_F: StaticWeapon {
         AVAR(mode) = "LOS";
         AVAR(power)[] = { 100, 200, 300, 400, 600, 800, 1200, 1800 };
-        AVAR(defaultPower) = 100;
+        AVAR(defaultPower) = 1200;
         AVAR(freq)[] = { 433, 915, 1200, 2400, 5800 };
-        AVAR(defaultFreq) = 1200;
+        AVAR(defaultFreq) = 915;
         AVAR(isr) = QEFUNC(isr,designator);
         AVAR(noBattery) = 1;
         class ACE_Actions: ACE_Actions {
