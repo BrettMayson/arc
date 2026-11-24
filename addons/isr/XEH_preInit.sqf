@@ -34,6 +34,15 @@ GVAR(menuStack) = [];
     1
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(showTargets),
+    "CHECKBOX",
+    [LLSTRING(Setting_ShowTargets), LLSTRING(Setting_ShowTargets_Description)],
+    "ARC - ISR",
+    true,
+    0
+] call CBA_fnc_addSetting;
+
 private _fnc_numpad = {
     params ["_line"];
     switch (_line) do {
@@ -50,24 +59,12 @@ private _fnc_numpad = {
     };
 };
 
-[
-    "ARC - ISR",
-    QGVAR(menuLine0),
-    "Back / Exit",
-    {
-        _this call FUNC(menu_keybind);
-    },
-    {},
-    [[0] call _fnc_numpad, [false, false, false]]
-] call CBA_fnc_addKeybind;
-for "_i" from 1 to 9 do {
+for "_i" from 0 to 9 do {
     [
         "ARC - ISR",
         format [QGVAR(menuLine%1), _i],
-        format ["Menu %1", _i],
-        {
-            _this call FUNC(menu_keybind);
-        },
+        [format [LLSTRING(Keybind_MenuLine), _i], LLSTRING(Keybind_Back)] select (_i == 0),
+        compile format ["[%1] call %2", _i, QFUNC(menu_keybind)],
         {},
         [[_i] call _fnc_numpad, [false, false, false]]
     ] call CBA_fnc_addKeybind;

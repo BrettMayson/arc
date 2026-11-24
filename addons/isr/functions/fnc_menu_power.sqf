@@ -3,10 +3,10 @@
 params ["_command", "_arg"];
 
 private _fnc_options = {
-    private _currentFreq = GVAR(vehicle) getVariable [QAVAR(freq), 1300];
-    private _currentPower = GVAR(vehicle) getVariable [QAVAR(power), 800];
-    private _frequencyOptions = GVAR(vehicle) getVariable [QAVAR(freqOptions), []];
-    private _powerOptions = GVAR(vehicle) getVariable [QAVAR(powerOptions), []];
+    private _currentFreq = GVAR(vehicle) getVariable [QAVAR(freq), DEFAULT_FREQ];
+    private _currentPower = GVAR(vehicle) getVariable [QAVAR(power), DEFAULT_POWER];
+    private _frequencyOptions = GVAR(vehicle) getVariable [QAVAR(freqOptions), DEFAULT_FREQ_OPTIONS];
+    private _powerOptions = GVAR(vehicle) getVariable [QAVAR(powerOptions), DEFAULT_POWER_OPTIONS];
     private _freqCurrent = _frequencyOptions find _currentFreq;
     private _powerCurrent = _powerOptions find _currentPower;
     private _freqNext = if (_frequencyOptions isNotEqualTo []) then {

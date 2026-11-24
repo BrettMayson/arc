@@ -6,6 +6,7 @@ private _uav = GVAR(uav);
 
 if (isNull _uav) exitWith {
     [_handle] call CBA_fnc_removePerFrameHandler;
+    GVAR(pfh) = -1;
     GVAR(ppResolution) ppEffectEnable false;
 };
 
@@ -24,18 +25,17 @@ GVAR(ppResolution) ppEffectCommit 0.15;
 GVAR(ppResolution) ppEffectEnable true;
 AVAR(currentSignal) = _signal;
 if (_signal == 0) then {
-    // Change the frequency to the lowest frequency
-    private _freqOptions = _uav getVariable [QAVAR(freqOptions), []];
-    private _currentFreq = _uav getVariable [QAVAR(freq), 1300];
-    private _lowestFreq = _freqOptions select 0;
-    if (_currentFreq != _lowestFreq) then {
+    // Try the lowest frequency before losing the connection
+    private _lowestFreq = selectMin (_uav getVariable [QAVAR(freqOptions), DEFAULT_FREQ_OPTIONS]);
+    private _currentFreq = _uav getVariable [QAVAR(freq), DEFAULT_FREQ];
+    if (AVAR(mode) == "LOS" && {_currentFreq != _lowestFreq}) then {
         _uav setVariable [QAVAR(freq), _lowestFreq, true];
     } else {
         ace_player remoteControl objNull;
     };
 };
 
-if (AVAR(mode) == "LOS" && _uav getVariable [QAVAR(autoAdjust), false] && GVAR(nextSignalAdjust) < time) then {
+if (AVAR(mode) == "LOS" && {_uav getVariable [QAVAR(autoAdjust), false]} && {GVAR(nextSignalAdjust) < time}) then {
     GVAR(nextSignalAdjust) = time + 3;
     [_uav, _signal] call FUNC(adjust);
 };

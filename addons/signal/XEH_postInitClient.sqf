@@ -12,19 +12,22 @@ GVAR(ppResolution) = ppEffectCreate ["Resolution", 2012];
         if (GVAR(pfh) != -1) then {
             [GVAR(pfh)] call CBA_fnc_removePerFrameHandler;
             GVAR(pfh) = -1;
-            GVAR(ppResolution) ppEffectEnable false;
         };
+        GVAR(ppResolution) ppEffectEnable false;
     };
-    if ((!isNull _uav) && isNull GVAR(uav)) then {
-        GVAR(uav) = _uav;
-        private _config = configOf _uav;
-        private _mode = getText (_config >> QAVAR(mode));
-        if (_mode == "SAT") then {
-            AVAR(mode) = "SAT";
-            GVAR(satCacheExpiry) = 0;
-        } else {
-            AVAR(mode) = "LOS";
-        };
-        GVAR(pfh) = [{ call FUNC(pfh)}, 0.25] call CBA_fnc_addPerFrameHandler;
+    // Changing seats in the same UAV
+    if (_uav isEqualTo GVAR(uav)) exitWith {};
+
+    // New UAV, which may be a direct switch from another one
+    GVAR(uav) = _uav;
+    if (getText (configOf _uav >> QAVAR(mode)) == "SAT") then {
+        AVAR(mode) = "SAT";
+        GVAR(satCacheExpiry) = 0;
+    } else {
+        AVAR(mode) = "LOS";
+    };
+    AVAR(currentSignal) = 1;
+    if (GVAR(pfh) == -1) then {
+        GVAR(pfh) = [{ call FUNC(pfh) }, 0.25] call CBA_fnc_addPerFrameHandler;
     };
 }] call CBA_fnc_addEventHandler;

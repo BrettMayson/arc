@@ -3,6 +3,6 @@ class RscText;
 
 class RscInGameUI {
     class RscUnitInfo;
-    #include "UI/DarterDriver.hpp"
-    #include "UI/DarterTurret.hpp"
+    #include "UI\DarterDriver.hpp"
+    #include "UI\DarterTurret.hpp"
 };

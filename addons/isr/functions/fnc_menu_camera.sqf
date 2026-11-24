@@ -6,7 +6,8 @@ private _fnc_draw = {
     private _menu = [
         LLSTRING(Menu_Configuration_Camera),
         LLSTRING(Menu_Configuration_Camera_Move),
-        LLSTRING(Menu_Configuration_Camera_Lock)
+        LLSTRING(Menu_Configuration_Camera_Lock),
+        LLSTRING(Menu_Configuration_Camera_Unlock)
     ];
     [_menu] call FUNC(menu_draw);
 };
@@ -19,20 +20,15 @@ switch (_command) do {
     };
     case "return": {
         _arg params ["_from", "_ret"];
-        if (_state select 0 == "move to grid" && _from == "grid" && _ret isNotEqualTo [] && (_ret select 0) != 0) then {
+        private _mode = _state select 0;
+        if (_mode in ["move to grid", "lock to grid"] && _from == "grid" && _ret isNotEqualTo [] && {(_ret select 0) != 0}) then {
             private _pos = (_ret select 1 call BIS_fnc_gridToPos) select 0;
             _pos set [2, getTerrainHeightASL _pos];
             GVAR(vehicle) enableDirectionStabilization [true, [0]];
-            GVAR(vehicle) lockCameraTo [_pos, [0], true];
-            _state set [0, ""];
+            // Move: the lock is released as soon as the operator moves the camera
+            GVAR(vehicle) lockCameraTo [_pos, [0], _mode == "move to grid"];
         };
-        if (_state select 0 == "lock to grid" && _from == "grid" && _ret isNotEqualTo [] && (_ret select 0) != 0) then {
-            private _pos = (_ret select 1 call BIS_fnc_gridToPos) select 0;
-            _pos set [2, getTerrainHeightASL _pos];
-            GVAR(vehicle) enableDirectionStabilization [true, [0]];
-            GVAR(vehicle) lockCameraTo [_pos, [0], true];
-            _state set [0, ""];
-        };
+        _state set [0, ""];
         call _fnc_draw;
     };
     case "key": {
@@ -44,6 +40,9 @@ switch (_command) do {
             case 2: {
                 _state set [0, "lock to grid"];
                 ["open", "camera"] call FUNC(menu_grid);
+            };
+            case 3: {
+                GVAR(vehicle) lockCameraTo [objNull, [0]];
             };
         };
     };

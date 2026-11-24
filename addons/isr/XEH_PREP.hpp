@@ -1,3 +1,4 @@
+PREP(designator);
 PREP(getAltitude);
 PREP(getSpeed);
 PREP(isISR);

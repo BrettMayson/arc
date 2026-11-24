@@ -81,10 +81,20 @@
             <Spanish>Desarmar 4</Spanish>
             <Russian>Разрядить 4</Russian>
         </Key>
+        <Key ID="STR_ARC_Core_UAV_Grab">
+            <English>Grab</English>
+            <Spanish>Agarrar</Spanish>
+            <Russian>Взять</Russian>
+        </Key>
         <Key ID="STR_ARC_Core_UAV_Pack">
             <English>Pack</English>
             <Spanish>Empacar</Spanish>
             <Russian>Упаковать</Russian>
+        </Key>
+        <Key ID="STR_ARC_Core_UAV_Packing">
+            <English>Packing %1</English>
+            <Spanish>Empacando %1</Spanish>
+            <Russian>Упаковка %1</Russian>
         </Key>
     </Package>
 </Project>

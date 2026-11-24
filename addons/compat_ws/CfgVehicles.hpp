@@ -166,10 +166,4 @@ class CfgVehicles {
             killed = "call (uinamespace getvariable 'BIS_fnc_effectKilled');";
         };
     };
-
-    // Pelican
-    class UAV_06_base_F: Helicopter_Base_F {
-        #include "..\core\actions\pack.hpp"
-        #include "..\core\actions\battery.hpp"
-    };
 };

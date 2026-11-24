@@ -17,7 +17,7 @@ class CfgVehicles {
         class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {
                 class AVAR(grab) {
-                    displayName = "Grab";
+                    displayName = ECSTRING(core,UAV_Grab);
                     distance = 4;
                     condition = QUOTE([ARR_2(_player,_target)] call FUNC(mini_grabCondition));
                     statement = QUOTE([ARR_2(_player,_target)] call FUNC(mini_grab));

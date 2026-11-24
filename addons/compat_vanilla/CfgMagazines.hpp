@@ -9,29 +9,29 @@ class CfgMagazines {
     class AVAR(B_UAV_01_CASE): AVAR(case_base_darter) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AR-2 (BLUFOR)";
-        descriptionShort = "Contains a BLUFOR AR-2 Darter";
+        displayName = CSTRING(B_UAV_01_CASE_DisplayName);
+        descriptionShort = CSTRING(B_UAV_01_CASE_Description);
         AVAR(drone) = "B_UAV_01_F";
     };
     class AVAR(I_UAV_01_CASE): AVAR(case_base_darter) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AR-2 (INDEP)";
-        descriptionShort = "Contains an INDEP AR-2 Darter";
+        displayName = CSTRING(I_UAV_01_CASE_DisplayName);
+        descriptionShort = CSTRING(I_UAV_01_CASE_Description);
         AVAR(drone) = "I_UAV_01_F";
     };
     class AVAR(O_UAV_01_CASE): AVAR(case_base_darter) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AR-2 (OPFOR)";
-        descriptionShort = "Contains an OPFOR AR-2 Darter";
+        displayName = CSTRING(O_UAV_01_CASE_DisplayName);
+        descriptionShort = CSTRING(O_UAV_01_CASE_Description);
         AVAR(drone) = "O_UAV_01_F";
     };
     class AVAR(C_IDAP_UAV_01_CASE): AVAR(case_base_darter) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AR-2 (IDAP)";
-        descriptionShort = "Contains a IDAP AR-2 Darter";
+        displayName = CSTRING(C_IDAP_UAV_01_CASE_DisplayName);
+        descriptionShort = CSTRING(C_IDAP_UAV_01_CASE_Description);
         AVAR(drone) = "C_IDAP_UAV_01_F";
     };
 
@@ -44,57 +44,57 @@ class CfgMagazines {
     class AVAR(B_UAV_06_F_CASE): AVAR(case_base_pelican) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AL-6 (BLUFOR)";
-        descriptionShort = "Contains a BLUFOR AL-6";
+        displayName = CSTRING(B_UAV_06_F_CASE_DisplayName);
+        descriptionShort = CSTRING(B_UAV_06_F_CASE_Description);
         AVAR(drone) = "B_UAV_06_F";
     };
     class AVAR(B_UAV_06_medical_F_CASE): AVAR(case_base_pelican) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AL-6 Medical (BLUFOR)";
-        descriptionShort = "Contains a BLUFOR AL-6 Medical";
+        displayName = CSTRING(B_UAV_06_medical_F_CASE_DisplayName);
+        descriptionShort = CSTRING(B_UAV_06_medical_F_CASE_Description);
         AVAR(drone) = "B_UAV_06_medical_F";
     };
     class AVAR(I_UAV_06_F_CASE): AVAR(case_base_pelican) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AL-6 (INDEP)";
-        descriptionShort = "Contains an INDEP AL-6";
+        displayName = CSTRING(I_UAV_06_F_CASE_DisplayName);
+        descriptionShort = CSTRING(I_UAV_06_F_CASE_Description);
         AVAR(drone) = "I_UAV_06_F";
     };
     class AVAR(I_UAV_06_medical_F_CASE): AVAR(case_base_pelican) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AL-6 Medical (INDEP)";
-        descriptionShort = "Contains an INDEP AL-6 Medical";
+        displayName = CSTRING(I_UAV_06_medical_F_CASE_DisplayName);
+        descriptionShort = CSTRING(I_UAV_06_medical_F_CASE_Description);
         AVAR(drone) = "I_UAV_06_medical_F";
     };
     class AVAR(O_UAV_06_F_CASE): AVAR(case_base_pelican) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AL-6 (OPFOR)";
-        descriptionShort = "Contains an OPFOR AL-6";
+        displayName = CSTRING(O_UAV_06_F_CASE_DisplayName);
+        descriptionShort = CSTRING(O_UAV_06_F_CASE_Description);
         AVAR(drone) = "O_UAV_06_F";
     };
     class AVAR(O_UAV_06_medical_F_CASE): AVAR(case_base_pelican) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AL-6 Medical (OPFOR)";
-        descriptionShort = "Contains an OPFOR AL-6 Medical";
+        displayName = CSTRING(O_UAV_06_medical_F_CASE_DisplayName);
+        descriptionShort = CSTRING(O_UAV_06_medical_F_CASE_Description);
         AVAR(drone) = "O_UAV_06_medical_F";
     };
     class AVAR(C_UAV_06_F_CASE): AVAR(case_base_pelican) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AL-6 (CIVILIAN)";
-        descriptionShort = "Contains a CIVILIAN AL-6";
+        displayName = CSTRING(C_UAV_06_F_CASE_DisplayName);
+        descriptionShort = CSTRING(C_UAV_06_F_CASE_Description);
         AVAR(drone) = "C_UAV_06_F";
     };
     class AVAR(C_UAV_06_medical_F_CASE): AVAR(case_base_pelican) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AL-6 Medical (CIVILIAN)";
-        descriptionShort = "Contains a CIVILIAN AL-6 Medical";
+        displayName = CSTRING(C_UAV_06_medical_F_CASE_DisplayName);
+        descriptionShort = CSTRING(C_UAV_06_medical_F_CASE_Description);
         AVAR(drone) = "C_UAV_06_medical_F";
     };
 };

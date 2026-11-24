@@ -37,6 +37,16 @@
             <Spanish>VEL [%1]:</Spanish>
             <Russian>СКОР [%1]:</Russian>
         </Key>
+        <Key ID="STR_ARC_ISR_Keybind_Back">
+            <English>Back / Exit</English>
+            <Spanish>Atrás / Salir</Spanish>
+            <Russian>Назад / Выход</Russian>
+        </Key>
+        <Key ID="STR_ARC_ISR_Keybind_MenuLine">
+            <English>Menu %1</English>
+            <Spanish>Menú %1</Spanish>
+            <Russian>Меню %1</Russian>
+        </Key>
         <Key ID="STR_ARC_ISR_Menu">
             <English>ISR MENU</English>
             <Spanish>MENÚ ISR</Spanish>
@@ -91,6 +101,11 @@
             <English>MOVE TO GRID</English>
             <Spanish>MOVER A COORD</Spanish>
             <Russian>ПЕРЕМ В КВАДРАТ</Russian>
+        </Key>
+        <Key ID="STR_ARC_ISR_Menu_Configuration_Camera_Unlock">
+            <English>UNLOCK CAMERA</English>
+            <Spanish>LIBERAR CÁMARA</Spanish>
+            <Russian>РАЗБЛ КАМЕР</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Menu_Configuration_Markers">
             <English>MARKERS</English>
@@ -203,6 +218,16 @@
             <English>Max Marker Distance</English>
             <Spanish>Distancia Máx Marcadores</Spanish>
             <Russian>Макс Дистанция Маркера</Russian>
+        </Key>
+        <Key ID="STR_ARC_ISR_Setting_ShowTargets">
+            <English>Show Sensor Targets</English>
+            <Spanish>Mostrar objetivos de sensores</Spanish>
+            <Russian>Показывать цели сенсоров</Russian>
+        </Key>
+        <Key ID="STR_ARC_ISR_Setting_ShowTargets_Description">
+            <English>Draw sensor targets and ACE laser codes in the ISR view</English>
+            <Spanish>Mostrar objetivos de sensores y códigos láser de ACE en la vista ISR</Spanish>
+            <Russian>Отображать цели сенсоров и лазерные коды ACE в режиме ISR</Russian>
         </Key>
         <Key ID="STR_ARC_ISR_Setting_enableISR">
             <English>Enable ISR Menu</English>

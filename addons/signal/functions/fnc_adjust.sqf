@@ -2,13 +2,22 @@
 
 params ["_uav", "_signal"];
 
-private _currentFreq = _uav getVariable [QAVAR(freq), 1300];
-private _currentPower = _uav getVariable [QAVAR(power), 800];
-private _powerLevels = _uav getVariable [QAVAR(powerOptions), [200, 300, 400, 600, 800, 1200, 1800]];
-private _freqLevels = _uav getVariable [QAVAR(freqOptions), [433, 915, 1200, 2400, 5800]];
+private _currentFreq = _uav getVariable [QAVAR(freq), DEFAULT_FREQ];
+private _currentPower = _uav getVariable [QAVAR(power), DEFAULT_POWER];
+private _powerLevels = _uav getVariable [QAVAR(powerOptions), DEFAULT_POWER_OPTIONS];
+private _freqLevels = _uav getVariable [QAVAR(freqOptions), DEFAULT_FREQ_OPTIONS];
 
-private _powerIndex = _powerLevels find _currentPower;
-private _freqIndex = _freqLevels find _currentFreq;
+// Index of the value, or of the closest level if the value isn't one of the levels
+private _fnc_levelIndex = {
+    params ["_levels", "_value"];
+    private _index = _levels find _value;
+    if (_index != -1) exitWith {_index};
+    private _distances = _levels apply {abs (_x - _value)};
+    _distances find (selectMin _distances)
+};
+
+private _powerIndex = [_powerLevels, _currentPower] call _fnc_levelIndex;
+private _freqIndex = [_freqLevels, _currentFreq] call _fnc_levelIndex;
 
 // Signal is very strong — try to reduce power
 if (_signal > 0.8) then {

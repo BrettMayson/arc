@@ -11,22 +11,22 @@ class CfgMagazines {
     class AVAR(B_UAV_02_lxWS_CASE): AVAR(case_base_bustard) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AP-5 (BLUFOR)";
-        descriptionShort = "Contains a BLUFOR AP-5";
+        displayName = CSTRING(B_UAV_02_lxWS_CASE_DisplayName);
+        descriptionShort = CSTRING(B_UAV_02_lxWS_CASE_Description);
         AVAR(drone) = "B_UAV_02_lxWS";
     };
     class AVAR(I_UAV_02_lxWS_CASE): AVAR(case_base_bustard) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AP-5 (INDEP)";
-        descriptionShort = "Contains an INDEP AP-5";
+        displayName = CSTRING(I_UAV_02_lxWS_CASE_DisplayName);
+        descriptionShort = CSTRING(I_UAV_02_lxWS_CASE_Description);
         AVAR(drone) = "I_UAV_02_lxWS";
     };
     class AVAR(O_UAV_02_lxWS_CASE): AVAR(case_base_bustard) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AP-5 (OPFOR)";
-        descriptionShort = "Contains an OPFOR AP-5";
+        displayName = CSTRING(O_UAV_02_lxWS_CASE_DisplayName);
+        descriptionShort = CSTRING(O_UAV_02_lxWS_CASE_Description);
         AVAR(drone) = "O_UAV_02_lxWS";
     };
 
@@ -40,22 +40,22 @@ class CfgMagazines {
     class AVAR(B_UAV_02_IED_lxWS_CASE): AVAR(case_base_ied) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AP-5 IED (BLUFOR)";
-        descriptionShort = "Contains a BLUFOR AP-5 IED";
+        displayName = CSTRING(B_UAV_02_IED_lxWS_CASE_DisplayName);
+        descriptionShort = CSTRING(B_UAV_02_IED_lxWS_CASE_Description);
         AVAR(drone) = "B_G_UAV_02_IED_lxWS";
     };
     class AVAR(I_G_UAV_02_IED_lxWS_CASE): AVAR(case_base_ied) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AP-5 IED (INDEP)";
-        descriptionShort = "Contains an INDEP AP-5 IED";
+        displayName = CSTRING(I_G_UAV_02_IED_lxWS_CASE_DisplayName);
+        descriptionShort = CSTRING(I_G_UAV_02_IED_lxWS_CASE_Description);
         AVAR(drone) = "I_G_UAV_02_IED_lxWS";
     };
     class AVAR(O_G_UAV_02_IED_lxWS_CASE): AVAR(case_base_ied) {
         scope = 2;
         scopeCurator = 2;
-        displayName = "AP-5 IED (OPFOR)";
-        descriptionShort = "Contains an OPFOR AP-5 IED";
+        displayName = CSTRING(O_G_UAV_02_IED_lxWS_CASE_DisplayName);
+        descriptionShort = CSTRING(O_G_UAV_02_IED_lxWS_CASE_Description);
         AVAR(drone) = "O_G_UAV_02_IED_lxWS";
     };
 };

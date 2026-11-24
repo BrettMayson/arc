@@ -1,8 +1,8 @@
 #include "..\script_component.hpp"
 
-if !(call FUNC(isISR)) exitWith {false};
+params ["_line"];
 
-private _line = parseNumber ((_this select 6) select [count (_this select 6) - 8,1]);
+if !(call FUNC(isISR)) exitWith {false};
 
 if (count GVAR(menuStack) == 0) exitWith {
     ["open", _line, []] call FUNC(menu_main);

@@ -8,9 +8,7 @@ private _children = [];
     private _container = _x;
     {
         _x params ["_class", "_count"];
-        if (_class != QAVAR(battery)) exitWith {
-            continue;
-        };
+        if (_class != QAVAR(battery)) then { continue; };
         _children pushBack [
             [
                 format ["battery_%1", _forEachIndex],

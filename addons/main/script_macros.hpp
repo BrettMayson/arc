@@ -19,6 +19,12 @@
 
 #define DEFAULT_DISTANCE 4
 
+// Signal defaults, used when a UAV has no ARC config
+#define DEFAULT_FREQ 1200
+#define DEFAULT_POWER 800
+#define DEFAULT_FREQ_OPTIONS [433, 915, 1200, 2400, 5800]
+#define DEFAULT_POWER_OPTIONS [200, 300, 400, 600, 800, 1200, 1800]
+
 // ACE3 reference macros
 #define ACE_PREFIX ace
 

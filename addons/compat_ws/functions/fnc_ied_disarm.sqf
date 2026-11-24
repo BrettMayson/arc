@@ -2,7 +2,7 @@
 
 params ["_unit", "_uav", "_slot"];
 
-if ([_unit, _uav, _slot] call FUNC(ied_armCondition)) exitWith { false };
+if !([_unit, _uav, _slot] call FUNC(ied_disarmCondition)) exitWith { false };
 
 _unit playActionNow "putDown";
 
@@ -21,12 +21,6 @@ private _playerMag = switch (_uavMag) do {
 };
 
 private _weapon = getText (configFile >> "CfgMagazines" >> _uavMag >> "pylonWeapon");
-[[_uav, _slot, _uavMag, _weapon],{
-    params ["_uav", "_slot", "_uavMag", "_weapon"];
-    _uav setPylonLoadout [_slot, ""];
-    if ((getAllPylonsInfo _uav findIf {_x#3 == _uavMag and _x#4 > 0}) == -1) then {
-        _uav removeWeapon _weapon;
-    };
-}] remoteExecCall ["call"];
+[QGVAR(clearPylon), [_uav, _slot, _uavMag, _weapon]] call CBA_fnc_globalEvent;
 
 [_unit, _playerMag] call EFUNC(core,addMagazine);

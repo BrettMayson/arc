@@ -2,12 +2,14 @@
 
 params ["_uav", "_operator"];
 
-private _freq = _uav getVariable [QAVAR(freq), 1300];
-private _power = _uav getVariable [QAVAR(power), 800];
+private _freq = _uav getVariable [QAVAR(freq), DEFAULT_FREQ];
+private _power = _uav getVariable [QAVAR(power), DEFAULT_POWER];
 
+// The terminal is held at wrist height
 private _operatorPos = getPosASL _operator;
-private _terminalOffset = (_operator selectionPosition "lwrist") select 0;
-_operatorPos set [2, (_operatorPos select 2) + _terminalOffset];
+private _terminalHeight = (_operator selectionPosition "lwrist") select 2;
+if (_terminalHeight <= 0) then { _terminalHeight = 1.3; };
+_operatorPos set [2, (_operatorPos select 2) + _terminalHeight];
 
 private _uavPos = getPosASL _uav;
 _uavPos set [2, (_uavPos select 2) + 0.1]; // Antennas don't rest on the ground

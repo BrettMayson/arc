@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ARC">
+    <Package name="Compat_Vanilla">
+        <Key ID="STR_ARC_Compat_Vanilla_B_Static_Designator_01_F_CASE_DisplayName">
+            <English>Remote Designator (BLUFOR)</English>
+            <Spanish>Designador remoto (BLUFOR)</Spanish>
+            <Russian>Дистанционный целеуказатель (BLUFOR)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_B_UAV_01_CASE_Description">
+            <English>Contains a BLUFOR AR-2 Darter</English>
+            <Spanish>Contiene un AR-2 Darter (BLUFOR)</Spanish>
+            <Russian>Содержит AR-2 Darter (BLUFOR)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_B_UAV_01_CASE_DisplayName">
+            <English>AR-2 (BLUFOR)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_B_UAV_06_F_CASE_Description">
+            <English>Contains a BLUFOR AL-6</English>
+            <Spanish>Contiene un AL-6 (BLUFOR)</Spanish>
+            <Russian>Содержит AL-6 (BLUFOR)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_B_UAV_06_F_CASE_DisplayName">
+            <English>AL-6 (BLUFOR)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_B_UAV_06_medical_F_CASE_Description">
+            <English>Contains a BLUFOR AL-6 Medical</English>
+            <Spanish>Contiene un AL-6 Medical (BLUFOR)</Spanish>
+            <Russian>Содержит AL-6 Medical (BLUFOR)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_B_UAV_06_medical_F_CASE_DisplayName">
+            <English>AL-6 Medical (BLUFOR)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_C_IDAP_UAV_01_CASE_Description">
+            <English>Contains a IDAP AR-2 Darter</English>
+            <Spanish>Contiene un AR-2 Darter (IDAP)</Spanish>
+            <Russian>Содержит AR-2 Darter (IDAP)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_C_IDAP_UAV_01_CASE_DisplayName">
+            <English>AR-2 (IDAP)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_C_UAV_06_F_CASE_Description">
+            <English>Contains a CIVILIAN AL-6</English>
+            <Spanish>Contiene un AL-6 (CIVILIAN)</Spanish>
+            <Russian>Содержит AL-6 (CIVILIAN)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_C_UAV_06_F_CASE_DisplayName">
+            <English>AL-6 (CIVILIAN)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_C_UAV_06_medical_F_CASE_Description">
+            <English>Contains a CIVILIAN AL-6 Medical</English>
+            <Spanish>Contiene un AL-6 Medical (CIVILIAN)</Spanish>
+            <Russian>Содержит AL-6 Medical (CIVILIAN)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_C_UAV_06_medical_F_CASE_DisplayName">
+            <English>AL-6 Medical (CIVILIAN)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_I_UAV_01_CASE_Description">
+            <English>Contains an INDEP AR-2 Darter</English>
+            <Spanish>Contiene un AR-2 Darter (INDEP)</Spanish>
+            <Russian>Содержит AR-2 Darter (INDEP)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_I_UAV_01_CASE_DisplayName">
+            <English>AR-2 (INDEP)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_I_UAV_06_F_CASE_Description">
+            <English>Contains an INDEP AL-6</English>
+            <Spanish>Contiene un AL-6 (INDEP)</Spanish>
+            <Russian>Содержит AL-6 (INDEP)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_I_UAV_06_F_CASE_DisplayName">
+            <English>AL-6 (INDEP)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_I_UAV_06_medical_F_CASE_Description">
+            <English>Contains an INDEP AL-6 Medical</English>
+            <Spanish>Contiene un AL-6 Medical (INDEP)</Spanish>
+            <Russian>Содержит AL-6 Medical (INDEP)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_I_UAV_06_medical_F_CASE_DisplayName">
+            <English>AL-6 Medical (INDEP)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_O_Static_Designator_02_F_CASE_DisplayName">
+            <English>Remote Designator (OPFOR)</English>
+            <Spanish>Designador remoto (OPFOR)</Spanish>
+            <Russian>Дистанционный целеуказатель (OPFOR)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_O_UAV_01_CASE_Description">
+            <English>Contains an OPFOR AR-2 Darter</English>
+            <Spanish>Contiene un AR-2 Darter (OPFOR)</Spanish>
+            <Russian>Содержит AR-2 Darter (OPFOR)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_O_UAV_01_CASE_DisplayName">
+            <English>AR-2 (OPFOR)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_O_UAV_06_F_CASE_Description">
+            <English>Contains an OPFOR AL-6</English>
+            <Spanish>Contiene un AL-6 (OPFOR)</Spanish>
+            <Russian>Содержит AL-6 (OPFOR)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_O_UAV_06_F_CASE_DisplayName">
+            <English>AL-6 (OPFOR)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_O_UAV_06_medical_F_CASE_Description">
+            <English>Contains an OPFOR AL-6 Medical</English>
+            <Spanish>Contiene un AL-6 Medical (OPFOR)</Spanish>
+            <Russian>Содержит AL-6 Medical (OPFOR)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_O_UAV_06_medical_F_CASE_DisplayName">
+            <English>AL-6 Medical (OPFOR)</English>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6_bag_civ_DisplayName">
+            <English>UAV Backpack (AL-6, CIV)</English>
+            <Spanish>Mochila de UAV (AL-6, CIV)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6, ГРАЖД)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6_bag_green_DisplayName">
+            <English>UAV Backpack (AL-6, Green)</English>
+            <Spanish>Mochila de UAV (AL-6, Verde)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6, Зелёный)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6_bag_idap_DisplayName">
+            <English>UAV Backpack (AL-6, IDAP)</English>
+            <Spanish>Mochila de UAV (AL-6, IDAP)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6, IDAP)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6_bag_od_DisplayName">
+            <English>UAV Backpack (AL-6, OD)</English>
+            <Spanish>Mochila de UAV (AL-6, OD)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6, OD)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6_bag_tan_DisplayName">
+            <English>UAV Backpack (AL-6, Tan)</English>
+            <Spanish>Mochila de UAV (AL-6, Canela)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6, Песочный)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6_bag_wdl_DisplayName">
+            <English>UAV Backpack (AL-6, Woodland)</English>
+            <Spanish>Mochila de UAV (AL-6, Boscoso)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6, Лесной)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6m_bag_civ_DisplayName">
+            <English>UAV Backpack (AL-6M, CIV)</English>
+            <Spanish>Mochila de UAV (AL-6M, CIV)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6M, ГРАЖД)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6m_bag_green_DisplayName">
+            <English>UAV Backpack (AL-6M, Green)</English>
+            <Spanish>Mochila de UAV (AL-6M, Verde)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6M, Зелёный)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6m_bag_idap_DisplayName">
+            <English>UAV Backpack (AL-6M, IDAP)</English>
+            <Spanish>Mochila de UAV (AL-6M, IDAP)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6M, IDAP)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6m_bag_od_DisplayName">
+            <English>UAV Backpack (AL-6M, OD)</English>
+            <Spanish>Mochila de UAV (AL-6M, OD)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6M, OD)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6m_bag_tan_DisplayName">
+            <English>UAV Backpack (AL-6M, Tan)</English>
+            <Spanish>Mochila de UAV (AL-6M, Canela)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6M, Песочный)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_al6m_bag_wdl_DisplayName">
+            <English>UAV Backpack (AL-6M, Woodland)</English>
+            <Spanish>Mochila de UAV (AL-6M, Boscoso)</Spanish>
+            <Russian>Рюкзак БПЛА (AL-6M, Лесной)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_ar2_bag_green_DisplayName">
+            <English>UAV Backpack (AR-2, Green)</English>
+            <Spanish>Mochila de UAV (AR-2, Verde)</Spanish>
+            <Russian>Рюкзак БПЛА (AR-2, Зелёный)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_ar2_bag_idap_DisplayName">
+            <English>UAV Backpack (AR-2, IDAP)</English>
+            <Spanish>Mochila de UAV (AR-2, IDAP)</Spanish>
+            <Russian>Рюкзак БПЛА (AR-2, IDAP)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_ar2_bag_od_DisplayName">
+            <English>UAV Backpack (AR-2, OD)</English>
+            <Spanish>Mochila de UAV (AR-2, OD)</Spanish>
+            <Russian>Рюкзак БПЛА (AR-2, OD)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_ar2_bag_tan_DisplayName">
+            <English>UAV Backpack (AR-2, Tan)</English>
+            <Spanish>Mochila de UAV (AR-2, Canela)</Spanish>
+            <Russian>Рюкзак БПЛА (AR-2, Песочный)</Russian>
+        </Key>
+        <Key ID="STR_ARC_Compat_Vanilla_ar2_bag_wdl_DisplayName">
+            <English>UAV Backpack (AR-2, Woodland)</English>
+            <Spanish>Mochila de UAV (AR-2, Boscoso)</Spanish>
+            <Russian>Рюкзак БПЛА (AR-2, Лесной)</Russian>
+        </Key>
+    </Package>
+</Project>

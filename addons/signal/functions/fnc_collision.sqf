@@ -9,6 +9,7 @@ private _lossDb = 0;
 private _hits = 0;
 
 private _dir = vectorNormalized (_start vectorFromTo _end);
+private _totalDistance = _start distance _end;
 
 // Frequency scaling
 private _frequencyRatio = linearConversion [10, 20000, _f, 0.5, 20, true];
@@ -17,10 +18,6 @@ private _terrainLossPerHit = 2.4 * _frequencyRatio;
 private _objectLossPerHit  = 1.2 * _frequencyRatio;
 
 while {true} do {
-    if (!(_start isEqualType []) || {count _start != 3}) then {
-        INFO_1(format ["%1: Invalid start position",_f]);
-        break
-    };
     private _intersects = lineIntersectsSurfaces [
         _start,
         _end,
@@ -57,7 +54,7 @@ while {true} do {
 };
 
 // Rain attenuation (frequency scaled, capped)
-private _rainLoss = (linearConversion [100, 3000, _start distance _end, 0, 1, true] * ((rain / 10) * _frequencyRatio));
+private _rainLoss = (linearConversion [100, 3000, _totalDistance, 0, 1, true] * ((rain / 10) * _frequencyRatio));
 _lossDb = _lossDb + _rainLoss;
 
 _lossDb

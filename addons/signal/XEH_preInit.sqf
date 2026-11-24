@@ -6,4 +6,7 @@ GVAR(satCacheExpiry) = 0;
 GVAR(nextSignalAdjust) = 0;
 GVAR(baseDisruptStrength) = 0;
 
+AVAR(mode) = "LOS";
+AVAR(currentSignal) = 1;
+
 ADDON = true;

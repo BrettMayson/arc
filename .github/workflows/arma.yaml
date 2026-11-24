@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Setup HEMTT
@@ -25,4 +25,4 @@ jobs:
         with:
           name: arc.zip
           path: .hemttout/@*
-          include-hidden-files: true 
+          include-hidden-files: true

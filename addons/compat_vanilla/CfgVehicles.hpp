@@ -3,31 +3,31 @@ class CfgVehicles {
     class AVAR(ar2_bag_base): AVAR(uav_bag_base) {};
     class AVAR(ar2_bag_od): AVAR(ar2_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AR-2, OD)";
+        displayName = CSTRING(ar2_bag_od_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_06_backpack_NATO_co.paa"};
         picture = "\A3\Drones_F\Weapons_F_Gamma\Ammoboxes\Bags\Data\UI\icon_B_C_UAV_oli_ca";
     };
     class AVAR(ar2_bag_green): AVAR(ar2_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AR-2, Green)";
+        displayName = CSTRING(ar2_bag_green_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_06_backpack_AAF_co.paa"};
         picture = "\A3\Drones_F\Weapons_F_Gamma\Ammoboxes\Bags\Data\UI\icon_B_C_UAV_oli_ca";
     };
     class AVAR(ar2_bag_wdl): AVAR(ar2_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AR-2, Woodland)";
+        displayName = CSTRING(ar2_bag_wdl_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Enoch\Bags\Data\UAV_backpack_EAF_co.paa"};
         picture = "\A3\Supplies_F_Enoch\Bags\Data\UI\icon_I_E_UAV_01_backpack_F_ca";
     };
     class AVAR(ar2_bag_tan): AVAR(ar2_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AR-2, Tan)";
+        displayName = CSTRING(ar2_bag_tan_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_06_backpack_CSAT_co.paa"};
         picture = "\A3\Drones_F\Weapons_F_Gamma\Ammoboxes\Bags\Data\UI\icon_B_C_UAV_cbr_ca";
     };
     class AVAR(ar2_bag_idap): AVAR(ar2_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AR-2, IDAP)";
+        displayName = CSTRING(ar2_bag_idap_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_backpack_IDAP_co.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_C_IDAP_UAV_ca";
     };
@@ -36,74 +36,74 @@ class CfgVehicles {
     };
     class AVAR(al6_bag_od): AVAR(al6_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6, OD)";
+        displayName = CSTRING(al6_bag_od_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_06_backpack_NATO_co.paa","a3\air_f_orange\uav_06\data\b_UAV_06_CO.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_B_UAV_06_ca";
     };
     class AVAR(al6_bag_green): AVAR(al6_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6, Green)";
+        displayName = CSTRING(al6_bag_green_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_06_backpack_AAF_co.paa","a3\air_f_orange\uav_06\data\i_UAV_06_CO.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_I_UAV_06_ca";
     };
     class AVAR(al6_bag_wdl): AVAR(al6_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6, Woodland)";
+        displayName = CSTRING(al6_bag_wdl_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Enoch\Bags\Data\UAV_06_backpack_LDF_co.paa","a3\air_f_enoch\uav_06\data\I_E_UAV_06_CO.paa"};
         picture = "\a3\Supplies_F_Enoch\Bags\Data\UI\icon_I_E_UAV_06_backpack_F_ca.paa";
     };
     class AVAR(al6_bag_tan): AVAR(al6_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6, Tan)";
+        displayName = CSTRING(al6_bag_tan_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_06_backpack_CSAT_co.paa","a3\air_f_orange\uav_06\data\o_UAV_06_CO.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_O_UAV_06_ca";
     };
     class AVAR(al6_bag_idap): AVAR(al6_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6, IDAP)";
+        displayName = CSTRING(al6_bag_idap_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_backpack_IDAP_co.paa","a3\air_f_orange\uav_06\data\C_IDAP_UAV_06_CO.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_C_IDAP_UAV_06_ca";
     };
     class AVAR(al6_bag_civ): AVAR(al6_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6, CIV)";
+        displayName = CSTRING(al6_bag_civ_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_backpack_Civ_co.paa","a3\air_f_orange\uav_06\data\C_UAV_06_CO.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_C_UAV_06_ca";
     };
     class AVAR(al6m_bag_base): AVAR(uav_bag_base) {};
     class AVAR(al6m_bag_od): AVAR(al6m_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6M, OD)";
+        displayName = CSTRING(al6m_bag_od_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_06_backpack_NATO_co.paa","a3\air_f_orange\uav_06\data\b_uav_06_co.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_B_UAV_06_medical_ca";
     };
     class AVAR(al6m_bag_green): AVAR(al6m_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6M, Green)";
+        displayName = CSTRING(al6m_bag_green_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_06_backpack_AAF_co.paa","a3\air_f_orange\uav_06\data\i_uav_06_co.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_I_UAV_06_medical_ca";
     };
     class AVAR(al6m_bag_wdl): AVAR(al6m_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6M, Woodland)";
+        displayName = CSTRING(al6m_bag_wdl_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Enoch\Bags\Data\UAV_06_backpack_LDF_co.paa","a3\air_f_enoch\uav_06\data\I_E_UAV_06_CO.paa"};
         picture = "\A3\Supplies_F_Enoch\Bags\Data\UI\icon_I_E_UAV_06_backpack_F_ca.paa";
     };
     class AVAR(al6m_bag_tan): AVAR(al6m_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6M, Tan)";
+        displayName = CSTRING(al6m_bag_tan_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_06_backpack_CSAT_co.paa","a3\air_f_orange\uav_06\data\o_uav_06_co.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_O_UAV_06_medical_ca";
     };
     class AVAR(al6m_bag_idap): AVAR(al6m_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6M, IDAP)";
+        displayName = CSTRING(al6m_bag_idap_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_backpack_IDAP_co.paa","\a3\air_f_orange\uav_06\data\c_idap_uav_06_medical_co.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_C_IDAP_UAV_06_medical_ca";
     };
     class AVAR(al6m_bag_civ): AVAR(al6m_bag_base) {
         scope = 2;
-        displayName = "UAV Backpack (AL-6M, CIV)";
+        displayName = CSTRING(al6m_bag_civ_DisplayName);
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Orange\Bags\Data\UAV_backpack_CIV_co.paa","\a3\air_f_orange\uav_06\data\c_uav_06_medical_co.paa"};
         picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_C_UAV_06_medical_ca";
     };

@@ -1,12 +1,17 @@
 #include "..\script_component.hpp"
 
+// 0: enabled, 1: disabled, 2: UAV only
+if (GVAR(enableISR) == 1) exitWith {false};
+
+// UAVControl lists [unit, seat] for each controller, so the player may not be first
 private _control = UAVControl getConnectedUAV ACE_player;
-if (_control#0 == ACE_player && _control#1 != "") exitWith { true };
+private _index = _control find ACE_player;
+if (_index != -1 && {(_control param [_index + 1, ""]) != ""}) exitWith {true};
 
 private _currentVehicle = vehicle ACE_player;
 if (_currentVehicle isEqualTo ACE_player) exitWith {false};
 
-if !([true, false, (unitIsUAV _currentVehicle)] select GVAR(enableISR)) exitWith {};
+if (GVAR(enableISR) == 2 && {!unitIsUAV _currentVehicle}) exitWith {false};
 
 if (cameraView != "GUNNER") exitWith {false};
 

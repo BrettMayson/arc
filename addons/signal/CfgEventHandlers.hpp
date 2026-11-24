@@ -13,10 +13,3 @@ class Extended_PostInit_EventHandlers {
         clientInit = QUOTE(call COMPILE_FILE(XEH_postInitClient));
     };
 };
-class Extended_Init_EventHandlers {
-    class AllVehicles {
-        class ADDON {
-            init = QUOTE(call FUNC(init));
-        };
-    };
-};
